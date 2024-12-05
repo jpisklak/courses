@@ -105,7 +105,7 @@ table tr:nth-child(even) {
 }
 
 button {
-    background-color: #003366; /* Dark blue button */
+    background-color: #275D38; /* Dark green button */
     color: #ffffff; /* White text */
     border: none;
     padding: 10px 20px;
