@@ -1,5 +1,4 @@
-document.write('\
-\
+document.write('
 <header>
         Professional Services Online
     </header>
@@ -8,5 +7,4 @@ document.write('\
         <a href="#services">Services</a> | 
         <a href="#contact">Contact</a>
     </nav>
-\
-');
+        ')
