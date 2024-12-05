@@ -1,0 +1,12 @@
+document.write('\
+\
+<header>
+        Professional Services Online
+    </header>
+    <nav>
+        <a href="#about">About Us</a> | 
+        <a href="#services">Services</a> | 
+        <a href="#contact">Contact</a>
+    </nav>
+\
+');
