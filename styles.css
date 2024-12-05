@@ -1,3 +1,7 @@
+/* UofA Colours */
+/* Green #275D38 */
+/* Yellow: #F4CF00 */
+
 /* Early 90s Professional Webpage CSS */
 body {
     background-color: #dcdcdc; /* Light gray background */
@@ -10,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #000080; /* Navy blue header */
+    background-color: #275D38; /* green header */
     color: #ffffff; /* White text */
     padding: 10px;
     font-size: 24px;
@@ -45,7 +49,7 @@ main {
 
 h1, h2, h3 {
     font-family: "Arial", sans-serif; /* Early sans-serif for headings */
-    color: #000080; /* Navy blue headings */
+    color: #275D38; /* Dark green headings */
 }
 
 h1 {
@@ -70,7 +74,7 @@ p {
 }
 
 footer {
-    background-color: #000080; /* Navy footer */
+    background-color: #275D38; /* Dark green footer */
     color: #ffffff; /* White text */
     padding: 5px;
     font-size: 12px;
