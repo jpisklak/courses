@@ -1,39 +1,37 @@
-/* Professional 1990s CSS */ 
+/* Early 90s Professional Webpage CSS */
 body {
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #dcdcdc; /* Light gray background */
     color: #000000; /* Black text */
-    font-family: "Times New Roman", serif; /* Traditional font for professionalism */
-    font-size: 16px;
+    font-family: "Courier New", Courier, monospace; /* Early 90s font */
+    font-size: 14px;
     margin: 0;
     padding: 0;
-    text-align: center; /* Centered content */
+    text-align: center; /* Center everything */
 }
 
 header {
-    background-color: #003366; /* Dark blue header */
-    color: #ffffff; /* White text for contrast */
-    padding: 20px;
-    text-align: center;
+    background-color: #000080; /* Navy blue header */
+    color: #ffffff; /* White text */
+    padding: 10px;
     font-size: 24px;
+    text-transform: uppercase;
     font-weight: bold;
+    border-bottom: 3px solid #cccccc; /* Separator line */
 }
 
 nav {
-    background-color: #cccccc; /* Light gray navigation bar */
+    background-color: #cccccc; /* Gray navigation bar */
     padding: 10px;
     text-align: center;
-    border-bottom: 2px solid #003366; /* Blue border */
+    font-family: "Arial", sans-serif;
+    border: 1px solid #999999;
 }
 
 nav a {
-    color: #003366; /* Dark blue links */
-    text-decoration: none; /* No underline for links */
-    font-weight: bold;
-    margin: 0 15px;
-}
-
-nav a:hover {
-    text-decoration: underline; /* Underline on hover */
+    color: #0000cc; /* Bright blue links */
+    text-decoration: underline;
+    font-size: 14px;
+    margin: 0 10px;
 }
 
 main {
@@ -41,74 +39,72 @@ main {
     margin: 20px auto;
     background-color: #ffffff; /* White content area */
     padding: 20px;
-    border: 1px solid #cccccc; /* Light gray border */
-    text-align: left; /* Left-aligned for professional content */
+    border: 2px solid #000000; /* Black border for boxy layout */
+    text-align: left;
 }
 
 h1, h2, h3 {
-    font-family: "Arial", sans-serif; /* Clean sans-serif font for headings */
-    color: #003366; /* Dark blue for headings */
+    font-family: "Arial", sans-serif; /* Early sans-serif for headings */
+    color: #000080; /* Navy blue headings */
 }
 
 h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 22px;
+    font-size: 26px;
+    border-bottom: 1px solid #cccccc; /* Divider under main heading */
     margin-bottom: 15px;
 }
 
-h3 {
-    font-size: 18px;
+h2 {
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
+h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
 p {
-    line-height: 1.6; /* Increased line spacing for readability */
+    line-height: 1.5;
     margin-bottom: 15px;
 }
 
 footer {
-    background-color: #003366; /* Dark blue footer */
+    background-color: #000080; /* Navy footer */
     color: #ffffff; /* White text */
-    padding: 10px;
-    font-size: 14px;
-    text-align: center;
-    border-top: 2px solid #cccccc; /* Light gray border */
+    padding: 5px;
+    font-size: 12px;
+    border-top: 3px solid #cccccc; /* Separator line */
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border: 1px solid #000000; /* Black border around the table */
     margin: 20px 0;
+    border-collapse: collapse;
 }
 
 table th, table td {
-    border: 1px solid #cccccc; /* Light gray borders */
-    padding: 10px;
+    border: 1px solid #000000; /* Black borders for cells */
+    padding: 8px;
     text-align: left;
+    font-family: "Courier New", Courier, monospace;
 }
 
 table th {
-    background-color: #003366; /* Dark blue header cells */
-    color: #ffffff; /* White text in header */
-}
-
-table tr:nth-child(even) {
-    background-color: #f9f9f9; /* Alternating row color */
+    background-color: #cccccc; /* Light gray header cells */
 }
 
 button {
-    background-color: #003366; /* Dark blue button */
-    color: #ffffff; /* White text */
-    border: none;
-    padding: 10px 20px;
+    background-color: #ffffff; /* White button */
+    color: #000000; /* Black text */
+    border: 2px solid #000000; /* Black border */
+    padding: 5px 10px;
+    font-family: "Courier New", Courier, monospace;
     font-size: 14px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #00509e; /* Slightly lighter blue on hover */
+    background-color: #cccccc; /* Light gray on hover */
 }
