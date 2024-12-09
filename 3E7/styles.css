@@ -1,0 +1,99 @@
+/* Basic Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background: url('bkg.jpg') repeat;
+  color: #00FF00;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border: 5px dotted #FF00FF;
+  background-color: #000000AA; /* Semi-transparent black */
+  box-shadow: 0 0 20px #FF00FF;
+}
+
+/* Header */
+.header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 5px #FF0000;
+  color: #FFFF00;
+}
+
+/* Marquee */
+.marquee {
+  font-size: 1.5em;
+  color: #00FFFF;
+  margin: 10px 0;
+  background-color: #330033;
+  padding: 5px;
+}
+
+/* Content */
+.content {
+  margin: 20px 0;
+}
+
+.center-image {
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+  height: auto;
+}
+
+.intro-text {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.warning {
+  font-weight: bold;
+  color: #FF0000;
+}
+
+/* Call to Action */
+.cta {
+  margin: 20px 0;
+}
+
+.cta-text {
+  font-size: 2em;
+  color: #FFFF00;
+  text-shadow: 1px 1px 3px #FF0000;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  color: #000000;
+  background-color: #00FF00;
+  text-decoration: none;
+  font-weight: bold;
+  border: 3px solid #FF00FF;
+  box-shadow: 0 0 10px #FFFF00;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #FFFF00;
+  color: #0000FF;
+  box-shadow: 0 0 20px #FF00FF;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #FFFFFF;
+}
+
+footer a {
+  color: #00FFFF;
+  text-decoration: underline;
+}
