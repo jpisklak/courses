@@ -85,6 +85,14 @@ footer {
     border-top: 2px solid #cccccc; /* Light gray border */
 }
 
+ul {
+    list-style-type: disc; /* Default list style */
+}
+
+ul li {
+    margin-bottom: 5px; /* Adds space below each list item */
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
