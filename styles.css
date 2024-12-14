@@ -7,10 +7,11 @@ body {
     background-color: #f0f0f0; /* Light gray background*/
     color: #000000; /* Black text */
     font-family: "Times New Roman", serif; /* Traditional font for professionalism */
-    font-size: 16px;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     text-align: center; /* Centered content */
+    cursor: url('cursor/win95_arrow.cur'), auto;
 }
 
 header {
@@ -18,7 +19,7 @@ header {
     color: #ffffff; /* White text for contrast */
     padding: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -38,6 +39,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline; /* Underline on hover */
+    cursor: url('cursor/win95_pointer.cur'), pointer; /* Custom cursor with fallback */
 }
 
 main {
@@ -65,7 +67,7 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
