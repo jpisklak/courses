@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wake Up</title>
+    <style>
+        /* Classic 90s Style */
+        body {
+            background-color: #C0C0C0; /* Light gray background */
+            color: #000000; /* Black text */
+            font-family: "Times New Roman", serif; /* Default browser font */
+            margin: 0;
+            padding: 10px;
+        }
+        h1 {
+            color: #000080; /* Navy blue header */
+            text-align: center;
+            text-decoration: underline;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #000000;
+        }
+        a {
+            color: #0000FF; /* Blue links */
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #800080; /* Purple for visited links */
+        }
+        .content {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+     <script>
+        let countdown = 60; // Set the countdown time in seconds
+        function startCountdown() {
+            const timerElement = document.getElementById("timer");
+            const interval = setInterval(() => {
+                timerElement.textContent = countdown;
+                countdown--;
+                if (countdown < 0) {
+                    clearInterval(interval);
+                    window.location.href = "https://www.google.com"; // Redirect URL
+                }
+            }, 1000); // Update every second
+        }
+        window.onload = startCountdown;
+    </script>
+</head>
+<body>
+    <hr>
+    <div class="content">
+        <p>I know you're out there. I can feel you now. I know that you're 
+            afraid. You're afraid of us. You're afraid of change. I don't know 
+            the future. I didn't come here to tell you how this is going to end. 
+            I came here to tell you how it's going to begin. I'm going to show 
+            these people what you don't want them to see. I'm going to show 
+            them a world without you, a world without rules and controls, 
+            without borders or boundaries, a world where anything is possible. 
+            Where we go from there is a choice I leave to you.</p>
+    </div>
+    <hr>
+    You've chosen the comfort of the illusion over the discomfort of reality. Redirecting you to the dead internet in <span id="timer">60</span> seconds...</p>
+    (Your humanity slips away with each passing moment...)
+
+    <footer>
+
+
+    </footer>
+</body>
+</html>
