@@ -24,23 +24,69 @@ print(xtable(df, align = c("l", "l")),
       file="prime_table.html")
 
 
-# Primary List of Data files
+# Paired t-test Data files
 #-------------------------------------------------------------------------------
 
-prime_list <- list.files("../paired_t_hmwk_data", include.dirs = FALSE)
-prime_list_url <- paste0(
-  'https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_213/data_files/', prime_list)
+pair_t_list <- paste0("pair_data_", 1:40, ".csv")
+pair_t_list_url <- paste0(
+  'https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_213/data_files/paired_t_hmwk_data/', pair_t_list)
 
-prime_list_html <- paste0(
-  '<a href = "', prime_list_url, '" download = "', prime_list_url, '">', 
-  prime_list, '</a>')
+pair_t_list_html <- paste0(
+  '<a href = "', pair_t_list_url, '" download = "', pair_t_list_url, '">', 
+  pair_t_list, '</a>')
 
 
 df <- tibble(
-  Filename = prime_list_html
+  Filename = pair_t_list_html
 )
 
 print(xtable(df, align = c("l", "l")), 
       include.rownames = FALSE,
       type="html", 
-      file="prime_table.html")
+      file="pair_t_table.html")
+
+
+
+# Independent t-test Data files
+#-------------------------------------------------------------------------------
+
+indep_t_list <- paste0("independent_data_", 1:60, ".csv")
+indep_t_list_url <- paste0(
+  'https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_213/data_files/indep_t_hmwk_data/', indep_t_list)
+
+indep_t_list_html <- paste0(
+  '<a href = "', indep_t_list_url, '" download = "', indep_t_list_url, '">', 
+  indep_t_list, '</a>')
+
+
+df <- tibble(
+  Filename = indep_t_list_html
+)
+
+print(xtable(df, align = c("l", "l")), 
+      include.rownames = FALSE,
+      type="html", 
+      file="indep_t_table.html")
+
+
+
+# Regression Data files
+#-------------------------------------------------------------------------------
+
+reg_list <- paste0("regress_data_", 1:80, ".csv")
+reg_list_url <- paste0(
+  'https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_213/data_files/reg_hmwk_data/', reg_list)
+
+reg_list_html <- paste0(
+  '<a href = "', reg_list_url, '" download = "', reg_list_url, '">', 
+  reg_list, '</a>')
+
+
+df <- tibble(
+  Filename = reg_list_html
+)
+
+print(xtable(df, align = c("l", "l")), 
+      include.rownames = FALSE,
+      type="html", 
+      file="reg_table.html")

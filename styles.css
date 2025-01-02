@@ -114,6 +114,13 @@ table tr:nth-child(even) {
     background-color: #f9f9f9; /* Alternating row color */
 }
 
+.table-container {
+    width: 100%; /* Adjust width as needed */
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Optional: border for the table container */
+}
+
 button {
     background-color: #275D38; /* Dark green button */
     color: #ffffff; /* White text */
