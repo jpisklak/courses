@@ -127,6 +127,8 @@ button:hover {
     background-color: #F4CF00; /* Yellow on hover */
 }
 
+iframe.r {border:6px solid #FFFFFF; border-style: ridge;}
+
 #mobile-warning {
     display: none;
     background-color: #ffcc00;
