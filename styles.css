@@ -90,7 +90,11 @@ ul {
 }
 
 ul li {
-    margin-bottom: 5px; /* Adds space below each list item */
+    margin-bottom: 3px; /* Adds space below each list item */
+}
+
+ol li {
+    margin-bottom: 3px; /* Adds space below each list item */
 }
 
 table {
@@ -148,3 +152,13 @@ iframe.r {border:6px solid #FFFFFF; border-style: ridge;}
     width: 100%;
     z-index: 1000;
 }
+
+/* @font-face {
+    font-family: "clock";
+    src: url("fonts/digital-7/digital-7.ttf") format("truetype");
+  } */
+  
+/*   .temp-font {
+    font-family: "clock", sans-serif;
+    font-size: 28px;
+  } */
