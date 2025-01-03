@@ -1,8 +1,8 @@
 // Array of target dates, labels, and their respective timezones
 const countdownData = [
   { label: "Midterm", date: "2025-03-04T15:30:00", timezone: "America/Edmonton", containerId: "Midterm" },
-  { label: "Final Exam", date: "2025-02-14T18:30:00", timezone: "America/New_York", containerId: "section2" },
-  { label: "Event 3", date: "2025-03-20T09:00:00", timezone: "Asia/Tokyo", containerId: "section3" }
+  { label: "Achieve Countdown", date: "2025-03-04T15:30:00", timezone: "America/Edmonton", containerId: "Achieve_1" },
+  { label: "Achieve Countdown", date: "2025-04-09T11:59:00", timezone: "America/Edmonton", containerId: "Achieve_2" }
 ];
 
 // Function to create a timer in a specific container
