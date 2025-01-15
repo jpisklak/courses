@@ -90,3 +90,25 @@ print(xtable(df, align = c("l", "l")),
       include.rownames = FALSE,
       type="html", 
       file="reg_table.html")
+
+
+# BFD Data files
+#-------------------------------------------------------------------------------
+
+BFD_list <- paste0("BFD_", 1:5, ".csv")
+BFD_list_url <- paste0(
+  'https://github.com/jpisklak/courses/blob/main/PSYCH_213/data_files/BFD/', BFD_list)
+
+BFD_list_html <- paste0(
+  '<a href = "', BFD_list_url,'">', 
+  BFD_list, '</a>')
+
+
+df <- tibble(
+  `BF Data Files` = BFD_list_html
+)
+
+print(xtable(df, align = c("l", "l")), 
+      include.rownames = FALSE,
+      type="html", 
+      file="BFD_table.html")
