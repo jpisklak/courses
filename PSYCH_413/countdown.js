@@ -1,6 +1,7 @@
 // Array of target dates, labels, and their respective timezones
 const countdownData = [
   { label: "Midterm", date: "2025-02-25T09:30:00", timezone: "America/Edmonton", containerId: "Midterm" },
+  { label: "Final", date: "2025-04-22T08:30:00", timezone: "America/Edmonton", containerId: "Final" },
   { label: "Achieve Countdown", date: "2025-03-04T15:30:00", timezone: "America/Edmonton", containerId: "Achieve_1" },
   { label: "Achieve Countdown", date: "2025-04-09T11:59:00", timezone: "America/Edmonton", containerId: "Achieve_2" }
 ];
