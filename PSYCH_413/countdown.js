@@ -42,7 +42,7 @@ const updateTimers = () => {
 
         timerElement.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
       } else {
-        timerElement.innerText = "Time's up!";
+        timerElement.innerText = "Deadline has passed";
       }
     }
   });
