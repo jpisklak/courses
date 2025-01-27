@@ -76,6 +76,16 @@ p {
     margin-bottom: 15px;
 }
 
+code {
+    background-color: rgba(255, 230, 150, 0.5); /* Soft yellow highlight */
+    border-radius: 5px; /* Rounded corners */
+    padding: 2px 4px; /* Some padding for better visibility */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+    font-size: 0.95em; /* Slightly smaller text */
+    color: #333; /* Dark text color for good contrast */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+
 footer {
     background-color: #275D38; /* Dark green footer */
     color: #ffffff; /* White text */
