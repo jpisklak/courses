@@ -2,10 +2,11 @@
 const countdownData = [
   { label: "Midterm", date: "2025-02-25T09:30:00", timezone: "America/Edmonton", containerId: "Midterm" },
   { label: "Final", date: "2025-04-22T08:30:00", timezone: "America/Edmonton", containerId: "Final" },
-  { label: "Homeowrk 1 Countdown", date: "2025-01-24T23:59:59", timezone: "America/Edmonton", containerId: "HW_1" },
-  { label: "Homeowrk 2 Countdown", date: "2025-01-31T23:59:59", timezone: "America/Edmonton", containerId: "HW_2" },
-  { label: "Homeowrk 3 Countdown", date: "2025-02-07T23:59:59", timezone: "America/Edmonton", containerId: "HW_3" },
-  { label: "Homeowrk 4 Countdown", date: "2025-02-14T23:59:59", timezone: "America/Edmonton", containerId: "HW_4" }
+  { label: "Homework 1 Countdown", date: "2025-01-24T23:59:59", timezone: "America/Edmonton", containerId: "HW_1" },
+  { label: "Homework 2 Countdown", date: "2025-01-31T23:59:59", timezone: "America/Edmonton", containerId: "HW_2" },
+  { label: "Homework 3 Countdown", date: "2025-02-07T23:59:59", timezone: "America/Edmonton", containerId: "HW_3" },
+  { label: "Homework 4 Countdown", date: "2025-02-14T23:59:59", timezone: "America/Edmonton", containerId: "HW_4" },
+  { label: "Homework 5 Countdown", date: "2025-02-21T23:59:59", timezone: "America/Edmonton", containerId: "HW_5" }
 ];
 
 // Function to create a timer in a specific container
