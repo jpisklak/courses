@@ -6,7 +6,7 @@ const countdownData = [
   { label: "Homework 2 Countdown", date: "2025-01-31T23:59:59", timezone: "America/Edmonton", containerId: "HW_2" },
   { label: "Homework 3 Countdown", date: "2025-02-07T23:59:59", timezone: "America/Edmonton", containerId: "HW_3" },
   { label: "Homework 4 Countdown", date: "2025-02-14T23:59:59", timezone: "America/Edmonton", containerId: "HW_4" },
-  { label: "Homework 5 Countdown", date: "2025-02-21T23:59:59", timezone: "America/Edmonton", containerId: "HW_5" }
+  { label: "Homework 5 Countdown", date: "2025-02-23T23:59:59", timezone: "America/Edmonton", containerId: "HW_5_2" }
 ];
 
 // Function to create a timer in a specific container
