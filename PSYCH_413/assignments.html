@@ -6,12 +6,45 @@
     <title>Assignments and Homework</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/x-icon" href="../img/site_icon.ico">
-        <style>
-      img {
-        max-width: 30%;
-        height: auto;
-      }
-    </style>
+    <style>
+        img {
+          max-width: 30%;
+          height: auto;
+        }
+  
+        .button-container {
+              margin: 20px 20px;
+          }
+          .data-button {
+              background-color: #275D38;
+              color: white;
+              padding: 10px 15px;
+              margin: 10px;
+              border: none;
+              cursor: pointer;
+              font-size: 16px;
+              border-radius: 5px;
+          }
+          .data-button:hover {
+              background-color: #F2CD00;
+              color: black;
+          }
+          .submission-button {
+              background-color: #275D38;
+              color: white;
+              padding: 15px 25px;
+              font-size: 18px;
+              border: none;
+              cursor: pointer;
+              border-radius: 5px;
+              font-weight: bold;
+          }
+          .submission-button:hover {
+              background-color: #F2CD00;
+              color: black;
+          }
+  
+      </style>
 </head>
 
 <body>
@@ -28,6 +61,24 @@
     <!--   -->   
 
     <main>
+
+        <h1>Plotting Assignment</h1>
+
+        <ul>
+            <li><strong>Due</strong>: Friday March 28th by 11:59</li>
+            <li><div id="plot_assign" style="display: flex; align-items: center;">
+                <div><strong>Countdown:&nbsp;</strong></div>
+              </div></li>
+        </ul>
+
+        <div class="button-container">
+            <button class="submission-button" onclick="window.open('pdf/plotting_assign.pdf')">📄 Instructions</button> &nbsp; &nbsp;
+            <button class="submission-button" onclick="window.open('https://canvas.ualberta.ca/courses/18202/assignments/463171')">📤 Submission Portal</button> &nbsp; &nbsp;
+        </div>
+
+        <br>
+        <hr>
+        <br>
 
         <h1>Homework Assignments</h1>
         <ul>
@@ -115,43 +166,7 @@
             </tbody>
         </table>
 
-        <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
         <h2>Troubleshooting</h2>
 
         If you need assistance getting your code to work feel free to email the instructor. However, when you do, make sure you have done the following:
@@ -171,13 +186,7 @@
 
         
         <br>
-        <hr>
-        <br>
-
-        <h1>Plotting Assignment</h1>
-
-        <p>Check back here when this project is announced during class.</p>
-        
+       
  
   <!-- Include Moment.js and Moment-Timezone -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
