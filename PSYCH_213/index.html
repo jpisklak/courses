@@ -16,6 +16,37 @@
         }
     </script> 
 
+<style>
+    .ugly-plot-link {
+    display: inline-block;
+    padding: 16px 24px;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5);
+    color: #fff !important;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-decoration: none !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: ugly-bounce 2s infinite;
+    font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+    z-index: 9999;
+    position: relative;
+  }
+
+  .ugly-plot-link:hover {
+    transform: scale(1.1) rotate(2deg);
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
+
+  @keyframes ugly-bounce {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-4px) rotate(0deg); }
+  }
+  </style>
+
 </head>
 <body onload="detectMobile()"> <!-- Trigger the function on page load -->
     <!-- Mobile warning banner -->
@@ -403,6 +434,14 @@
             </tbody>
         </table>
 
+        <br>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeepSKar7KcU2-Fxaat5h7sGvZE19-hIq_XFex5dSRUcS8V4w/viewform?usp=header" target="_blank" class="ugly-plot-link">
+              🎨 Rate the Ugliest Plots Ever Made! 😱
+            </a>
+          </div>
+
         <div class="buttons">
             <a href = "https://geocities.restorativland.org/Area51/" target="_blank"><img src="../img/geocities_area_51.gif" title="WARNING: This Link May Summon the Men in Black" style="float: right; margin-left: 10px;"></a>
             <a href = "https://linuxmint.com/" target="_blank"><img src="../img/linux_powered.gif" title="Click here to free your PC from corporate overlords. Minty fresh freedom awaits!" style="float: right; margin-left: 10px;"></a>
@@ -410,6 +449,7 @@
             <a href = "https://www.cameronsworld.net/" target="_blank"><img src="../img/html.gif" title="Experience the Internet in Its Purest, Most Chaotic Form" style="float: right; margin-left: 10px;"></a>
         </div>
         <br>
+
 
     </main>
     <footer>
