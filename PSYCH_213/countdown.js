@@ -11,6 +11,7 @@ const countdownData = [
   { label: "Homework 4 Countdown", date: "2025-03-11T23:59:00", timezone: "America/Edmonton", containerId: "HW_4_2" },
   { label: "Homework 5 Countdown", date: "2025-03-21T23:59:00", timezone: "America/Edmonton", containerId: "HW_5" },
   { label: "Homework 6 Countdown", date: "2025-04-01T23:59:00", timezone: "America/Edmonton", containerId: "HW_6" },
+  { label: "Homework 7 Countdown", date: "2025-04-09T23:59:00", timezone: "America/Edmonton", containerId: "HW_7" },
   { label: "Course Project Countdown", date: "2025-04-09T23:59:00", timezone: "America/Edmonton", containerId: "CP_II" },
   
 ];
