@@ -1737,8 +1737,8 @@ effect if you wanted the ANOVA to have a power level of 0.85? Round to
 the nearest person.</p>
 <pre class="r"><code>library(pwr)
 result &lt;- pwr.anova.test(k = 3, f = 0.05, sig.level = 0.05, power = 0.85)
-round(result$n * 3)</code></pre>
-<pre><code>## [1] 4372</code></pre>
+round(result$n) * 3</code></pre>
+<pre><code>## [1] 4371</code></pre>
 <p>You would need a total sample size of <span class="math inline">\(N =
 4372\)</span>.</p>
 <p><br></p>
