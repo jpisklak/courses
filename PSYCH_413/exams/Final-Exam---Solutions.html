@@ -2333,7 +2333,9 @@ variance compared to Model 1, it is considered the superior model.</p>
 removed using a robust outlier detection method. List the outliers you
 removed and report the model equation with it’s <span class="math inline">\(R^2\)</span> value. You are allowed to use
 <code>lm()</code>.</p>
-<pre class="r"><code># MADN stat
+<pre class="r"><code># Note: Outliers should only be removed based on independent/predictor variables (i.e., parent height, NOT child height).
+
+# MADN stat
 madn &lt;- median(abs(heights$parent - median(heights$parent))) / 0.6745
 
 # Detect outliers
