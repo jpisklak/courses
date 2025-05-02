@@ -8,7 +8,9 @@
 body {
     background-color: #f0f0f0; /* Light gray background*/
     color: #000000; /* Black text */
-    font-family: "Times New Roman", serif; /* Traditional font for professionalism */
+    /* font-family: "Times New Roman", serif; */
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
     font-size: 20px;
     margin: 0;
     padding: 0;
