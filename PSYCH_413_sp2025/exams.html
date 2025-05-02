@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Information</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/site_icon.ico">
+    <style>
+        img {
+          max-width: 30%;
+          height: auto;
+        }
+  
+        .button-container {
+              margin: 20px 20px;
+          }
+          .data-button {
+              background-color: #275D38;
+              color: white;
+              padding: 10px 15px;
+              margin: 10px;
+              border: none;
+              cursor: pointer;
+              font-size: 16px;
+              border-radius: 5px;
+          }
+          .data-button:hover {
+              background-color: #F2CD00;
+              color: black;
+          }
+          .submission-button {
+              background-color: #275D38;
+              color: white;
+              padding: 15px 25px;
+              font-size: 18px;
+              border: none;
+              cursor: pointer;
+              border-radius: 5px;
+              font-weight: bold;
+          }
+          .submission-button:hover {
+              background-color: #F2CD00;
+              color: black;
+          }
+  
+      </style>
+
+</head>
+<body>
+
+    <!-- Navigation Header-->   
+<header>
+    Psychology 413: Design and Analysis in Experimental Psychology
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+ <!-- Navigation Header-->   
+
+    <main>
+
+        <p>Exam questions, data files, and submission links will be found here on exam day. Unless otherwise specified by the instructor, the exam will cover all content completed up to the date of the exam.</p>
+
+        <p><i>Note for students with academic accommodations:</i><br>Because of the "take-home" asynchronous nature of the exams, they do not need to be logged within the ClockWork system.</p>
+
+        <br>
+        <hr>
+        <br>
+
+        <h1>Midterm Information</h1>
+        <ul>
+            <li><strong>Accessible</strong>: Monday May 26th at 08:30am</li>
+            <li><strong>Due</strong>: Tuesday May 26th at 08:30am (24 hours later)</li>
+            <!-- <li><strong>Coverage</strong>: </li> -->
+            <li><div id="Midterm" style="display: flex; align-items: center;">
+                <div><strong>Time to midterm: &nbsp;</strong></div>
+              </div></li>
+        </ul>
+
+<!--         <div class="button-container">
+            <button class="submission-button" onclick="window.open('URL')">📄 Exam Questions</button> &nbsp; &nbsp;
+            <button class="submission-button" onclick="window.open('URL')">📤 Submission Portal</button> &nbsp; &nbsp;
+            <button class="submission-button" onclick="window.open('URL')">💡Exam Solutions</button>
+        </div> -->
+
+ <!--        <h2>Data sets</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Raw URL Address</th>
+                    <th>Copy URL</th>
+                </tr>
+            </thead>
+
+        <tbody>
+            <tr>
+                <td><b><pre style="font-size: 14px;">FILENAME.CSV</pre></b></td>
+                <td><pre style="font-size: 12px;" id="CSVIDforSCRIPT">URL TO CSV</pre></td>
+                <td><button onclick="copyToClipboard('CSVIDforSCRIPT')">Copy Text</button></td>
+            </tr>
+
+        </tbody>
+        </table>      
+        
+        <script>
+            function copyToClipboard(id) {
+              const text = document.getElementById(id).innerText;
+              navigator.clipboard.writeText(text).then(() => {
+                alert(`The raw URL address has been copied to your computer's clipboard.`);
+              });
+            }
+          </script> -->
+
+        <br>
+        <hr>
+        <br>
+
+        <h1>Final Exam Information</h1>
+        <ul>
+            <li><strong>Accessible</strong>: Thursday June 12th at 08:00am</li>
+            <li><strong>Due</strong>: Friday June 13th at 08:00am (24 hours later)</li>
+            <li><strong>Coverage</strong>: Everything</li>
+            <li><div id="Final" style="display: flex; align-items: center;">
+                <div><strong>Time to final:&nbsp;</strong></div>
+              </div></li>
+        </ul>
+
+
+  <!-- Include Moment.js and Moment-Timezone -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
+  <!-- Include the external JavaScript file -->
+  <script src="countdown.js"></script>
+
+  </main>
+    <footer>
+        © 1999 Jeffrey M. Pisklak. All Rights Reserved.
+    </footer>
+</body>
+</html>
