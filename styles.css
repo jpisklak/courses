@@ -133,6 +133,7 @@ ul {
 
 ul li {
     margin-bottom: 5px; /* Adds space below each list item */
+    font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 ol li {
