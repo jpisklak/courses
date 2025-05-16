@@ -5,6 +5,7 @@ const countdownData = [
   { label: "Midterm", date: "2025-05-26T08:30:00", timezone: "America/Edmonton", containerId: "Midterm" },
   { label: "Plotting Assignment", date: "2025-06-06T23:59:00", timezone: "America/Edmonton", containerId: "plot_assign" },
   { label: "Homework 1", date: "2025-05-16T23:59:00", timezone: "America/Edmonton", containerId: "HW1" },
+  { label: "Homework 2", date: "2025-05-23T23:59:00", timezone: "America/Edmonton", containerId: "HW2" },
   
 ];
 
