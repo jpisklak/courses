@@ -2827,8 +2827,8 @@ diff_data &lt;- data.frame(
 
 ad_data_diff &lt;- rbind(ad_data, diff_data)</code></pre>
 <pre class="r"><code># Obtain values for plot
-plot_data &lt;- ad_data_diff %&gt;%
-  group_by(Image) %&gt;%
+plot_data &lt;- ad_data_diff |&gt;
+  group_by(Image) |&gt;
   summarise(
     n = length(AdRecall),
     m = mean(AdRecall),
