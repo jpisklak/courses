@@ -1,224 +1,269 @@
-/* UofA Colours */
-/* Green #275D38 */
-/* Yellow: #F4CF00 */
+/* =========================================================
+   University of Alberta Theme (Green/Gold)
+   ---------------------------------------------------------
+   Green  : #275D38
+   Yellow : #F4CF00
+   Font   : Atkinson Hyperlegible
+   Notes  : Classic “GeoCities-esque” vibe + usable defaults
+   ======================================================= */
 
-/* Professional 1990s CSS */
-/* https://unpkg.com/98.css */
+
+/* ================
+   1) Base / Reset
+   ================ */
+
+:root {
+  /* Theme tokens */
+  --uofa-green: #275D38;
+  --uofa-yellow: #F4CF00;
+  --bg-body: #f0f0f0;
+  --bg-surface: #ffffff;
+  --text: #000000;
+  --muted-border: #cccccc;
+
+  /* Typography scale */
+  --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --font-heading: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --fs-body: 20px;
+  --lh-body: 1.25;
+
+  /* Effects */
+  --radius-sm: 5px;
+  --shadow-1: 0 1px 3px rgba(0,0,0,.2);
+}
+
+/* Helpful box-sizing */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+/* =======================
+   2) Typography & Fonts
+   ======================= */
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf') format('truetype');
+  font-family: "Atkinson Hyperlegible";
+  src: url("fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap; /* improve perceived load */
 }
-
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Bold.ttf') format('truetype');
+  font-family: "Atkinson Hyperlegible";
+  src: url("fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
-
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Italic.ttf') format('truetype');
+  font-family: "Atkinson Hyperlegible";
+  src: url("fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
-
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-BoldItalic.ttf') format('truetype');
+  font-family: "Atkinson Hyperlegible";
+  src: url("fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
+/* Body defaults */
+html, body {
+  margin: 0;
+  padding: 0;
+}
 body {
-    background-color: #f0f0f0; /* Light gray background*/
-    color: #000000; /* Black text */
-    /* font-family: "Times New Roman", serif; */
-    font-family: "Atkinson Hyperlegible", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Centered content */
-    cursor: url('cursor/xp_arrow_xl.cur'), auto;
+  background-color: var(--bg-body);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  text-align: center; /* center global content; override in main */
+  cursor: url("cursor/xp_arrow_xl.cur"), auto;
 }
+
+/* ==========================
+   3) Layout: Header / Main / Footer
+   ========================== */
 
 header {
-    background-color: #275D38; /* Dark green header */
-    color: #ffffff; /* White text for contrast */
-    padding: 20px;
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
+  background-color: var(--uofa-green);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: clamp(24px, 2.2vw, 28px);
+  font-weight: 700;
 }
 
 nav {
-    background-color: #cccccc; /* Light gray navigation bar */
-    padding: 10px;
-    text-align: center;
-    border-bottom: 2px solid #275D38; /* Green border */
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid var(--uofa-green);
 }
-
 nav a {
-    color: #275D38; /* Dark green links */
-    text-decoration: none; /* No underline for links */
-    font-weight: bold;
-    margin: 0 15px;
+  color: var(--uofa-green);
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 15px;
 }
-
 nav a:hover {
-    text-decoration: underline; /* Underline on hover */
-    cursor: url('cursor/xp_link_xl.cur'), pointer; /* Custom cursor with fallback */
+  text-decoration: underline;
+  cursor: url("cursor/xp_link_xl.cur"), pointer;
 }
 
 main {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #ffffff; /* White content area */
-    padding: 20px;
-    border: 1px solid #cccccc; /* Light gray border */
-    text-align: left; /* Left-aligned for professional content */
+  width: 80%;
+  margin: 20px auto;
+  background-color: var(--bg-surface);
+  padding: 20px;
+  border: 1px solid var(--muted-border);
+  text-align: left; /* professional content area */
 }
-
-h1, h2, h3 {
-    font-family: "Arial", sans-serif; /* Clean sans-serif font for headings */
-    color: #275D38; /* Dark green for headings */
-}
-
-h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-
-h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-p {
-    line-height: 1.25; /* Increased line spacing for readability */
-    margin-bottom: 15px;
-}
-
-code {
-    background-color: rgba(255, 230, 150, 0.5); /* Soft yellow highlight */
-    border-radius: 5px; /* Rounded corners */
-    padding: 2px 4px; /* Some padding for better visibility */
-    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
-    font-size: 0.90em; /* Slightly smaller text */
-    color: #333; /* Dark text color for good contrast */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  }
 
 footer {
-    background-color: #275D38; /* Dark green footer */
-    color: #ffffff; /* White text */
-    padding: 10px;
-    font-size: 14px;
-    text-align: center;
-    border-top: 2px solid #cccccc; /* Light gray border */
+  background-color: var(--uofa-green);
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 2px solid var(--muted-border);
 }
 
-ul {
-    list-style-type: disc; /* Default list style */
+/* ==================
+   4) Headings & Text
+   ================== */
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--uofa-green);
+  margin-top: 0.6em;
+}
+h1 { font-size: 28px; margin-bottom: 20px; }
+h2 { font-size: 22px; margin-bottom: 15px; }
+h3 { font-size: 20px; margin-bottom: 10px; }
+
+p {
+  line-height: var(--lh-body);
+  margin: 0 0 15px;
 }
 
-ul li {
-    margin-bottom: 5px; /* Adds space below each list item */
-    font-family: "Atkinson Hyperlegible", sans-serif;
+/* Inline code chips */
+code {
+  background-color: rgba(255, 230, 150, 0.5);
+  border-radius: var(--radius-sm);
+  padding: 2px 4px;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9em;
+  color: #333;
+  box-shadow: var(--shadow-1);
 }
 
+/* ==========
+   5) Lists
+   ========== */
+
+ul { list-style: disc; padding-left: 1.2em; }
+ol { padding-left: 1.2em; }
+
+ul li,
 ol li {
-    margin-bottom: 5px; /* Adds space below each list item */
+  margin-bottom: 5px;
+  font-family: var(--font-body);
+}
+
+/* ===========
+   6) Tables
+   =========== */
+
+.table-container {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
 }
-
-table th, table td {
-    border: 1px solid #cccccc; /* Light gray borders */
-    padding: 10px;
-    text-align: left;
+table th,
+table td {
+  border: 1px solid var(--muted-border);
+  padding: 10px;
+  text-align: left;
 }
-
 table th {
-    background-color: #275D38; /* Dark green header cells */
-    color: #ffffff; /* White text in header */
+  background-color: var(--uofa-green);
+  color: #fff;
 }
-
 table tr:nth-child(even) {
-    background-color: #f9f9f9; /* Alternating row color */
+  background-color: #f9f9f9;
 }
 
-.table-container {
-    width: 100%; /* Adjust width as needed */
-    max-height: 300px; /* Adjust height as needed */
-    overflow-y: auto; /* Enable vertical scrolling */
-    border: 1px solid #ccc; /* Optional: border for the table container */
-}
+/* ===========
+   7) Buttons
+   =========== */
 
 button {
-    background-color: #275D38; /* Dark green button */
-    color: #ffffff; /* White text */
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
+  background-color: var(--uofa-green);
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
 }
-
 button:hover {
-    background-color: #F4CF00; /* Yellow on hover */
+  background-color: var(--uofa-yellow);
+  color: #000; /* better contrast on yellow */
 }
 
+/* “88x31” buttons */
 .buttons img {
   width: 88px;
-height: 31px;
- transition: transform .2s; 
+  height: 31px;
+  transition: transform .2s;
 }
-
 .buttons img:hover {
- transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
- cursor: url(/cursors/cursor_select.png), pointer 
+  transform: scale(1.1);
+  cursor: url("/cursors/cursor_select.png"), pointer;
 }
 
-iframe.r {border:6px solid #FFFFFF; border-style: ridge;}
+/* ===============
+   8) Embeds/iframes
+   =============== */
+
+iframe.r {
+  border: 6px ridge #fff; /* matches your ridge style */
+}
+
+/* =======================
+   9) Notices / Utilities
+   ======================= */
 
 #mobile-warning {
-    display: none;
-    background-color: #ffcc00;
-    color: #000;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.2em;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  display: none;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-/* @font-face {
-    font-family: "clock";
-    src: url("fonts/digital-7/digital-7.ttf") format("truetype");
-  } */
-  
-/*   .temp-font {
-    font-family: "clock", sans-serif;
-    font-size: 28px;
-  } */
+/* ===========================
+   10) Custom Old-School Scrollbars
+   - WebKit/Blink (Chrome/Edge/Safari)
+   =========================== */
 
-  
-  /* Old-School Scrollbar */
   *::-webkit-scrollbar {
     width: 16px;
     height: 16px;
@@ -268,9 +313,10 @@ iframe.r {border:6px solid #FFFFFF; border-style: ridge;}
   *::-webkit-scrollbar-corner {
     background: silver;
   }
-  
-  /* dakedres was here ;3 */
 
+/* ===========================
+   11) Firefox scrollbar styles
+   =========================== */
 
   For Firefox
 
@@ -278,5 +324,5 @@ iframe.r {border:6px solid #FFFFFF; border-style: ridge;}
     scrollbar-color: #c0c0c0 #808080; /* thumb color, track color */
     scrollbar-width: auto; /* "thin", "auto", or "none" */
   }
-  
-  /* dakedres was here ;3 */
+
+/* End of stylesheet */
