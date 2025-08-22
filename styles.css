@@ -70,6 +70,42 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("fonts/Atkinson_Hyperlegible_Mono/AtkinsonHyperlegibleMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("fonts/Atkinson_Hyperlegible_Mono/AtkinsonHyperlegibleMono-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("fonts/Atkinson_Hyperlegible_Mono/AtkinsonHyperlegibleMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("fonts/Atkinson_Hyperlegible_Mono/AtkinsonHyperlegibleMono-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Add a mono token to :root */
+:root {
+  /* ...your existing tokens... */
+  --font-mono: "Atkinson Hyperlegible Mono", ui-monospace, "SFMono-Regular",
+               Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 /* Body defaults */
 html, body {
   margin: 0;
@@ -152,15 +188,49 @@ p {
   margin: 0 0 15px;
 }
 
-/* Inline code chips */
+/* Inline code chips — keep your existing visuals, swap the family */
 code {
   background-color: rgba(255, 230, 150, 0.5);
   border-radius: var(--radius-sm);
   padding: 2px 4px;
-  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-mono);      /* ⬅️ use the mono variable */
   font-size: 0.9em;
   color: #333;
   box-shadow: var(--shadow-1);
+  font-variant-ligatures: none;       /* avoid unexpected ligatures in code */
+  font-feature-settings: "liga" 0;
+}
+
+/* Block code */
+pre,
+pre code {
+  font-family: var(--font-mono);
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0;
+}
+
+pre {
+  background: #fafafa;
+  border: 1px solid var(--muted-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  overflow: auto;
+  line-height: 1.35;
+  tab-size: 4;               /* nicer tab alignment */
+  box-shadow: var(--shadow-1);
+}
+
+/* If your HTML renders <pre><code>…</code></pre>, prevent double styling */
+pre code {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  font-size: 0.95em;
+}
+
+/* Other monospacey elements */
+kbd, samp, tt {
+  font-family: var(--font-mono);
 }
 
 /* ==========
@@ -324,5 +394,71 @@ iframe.r {
     scrollbar-color: #c0c0c0 #808080; /* thumb color, track color */
     scrollbar-width: auto; /* "thin", "auto", or "none" */
   }
+
+
+/* ============ Grades FAQ ============ */
+.faq {
+  margin: 24px 0;
+}
+
+.faq-item {
+  border: 1px solid var(--muted-border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  margin: 10px 0;
+  box-shadow: var(--shadow-1);
+  overflow: clip; /* neat rounded corners */
+}
+
+/* Hide the default marker and style summary like a button */
+.faq-item > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--uofa-green);
+  outline: none;
+}
+.faq-item > summary::-webkit-details-marker { display: none; }
+
+/* Chevron */
+.faq-item > summary::before {
+  content: "▸";                     /* simple, accessible chevron */
+  display: inline-block;
+  transform: translateY(-1px);
+  transition: transform .18s ease;
+}
+.faq-item[open] > summary::before {
+  transform: rotate(90deg) translateX(-1px);
+}
+
+/* Focus (keyboard) and hover */
+.faq-item > summary:focus-visible {
+  box-shadow: 0 0 0 3px rgba(39,93,56,.25);
+  border-radius: var(--radius-sm);
+}
+.faq-item > summary:hover {
+  background: rgba(39,93,56,.05);
+}
+
+/* The body */
+.faq-content {
+  padding: 0 16px 14px 36px;        /* indent lines up under text, not chevron */
+  color: var(--text);
+}
+
+/* Optional: smooth open/close without layout jumps */
+@media (prefers-reduced-motion: no-preference) {
+  .faq-item .faq-content {
+    animation: faq-reveal .18s ease;
+  }
+  @keyframes faq-reveal {
+    from { opacity: 0; transform: translateY(-2px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}
 
 /* End of stylesheet */
