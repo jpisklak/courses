@@ -1,0 +1,291 @@
+---
+title: "Basic Tips for Styling Your R Code"
+author: "Jeffrey Pisklak"
+format: html
+embed-resources: true
+toc: true
+toc-depth: 2
+toc-title: Contents
+number-sections: false
+css: style.css
+editor: source
+execute:
+  warning: false
+  message: false
+  include: true
+callout-appearance: simple
+callout-icon: false
+grid:
+      body-width: 1100px     # default is ~800px
+      margin-width: 250px    # default 250px;
+      gutter-width: 1rem     # space between columns
+---
+
+```{r}
+#| label: setup
+#| include: false
+knitr::opts_chunk$set(
+   fig.width = 3.5, 
+   fig.height = 3, 
+   dpi = 300,
+   out.width = "55%",
+   dev = "ragg_png"
+ )
+
+library(tidyverse)
+```
+
+## 1. Use concise variable names that remain meaningful:
+
+### Bad
+
+::: {.callout-important icon="false"}
+```{r .good}
+sasquatch_foot_length <- read_csv("squatch.csv")
+```
+:::
+
+### Better
+
+```{r}
+squatch_feet <- read_csv('squatch.csv')
+```
+
+### Best
+
+::: {.callout-tip icon="false"}
+```{r}
+squatch <- read_csv('squatch.csv')
+```
+:::
+
+<br>
+
+------------------------------------------------------------------------
+
+<br>
+
+## 2. Put spaces before and after `<-`, `=`, `+`, `-`, `*`, `/`, `~`:
+
+### Bad:
+
+::: {.callout-important icon="false"}
+``` r
+duck<-waddle+quack+beak
+```
+:::
+
+### Good:
+
+::: {.callout-tip icon="false"}
+``` r
+duck <- waddle + quack + beak
+```
+:::
+
+<br>
+
+------------------------------------------------------------------------
+
+<br>
+
+## 3. Do not let any line exceed 80 characters:
+
+-   Note: Google collab will draw a margin when you are close to the 80 character mark.
+
+### Bad
+
+::: {.callout-important icon="false"}
+``` r
+summary(duck_model <- lm(duck ~ waddle + quack + beak, data = duck))$coefficients[2, 3] # 87 chars
+```
+:::
+
+### Good:
+
+::: {.callout-tip icon="false"}
+``` r
+duck_model <- lm(duck ~ waddle + quack + beak, data = duck)) # 60 chars
+summary(duck_model)$coefficients[2, 3] #38 chars
+```
+:::
+
+<br>
+
+------------------------------------------------------------------------
+
+<br>
+
+## 4. Use `snake_case` and avoid unnecessary capitalization:
+
+-   You won't be penalized for using `camelCase`; however, capital letters are harder to type and increase the chance of a mistake.
+
+### Bad:
+
+::: {.callout-important icon="false"}
+``` r
+LowerCI <- M - T_crit * SE
+UpperCI <- M + T_crit * SE
+```
+:::
+
+### Good:
+
+::: {.callout-tip icon="false"}
+``` r
+lower_ci <- m - t_crit * se
+lower_ci <- m + t_crit * se
+```
+:::
+
+<br>
+
+------------------------------------------------------------------------
+
+<br>
+
+## 5. Store all calculations with short sensible names (don't type them).
+
+-   This will help you avoid displaying unnecessary outputs and prevent mistakes if you need to alter your calculations. For example, suppose you want to calculate a confidence interval ....
+
+### Bad:
+
+::: {.callout-important icon="false"}
+```{r}
+mean(squatch$feet_cm)
+nrow(squatch)
+sd(squatch$feet_cm) / sqrt(112)
+t_crit <- abs(pt(0.05/2, df = 111))
+lower_ci <- 28.22946 - t_crit * 0.5583311
+upper_ci <- 28.22946 + t_crit * 0.5583311
+lower_ci
+upper_ci
+```
+:::
+
+-   Notice in this example that, if the data set or any preceding code is altered, it will require all manually entered values in the code to be recalculated and retyped. This significantly raises the likelihood of making errors. Additionally, the output is (annoyingly) displaying unnecessary values.
+
+### Good:
+
+::: {.callout-tip icon="false"}
+```{r}
+m <- mean(squatch$feet_cm)
+N <- nrow(squatch)
+se <- sd(squatch$feet_cm) / sqrt(N)
+df <- N - 1
+t_crit <- abs(pt(0.05/2, df = df))
+
+lower_ci <- m - t_crit * se
+upper_ci <- m + t_crit * se
+
+paste('95% CI = [', round(lower_ci, 3), ', ', round(upper_ci, 3), ']', sep = '')
+```
+:::
+
+<br>
+
+------------------------------------------------------------------------
+
+<br>
+
+## 6. Use comments (`#`) and spacing to organize your code blocks:
+
+### Bad:
+
+::: {.callout-important icon="false"}
+```{r}
+squatch_data <- read.csv("squatch.csv")
+squatch_mean <- mean(squatch_data$feet_cm)
+bear_mean <- 28
+squatch_sd <- sd(squatch_data$feet_cm)
+sample_size <- nrow(squatch_data)
+SE <- squatch_sd / sqrt(112)
+df = 112 - 1
+t <- round((squatch_mean - bear_mean) / SE, 5)
+p_value <- round(pt(t, df), 5)
+t
+df
+p_value
+crit_t <- qt(0.025, df = 111)
+lower_CI <- round(squatch_mean + crit_t * SE, 5)
+upper_CI <- round(squatch_mean - crit_t * SE, 5)
+lower_CI
+upper_CI
+```
+:::
+
+### Good:
+
+::: {.callout-tip icon="false"}
+```{r}
+# Load data
+squatch <- read_csv("squatch.csv")
+
+# Basic stats
+N <- nrow(squatch)
+m <- mean(squatch$feet_cm)
+se <- sd(squatch$feet_cm) / sqrt(N)
+
+# Test statistic
+mu <- 28
+df = N - 1
+t <- (m - mu) / se
+p_value <- pt(t, df)
+
+# Confidence interval
+alpha <- 0.05
+crit_t <- abs(qt(alpha/2, df = df))
+lower_ci <- m - crit_t * se
+upper_ci <- m + crit_t * se
+
+# Print values
+paste("Test-Stat = ", round(t, 3))
+paste("DF = ", df)
+paste("p = ", round(p_value, 3))
+paste('95% CI = [', round(lower_ci, 3), ', ', round(upper_ci, 3), ']', sep = '')
+```
+:::
+
+<br>
+
+------------------------------------------------------------------------
+
+<br>
+
+## 7. If there are lots of arguments, put them in a list format:
+
+### Bad:
+
+::: {.callout-important icon="false"}
+```{r}
+ggplot(squatch, aes(sample = feet_cm)) +
+  stat_qq(shape = 21, fill = '#8B6508', colour = 'black', size = 2, alpha = 0.5) +
+  stat_qq_line() +
+  xlab('Theoretical Quantiles') +
+  ylab('Sample Quantiles')
+```
+:::
+
+### Good:
+
+::: {.callout-tip icon="false"}
+```{r}
+ggplot(squatch, aes(sample = feet_cm)) +
+  stat_qq(
+    shape = 21,
+    fill = "#8B6508",
+    colour = "black",
+    size = 2,
+    alpha = 0.5
+  ) +
+  stat_qq_line() +
+  xlab('Theoretical Quantiles') +
+  ylab('Sample Quantiles')
+```
+:::
+
+<br>
+
+------------------------------------------------------------------------
+
+<br>

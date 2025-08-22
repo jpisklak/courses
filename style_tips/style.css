@@ -1,0 +1,65 @@
+/* Load both families (text + mono) from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Atkinson+Hyperlegible+Mono:wght@400;700&display=swap");
+
+/* Use Atkinson Hyperlegible for body + headings */
+body, .navbar, h1, h2, h3, h4, h5, h6 {
+  font-family: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+/* Increase base text size */
+body { font-size: 1.25rem; }   /* ~10% bigger */
+
+/* Increase header text size */
+:root{
+  --h1-size: 2.5rem;
+  --h2-size: 2rem;
+  --h3-size: 1.75rem;
+  --h4-size: 1.5rem;
+  --h5-size: 1.25rem;
+  --h6-size: 1rem;
+}
+
+:root { --h-scale: 1; }  /* (adjust to scale all) */
+
+h1 { font-size: calc(var(--h1-size) * var(--h-scale)); }
+h2 { font-size: calc(var(--h2-size) * var(--h-scale)); }
+h3 { font-size: calc(var(--h3-size) * var(--h-scale)); }
+h4 { font-size: calc(var(--h4-size) * var(--h-scale)); }
+h5 { font-size: calc(var(--h5-size) * var(--h-scale)); }
+h6 { font-size: calc(var(--h6-size) * var(--h-scale)); }
+
+
+/* Use the Mono variant for code */
+pre, code, kbd, samp {
+  font-family: "Atkinson Hyperlegible Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+/* --- Code blocks (fenced chunks) --- */
+div.sourceCode,                 /* the wrapper div */
+pre.sourceCode {                /* sometimes pre has the class too */
+  font-size: 1rem;            /* adjust to taste */
+}
+
+div.sourceCode pre,             /* inner pre */
+pre.sourceCode code {           /* inner code */
+  font-size: inherit;
+}
+
+/* --- Cell outputs (stdout, messages, printed objects) --- */
+.cell-output,
+.cell-output pre,
+.cell-output code,
+.cell-output-stdout,
+.cell-output-stderr {
+  font-size: 1rem;            /* keep outputs readable */
+}
+
+/* Optional: inline code stays normal-sized */
+p code, li code, td code {
+  font-size: 0.95em;
+}
+
+/* Optional: inline code colour */
+code {
+    color: #000000; /* Change to your desired color */
+}
