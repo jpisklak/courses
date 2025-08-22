@@ -31,7 +31,7 @@ df_pair <- tibble(
       '<a href = "', href_main, "paired_t_hmwk_data/", pair_t_list, '">', 
       pair_t_list, "</a>"),
   
-  `Raw URL` = paste0(raw_main, pair_t_list)
+  `Raw URL` = paste0(raw_main, "paired_t_hmwk_data/", pair_t_list)
 )
 
 df_indep <- tibble(
@@ -41,7 +41,7 @@ df_indep <- tibble(
       '<a href = "', href_main, "indep_t_hmwk_data/", ind_t_list, '">', 
       ind_t_list, "</a>"),
   
-  `Raw URL` = paste0(raw_main, ind_t_list)
+  `Raw URL` = paste0(raw_main, "indep_t_hmwk_data/", ind_t_list)
 )
 
 df_reg <- tibble(
@@ -51,7 +51,7 @@ df_reg <- tibble(
       '<a href = "', href_main, "reg_hmwk_data/", reg_list, '">', 
       reg_list, "</a>"),
   
-  `Raw URL` = paste0(raw_main, reg_list)
+  `Raw URL` = paste0(raw_main, "reg_hmwk_data/", reg_list)
 )
 
 df_BFD <- tibble(
@@ -61,7 +61,7 @@ df_BFD <- tibble(
       '<a href = "', href_main, "BFD/", BFD_list, '">', 
       BFD_list, "</a>"),
   
-  `Raw URL` = paste0(raw_main, BFD_list)
+  `Raw URL` = paste0(raw_main, "BFD/", BFD_list)
 )
 
 df_BFD_skew <- tibble(
@@ -71,7 +71,7 @@ df_BFD_skew <- tibble(
       '<a href = "', href_main, "BFD_skew/", BFD_skew_list, '">', 
       BFD_skew_list, "</a>"),
   
-  `Raw URL` = paste0(raw_main, BFD_skew_list)
+  `Raw URL` = paste0(raw_main, "BFD_skew/", BFD_skew_list)
 )
 
 # Print Tables

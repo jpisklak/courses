@@ -196,7 +196,7 @@ code {
   font-family: var(--font-mono);      /* ⬅️ use the mono variable */
   font-size: 0.9em;
   color: #333;
-  box-shadow: var(--shadow-1);
+  /* box-shadow: var(--shadow-1); */
   font-variant-ligatures: none;       /* avoid unexpected ligatures in code */
   font-feature-settings: "liga" 0;
 }
