@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/site_icon.ico">
+        <style>
+      img {
+        max-width: 30%;
+        height: auto;
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header-->   
+<header>
+    Psychology 413: Design and Analysis in Experimental Psychology
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+ <!-- Navigation Header-->   
+
+    <main>
+        <h1>How to View Your Assignment Scores and Course Performance</h1>
+
+        <ol>
+        <li>Each student will be assigned a unique random ID (e.g., <code>YUrZ</code>).</li>
+        <li>Insert this ID into the following web address to access your personal grade page:  
+            <code>https://jpisklak.github.io/courses/PSYCH_413_fa2025/<b>grades/YUrZ</b></code>
+        </li>
+        <li>Your grade page will show your assignment results, class statistics, and (among other details) your current letter grade.</li>
+        </ol>
+
+        <p>Your random ID will be emailed to you after the add/drop deadline (September 15).</p>
+
+        <h1>How Your Grade Is Calculated</h1>
+
+        <p>
+        All assessments in this course are standardized so that the <strong>median score</strong> is set to 50 and the 
+        <strong>MADN (Median Absolute Deviation, normalized)</strong> is set to 25. This process is mathematically similar to converting raw scores into z-scores, but it uses the median and MADN instead of the mean and standard deviation, making it more stable under skewed or irregular distributions.
+        </p>
+        <p>
+        The scale is designed to feel intuitive: values near 0 always represent very low performance, values near 100 always represent very high performance, and 50 always represents the class average.
+        </p>
+        <p>
+        Each standardized score is then averaged according to the weights listed in Table&nbsp;3 of the syllabus to produce a course total.  
+        Because this weighting can introduce small shifts in the distribution, the totals are standardized once more.  
+        The final standardized score is then compared against the letter grade cutoffs shown in Table&nbsp;2 of the syllabus.
+        </p>
+
+
+        <h2>FAQ</h2>
+
+        <details>
+        <summary>Why are you standardising?</summary><br>
+        <p>Raw percentages can be misleading, because the same number can mean very different things depending on how hard the assessment is. For example, a score of 60% might be excellent on a very difficult exam, while 85% might be only average on an easier one. Using raw percentages would then force the instructor to set arbitrary and sometimes confusing letter boundaries. By standardizing scores instead, the scale is consistent and unambiguous: 50 always represents the class average, higher values reflect above-average performance, and lower values reflect below-average performance. This ensures that a very hard exam does not drag the entire class down, and an easy exam does not inflate everyone's grades—the standardized scale keeps grades tied to their intended meaning.</p>
+        </details>
+
+        <details>
+        <summary>Why are you using the median and MADN statistics?</summary><br>
+        <p>The <b>median</b> score is a <i>robust</i> measure of the class average. Similarly, the <b>MADN</b> is a <i>robust</i> measure of spread. In statistics, "robust" means that the method is not thrown off by unusual values or outliers. For example, if one student happens to score extremely low or extremely high, a robust method won’t let that single score shift the whole class's average or spread. These choices make the standardized scale more stable and fair, especially in classes where exams or assignments occasionally produce extreme results.</p>
+        </details>
+
+        <details>
+        <summary>What is the formula to convert a raw score to a standardized value? Can you show an example?</summary><br>
+        <p>Yes. The standardized score is calculated in a way similar to a z-score, but it uses the class median and the normalized median absolute deviation (MADN). The formula is:</p>
+
+        \[
+            s = \left(\frac{x - m}{\text{MADN}}\right) \times 25 + 50
+        \]
+
+        <p>where \(x\) is the raw score, \(m\) is the class median, and MADN measures the spread. The constants 25 and 50 set the scale so that one MADN corresponds to 25 points, and the class median corresponds to 50.</p>
+
+        <ul>
+            <li>Suppose the class median on an assignment is \(m = 72\)</li>
+            <li>Suppose \(\text{MADN} = 11.9\)</li>
+            <li>For a student with a raw score of \(x = 88\), we compute:</li>
+        </ul>
+
+                \[
+                \begin{align}
+                  s &= \left( \frac{88 - 72}{11.9}\right) \times 25 + 50 \\[1em]
+                  &\approx 83.6
+                  \end{align}
+                \]
+        </details>
+
+        <details>
+        <summary>Is this the same as ``grading on a curve''?</summary><br>
+        <p>No. A curve predetermines how many students can receive each letter grade, often based on a fixed distribution (e.g., only the top 5% of students get an A+). This course uses no quotas. The number of A's, B's, C's, etc., emerges from the class's actual performance, not an imposed formula — fully in line with University policy prohibiting mandatory curves. See <a href = https://www.ualberta.ca/en/alfresco/uappol/academic/assessment-and-grading/policy/assessment-and-grading-policy.pdf target = "_blank">University of Alberta Assessment and Grading Policy</a></p>
+        </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  </main>
+    <footer>
+        © 1999 Jeffrey M. Pisklak. All Rights Reserved.
+    </footer>
+</body>
+</html>
