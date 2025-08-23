@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignments and Homework</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
+    <style>
+      img {
+        max-width: 30%;
+        height: auto;
+      }
+
+      .button-container {
+        margin: 20px 20px;
+      }
+      .data-button {
+        background-color: #275d38;
+        color: white;
+        padding: 10px 15px;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+      .data-button:hover {
+        background-color: #f2cd00;
+        color: black;
+      }
+      .submission-button {
+        background-color: #275d38;
+        color: white;
+        padding: 15px 25px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .submission-button:hover {
+        background-color: #f2cd00;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation Header-->
+
+    <header>Psychology 282: Behaviour Modification</header>
+
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+
+    <!--   -->
+
+    <main>
+      <h1>Assignment 1</h1>
+
+      <ul>
+        <li><strong>Due</strong>: Friday October 17th by 23:59</li>
+        <li>
+          <div id="assign_1" style="display: flex; align-items: center">
+            <div><strong>Countdown:&nbsp;</strong></div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="button-container">
+        <button
+          class="submission-button"
+          onclick="window.open('docs/PSYCH_282_Fall_2025_Assignment_1_Instructions.pdf')"
+        >
+          📄 Instructions
+        </button>
+        &nbsp; &nbsp;
+        <button
+          class="submission-button"
+          onclick="window.open('https://canvas.ualberta.ca/courses/28362/assignments/646715')"
+        >
+          📤 Submission Portal
+        </button>
+        &nbsp; &nbsp;
+      </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <h1>Assignment 2</h1>
+
+      <ul>
+        <li><strong>Due</strong>: Friday November 28th by 23:59</li>
+        <li>
+          <div id="assign_2" style="display: flex; align-items: center">
+            <div><strong>Countdown:&nbsp;</strong></div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Include Moment.js and Moment-Timezone -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
+      <!-- Include the external JavaScript file -->
+      <script src="countdown.js"></script>
+    </main>
+    <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
+  </body>
+</html>
