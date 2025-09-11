@@ -1,293 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Psychology 213: Introduction to Data Analysis in Psychology I</title>
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
 
-    <!-- Add the JavaScript for detecting mobile -->
-    <script>
-      function detectMobile() {
-        if (
-          window.innerWidth <= 768 ||
-          /Mobi|Android/i.test(navigator.userAgent)
-        ) {
-          document.getElementById("mobile-warning").style.display = "block";
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psychology 213: Introduction to Data Analysis in Psychology I</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
+
+  <!-- Add the JavaScript for detecting mobile -->
+  <script>
+    function detectMobile() {
+      if (
+        window.innerWidth <= 768 ||
+        /Mobi|Android/i.test(navigator.userAgent)
+      ) {
+        document.getElementById("mobile-warning").style.display = "block";
       }
-    </script>
-  </head>
+    }
+  </script>
+</head>
 
-  <body onload="detectMobile()">
-    <!-- Trigger the function on page load -->
-    <!-- Mobile warning banner -->
-    <div id="mobile-warning">
-      📱 This page is designed for a desktop, where real productivity happens.
-      Give your scrolling thumb a rest and join us on a proper screen. 🖥️
-    </div>
+<body onload="detectMobile()">
+  <!-- Trigger the function on page load -->
+  <!-- Mobile warning banner -->
+  <div id="mobile-warning">
+    📱 This page is designed for a desktop, where real productivity happens.
+    Give your scrolling thumb a rest and join us on a proper screen. 🖥️
+  </div>
 
-    <!-- Navigation Header-->
-    <header>
-      Psychology 213: Introduction to Data Analysis in Psychology I
-    </header>
-    <nav>
-      <a href="docs/PSYCH_213_LEC_A2_Fall_2025_Pisklak.pdf" target="_blank"
-        >Syllabus</a
-      >
-      |
-      <a href="docs/OpenIntro_Statistics_Textbook.pdf" target="_blank"
-        >Textbook</a
-      >
-      |
-      <!-- <a href="https://canvas.ualberta.ca/courses/28360/external_tools/282" target="_blank">Zoom</a> |  -->
-      <a href="exams.html">Exams</a> |
-      <a href="assignments.html">Assignments & Homework</a> |
-      <a href="data_files.html">Data Files</a> |
-      <a href="grades.html" target="_blank">Grades</a> |
-      <span
-        ><a href="discord.html"
-          >Discord
-          <img
-            src="../img/discord-mark-blue.svg"
-            style="vertical-align: middle; width: 1%" /></a
-      ></span>
-      | <a href="contact.html">Contact</a> |
-      <a href="links.html">Useful Student Links</a>
-    </nav>
-    <!-- Navigation Header-->
+  <!-- Navigation Header-->
+  <header>
+    Psychology 213: Introduction to Data Analysis in Psychology I
+  </header>
+  <nav>
+    <a href="docs/PSYCH_213_LEC_A2_Fall_2025_Pisklak.pdf" target="_blank">Syllabus</a>
+    |
+    <a href="docs/OpenIntro_Statistics_Textbook.pdf" target="_blank">Textbook</a>
+    |
+    <!-- <a href="https://canvas.ualberta.ca/courses/28360/external_tools/282" target="_blank">Zoom</a> |  -->
+    <a href="exams.html">Exams</a> |
+    <a href="assignments.html">Assignments & Homework</a> |
+    <a href="data_files.html">Data Files</a> |
+    <a href="grades.html" target="_blank">Grades</a> |
+    <span><a href="discord.html">Discord
+        <img src="../img/discord-mark-blue.svg" style="vertical-align: middle; width: 1%" /></a></span>
+    | <a href="contact.html">Contact</a> |
+    <a href="links.html">Useful Student Links</a>
+  </nav>
+  <!-- Navigation Header-->
 
-    <main>
-      <!-- Announcement-->
-      <div
-        style="
+  <main>
+    <!-- Announcement-->
+    <div style="
           background-color: #ffcccc;
           border-left: 6px solid #ff0000;
           padding: 10px;
           margin: 20px 0;
           font-family: Arial, sans-serif;
           color: #660000;
-        "
-      >
-        <h3 style="margin: 0; font-size: 1.5em">
-          🚨 Important Announcement: 🚨
-        </h3>
-        <p style="margin: 5px 0 0 0; font-size: 1.2em; font-weight: bold">
-          Homework 1 is now available to complete. See the
-          <a href="assignments.html">Assignments & Homework</a> section.
-        </p>
+        ">
+      <h3 style="margin: 0; font-size: 1.5em">
+        🚨 Important Announcement: 🚨
+      </h3>
+      <p style="margin: 5px 0 0 0; font-size: 1.2em; font-weight: bold">
+        Homework 1 is now available to complete. See the
+        <a href="assignments.html">Assignments & Homework</a> section.
+      </p>
+    </div>
+
+    <br />
+
+    <!-- ================= LECTURES ================= -->
+
+    <h1>Lectures</h1>
+
+    <!-- ================= WEEK 1 ================= -->
+
+    <details class="faq-item">
+      <summary>Week 1</summary>
+      <div class="faq-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Week</th>
+              <th>Day</th>
+              <th>Topics / Videos</th>
+              <th>Notebooks</th>
+              <th>PDF Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+              <td>
+                <a href="https://youtu.be/XjdQt3SYHxQ" target="_blank" rel="noopener noreferrer"
+                  title="Lecture Video">Course Introduction</a>
+              </td>
+              <td></td>
+              <td>
+                📝
+                <a href="https://drive.google.com/file/d/1WQSb7R4y4XvNFX3pAzDhGLS1Nctqi2pK/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer">1-1-1</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>
+                <a href="https://youtu.be/AWYlbP_BfUc" target="_blank" rel="noopener noreferrer"
+                  title="Lecture Video">Introduction to R</a>
+              </td>
+              <td>
+                🧮
+                <a href="https://colab.research.google.com/drive/1qomhQDfyjB396J8kZWV9We53zeTqjlnK?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer">1-2-1</a>
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+    </details>
 
-      <br />
+    <!-- ================= WEEK 2 ================= -->
 
-      <!-- ================= LECTURES ================= -->
+    <details class="faq-item">
+      <summary>Week 2</summary>
+      <div class="faq-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Week</th>
+              <th>Day</th>
+              <th>Topics / Videos</th>
+              <th>Notebooks</th>
+              <th>PDF Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>1</td>
+              <td>
+                <a href="https://youtu.be/SB-85GQsu3c" target="_blank" rel="noopener noreferrer" title="Lecture Video">R
+                  Basics cont'd; Markdown</a>
+              </td>
+              <td>
+                🧮
+                <a href="https://colab.research.google.com/drive/1hOAIA10VM5WB80C13JpkFlakbhZWhbo9?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer">2-1-1</a>
 
-      <h1>Lectures</h1>
+                🧮
+                <a href="https://colab.research.google.com/drive/1VjReSdLeQfE7dDSoInMwDVJ2rNOlA9wT?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer">2-1-2</a>
+              </td>
+              <td></td>
+            </tr>
 
-      <!-- ================= WEEK 1 ================= -->
+            <tr>
+              <td>2</td>
+              <td>2</td>
+              <td>
+                <a href="https://youtu.be/9dRlrM7HzIc" target="_blank" rel="noopener noreferrer"
+                  title="Lecture Video">Creating a CSV; Math Refersher; Basic Terms</a>
+              </td>
+              <td>
+                🧮
+                <a href="https://colab.research.google.com/drive/15Fqamu2YaMZWOjXoXTIfAQeLA7TGMdz5?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer" title="2-2-1">2-2-1</a>
+              </td>
+              <td>
+                📝
+                <a href="https://drive.google.com/file/d/1m9bt8ZaknyxvNG4F1FJV6RvVmWPk08Xi/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer" title="2-2-1">2-2-1</a>
+                📝
+                <a href="https://drive.google.com/file/d/1EkTFcJfNFhux6DpYYbEMsfhWD9SyIvKL/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer" title="2-2-2">2-2-2</a>
+              </td>
 
-      <details class="faq-item">
-        <summary>Week 1</summary>
-        <div class="faq-content">
-          <table>
-            <thead>
-              <tr>
-                <th>Week</th>
-                <th>Day</th>
-                <th>Topics / Videos</th>
-                <th style="text-align: center">Notebooks</th>
-                <th style="text-align: center">PDF Notes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>
-                  <a
-                    href="https://youtu.be/XjdQt3SYHxQ"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Lecture Video"
-                    >Course Introduction</a
-                  >
-                </td>
-                <td></td>
-                <td style="text-align: center">
-                  📄
-                  <a
-                    href="https://drive.google.com/file/d/1WQSb7R4y4XvNFX3pAzDhGLS1Nctqi2pK/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >1-1-1</a
-                  >
-                </td>
-              </tr>
 
-              <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>
-                  <a
-                    href="https://youtu.be/AWYlbP_BfUc"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Lecture Video"
-                    >Introduction to R</a
-                  >
-                </td>
-                <td style="text-align: center">
-                  🧮
-                  <a
-                    href="https://colab.research.google.com/drive/1qomhQDfyjB396J8kZWV9We53zeTqjlnK?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >1-2-1</a
-                  >
-                </td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </details>
+              </td>
+            </tr>
 
-      <!-- ================= WEEK 2 ================= -->
 
-      <details class="faq-item">
-        <summary>Week 2</summary>
-        <div class="faq-content">
-          <table>
-            <thead>
-              <tr>
-                <th>Week</th>
-                <th>Day</th>
-                <th>Topics / Videos</th>
-                <th style="text-align: center">Notebooks</th>
-                <th style="text-align: center">PDF Notes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>
-                  <a
-                    href="https://youtu.be/SB-85GQsu3c"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Lecture Video"
-                    >R Basics cont'd; Markdown</a
-                  >
-                </td>
-                <td style="text-align: center">
-                  🧮
-                  <a
-                    href="https://colab.research.google.com/drive/1hOAIA10VM5WB80C13JpkFlakbhZWhbo9?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >2-1-1</a
-                  >
+          </tbody>
+        </table>
+      </div>
+    </details>
 
-                  🧮
-                  <a
-                    href="https://colab.research.google.com/drive/1VjReSdLeQfE7dDSoInMwDVJ2rNOlA9wT?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >2-1-2</a
-                  >
-                </td>
-                <td style="text-align: center"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </details>
+    <br />
 
-      <br />
+    <ul>
+      <li>
+        <b>You will need to be signed in to your U of A account on YouTube to
+          view the videos.</b>
+      </li>
+      <li>
+        The complete set of Colab Notebooks and other class files can be found
+        in the class Google Drive folder: 📂
+        <a href="https://drive.google.com/drive/folders/1JBjNTyBjdkoRAsBa0EDGetDx4XWdUaUl?usp=drive_link"
+          target="_blank" rel="noopener noreferrer">
+          Click here</a>
+      </li>
+      <li>
+        Notebooks and Notes are numbered with the following convention:
+        <code>[week] - [day] - [topic #]</code>
+      </li>
+    </ul>
 
-      <ul>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Bookmark Callout -->
+    <div class="bookmark-callout" role="note" aria-label="Bookmark this page">
+      <p>📝 <strong>Pro tip:</strong> Bookmark this page:</p>
+      <ul class="bookmark-how">
         <li>
-          <b
-            >You will need to be signed in to your U of A account on YouTube to
-            view the videos.</b
-          >
+          <strong>Windows/Linux:</strong> <kbd>Ctrl</kbd> + <kbd>D</kbd>
+        </li>
+        <li><strong>Mac:</strong> <kbd>⌘</kbd> + <kbd>D</kbd></li>
+        <li>
+          <strong>iOS (Safari):</strong> Share → <em>Add to Home Screen</em>
         </li>
         <li>
-          The complete set of Colab Notebooks and other class files can be found
-          in the class Google Drive folder: 📂
-          <a
-            href="https://drive.google.com/drive/folders/1JBjNTyBjdkoRAsBa0EDGetDx4XWdUaUl?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Click here</a
-          >
-        </li>
-        <li>
-          Notebooks and Notes are numbered with the following convention:
-          <code>[week] - [day] - [topic #]</code>
+          <strong>Android (Chrome):</strong> ⋮ → <em>Add to Home screen</em>
         </li>
       </ul>
+    </div>
 
-      <br />
-      <hr />
-      <br />
-
-      <!-- Bookmark Callout -->
-      <div class="bookmark-callout" role="note" aria-label="Bookmark this page">
-        <p>📝 <strong>Pro tip:</strong> Bookmark this page:</p>
-        <ul class="bookmark-how">
-          <li>
-            <strong>Windows/Linux:</strong> <kbd>Ctrl</kbd> + <kbd>D</kbd>
-          </li>
-          <li><strong>Mac:</strong> <kbd>⌘</kbd> + <kbd>D</kbd></li>
-          <li>
-            <strong>iOS (Safari):</strong> Share → <em>Add to Home Screen</em>
-          </li>
-          <li>
-            <strong>Android (Chrome):</strong> ⋮ → <em>Add to Home screen</em>
-          </li>
-        </ul>
-      </div>
-
-      <div class="buttons">
-        <a
-          href="https://geocities.restorativland.org/Area51/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            src="../img/geocities_area_51.gif"
-            title="WARNING: This Link May Summon the Men in Black"
-            style="float: right; margin-left: 10px"
-        /></a>
-        <!-- <a href = "https://linuxmint.com/" target="_blank"><img src="../img/linux_powered.gif" title="Click here to free your PC from corporate overlords. Minty fresh freedom awaits!" style="float: right; margin-left: 10px;"></a> -->
-        <a
-          href="https://neocities.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            src="../img/neocities-button.gif"
-            title="Handcraft your own website—because algorithms are overrated"
-            style="float: right; margin-left: 10px"
-        /></a>
-        <a
-          href="https://www.cameronsworld.net/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img
-            src="../img/html.gif"
-            title="Experience the Internet in Its Purest, Most Chaotic Form"
-            style="float: right; margin-left: 10px"
-        /></a>
-      </div>
-      <br />
-    </main>
-    <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
+    <div class="buttons">
+      <a href="https://geocities.restorativland.org/Area51/" target="_blank" rel="noopener noreferrer"><img
+          src="../img/geocities_area_51.gif" title="WARNING: This Link May Summon the Men in Black"
+          style="float: right; margin-left: 10px" /></a>
+      <!-- <a href = "https://linuxmint.com/" target="_blank"><img src="../img/linux_powered.gif" title="Click here to free your PC from corporate overlords. Minty fresh freedom awaits!" style="float: right; margin-left: 10px;"></a> -->
+      <a href="https://neocities.org/" target="_blank" rel="noopener noreferrer"><img src="../img/neocities-button.gif"
+          title="Handcraft your own website—because algorithms are overrated"
+          style="float: right; margin-left: 10px" /></a>
+      <a href="https://www.cameronsworld.net/" target="_blank" rel="noopener noreferrer"><img src="../img/html.gif"
+          title="Experience the Internet in Its Purest, Most Chaotic Form"
+          style="float: right; margin-left: 10px" /></a>
+    </div>
     <br />
-    <a href="../index.html"
-      ><img src="../img/y2kintegration.gif" style="width: 2%"
-    /></a>
-  </body>
+  </main>
+  <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
+  <br />
+  <a href="../index.html"><img src="../img/y2kintegration.gif" style="width: 2%" /></a>
+</body>
+
 </html>
