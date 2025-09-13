@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="../styles.css" />
     <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
 
+    <!-- Prevent caching of the main HTML file -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     <!-- Add the JavaScript for detecting mobile -->
     <script>
       function detectMobile() {
@@ -66,7 +74,7 @@
 
     <main>
       <!-- Announcement-->
-<!--       <div
+      <!--       <div
         style="
           background-color: #ffcccc;
           border-left: 6px solid #ff0000;
@@ -463,6 +471,8 @@
 
       <br />
 
+      <!-- ================= NOTES ================= -->
+
       <ul>
         <li>
           You will need to be signed in to your U of A account on YouTube to
@@ -496,6 +506,9 @@
 
       <!-- ================= FOOTER ================= -->
 
+      <!-- Banner will be filled in by JavaScript -->
+      <div id="last-updated">Loading last updated time...</div>
+
       <div class="buttons">
         <a
           href="https://geocities.restorativland.org/Area51/"
@@ -527,6 +540,9 @@
         /></a>
       </div>
       <br />
+
+      <!-- Include the external JavaScript files -->
+      <script src="../refresh.js"></script>
     </main>
     <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
     <br />

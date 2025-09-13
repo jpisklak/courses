@@ -6,6 +6,15 @@
     <title>Assignments and Homework</title>
     <link rel="stylesheet" href="../styles.css" />
     <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
+
+    <!-- Prevent caching of the main HTML file -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     <style>
       img {
         max-width: 30%;
@@ -204,11 +213,17 @@
             <button class="submission-button" onclick="window.open('https://canvas.ualberta.ca/courses/22308/assignments/570262')">📤 Submission Portal</button> &nbsp; &nbsp;
         </div> -->
 
+      <br />
+      <!-- Banner will be filled in by JavaScript -->
+      <hr />
+      <div id="last-updated">Loading last updated time...</div>
+
       <!-- Include Moment.js and Moment-Timezone -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
       <!-- Include the external JavaScript file -->
       <script src="countdown.js"></script>
+      <script src="../refresh.js"></script>
     </main>
     <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
   </body>
