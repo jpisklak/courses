@@ -1,6 +1,5 @@
 ---
-title: "Basic Tips for Styling Your R Code"
-author: "Jeffrey Pisklak"
+title: "R Code Style Tips for This Course"
 format: html
 embed-resources: true
 toc: true
@@ -34,6 +33,10 @@ knitr::opts_chunk$set(
 
 library(tidyverse)
 ```
+
+[Adapted from the Tidyverse's style guide](https://style.tidyverse.org/)
+
+<br>
 
 ## 1. Use concise variable names that remain meaningful:
 
@@ -151,7 +154,7 @@ lower_ci <- m + t_crit * se
 ### Bad:
 
 ::: {.callout-important icon="false"}
-```{r}
+```{r results = "hold"}
 mean(squatch$feet_cm)
 nrow(squatch)
 sd(squatch$feet_cm) / sqrt(112)
@@ -193,7 +196,7 @@ paste('95% CI = [', round(lower_ci, 3), ', ', round(upper_ci, 3), ']', sep = '')
 ### Bad:
 
 ::: {.callout-important icon="false"}
-```{r}
+```{r results = "hold"}
 squatch_data <- read.csv("squatch.csv")
 squatch_mean <- mean(squatch_data$feet_cm)
 bear_mean <- 28
@@ -217,7 +220,7 @@ upper_CI
 ### Good:
 
 ::: {.callout-tip icon="false"}
-```{r}
+```{r results = "hold"}
 # Load data
 squatch <- read_csv("squatch.csv")
 
