@@ -6,6 +6,8 @@ const countdownData = [
   { label: "Achieve", date: "2025-12-08T23:59:00", timezone: "America/Edmonton", containerId: "Achieve_2" },
   { label: "Homework 1", date: "2025-09-23T23:59:00", timezone: "America/Edmonton", containerId: "HW_1" },
   { label: "Homework 2", date: "2025-10-09T23:59:00", timezone: "America/Edmonton", containerId: "HW_2" },
+  { label: "Homework 3", date: "2025-10-23T23:59:00", timezone: "America/Edmonton", containerId: "HW_3" },
+
 
  
 ];
