@@ -1,0 +1,490 @@
+/* =========================================================
+   Halloween Variant (Nosifer + Jolly Lodger + link fix)
+   ======================================================= */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Nosifer&display=swap');
+
+:root {
+  --uofa-green: #4B1D5E;            /* deep purple */
+  --uofa-yellow: #FF6A00;           /* pumpkin */
+  --bg-body: #0B0B10;               /* night */
+  --bg-surface: #16161f;            /* dark surface */
+  --text: #F5F2E8;                  /* bone */
+  --muted-border: rgba(245,242,232,0.18);
+
+  /* Fonts */
+  --font-body: "Jolly Lodger", cursive, sans-serif;
+  --font-heading: "Nosifer", cursive, serif;
+  --font-mono: "Atkinson Hyperlegible Mono", ui-monospace, SFMono-Regular,
+               Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Sizing */
+  --fs-body: 2.25em;
+  --lh-body: 1.25;
+
+  /* Effects */
+  --radius-sm: 5px;
+  --shadow-1: 0 1px 3px rgba(0,0,0,.35);
+}
+
+/* Helpful box-sizing */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+/* =======================
+   2) Typography & Fonts
+   ======================= */
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* improve perceived load */
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("fonts/Atkinson_Hyperlegible_Mono/AtkinsonHyperlegibleMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("fonts/Atkinson_Hyperlegible_Mono/AtkinsonHyperlegibleMono-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("fonts/Atkinson_Hyperlegible_Mono/AtkinsonHyperlegibleMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("fonts/Atkinson_Hyperlegible_Mono/AtkinsonHyperlegibleMono-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Add a mono token to :root */
+:root {
+  --font-mono: "Atkinson Hyperlegible Mono", ui-monospace, "SFMono-Regular",
+               Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Body defaults */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--bg-body);
+  color: var(--text);
+  background-image: url("img/blood2.png");
+  background-repeat: repeat;       /* tile pattern, or use no-repeat */
+  background-position: top center; /* where the image is anchored */
+  background-size: 50%;           /* or "cover", "contain" */
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  text-align: center; /* center global content; override in main */
+  cursor: url("cursor/xp_arrow_xl.cur"), auto;
+}
+
+.side-img {
+  float: right;
+  max-width: 200px;   /* shrink image */
+  margin: 0 0 10px 20px; /* space between image and text */
+}
+
+.center-img {
+  display: block;
+  margin: 20px auto;   /* centers horizontally */
+  max-width: 200px;    /* optional: shrink */
+}
+
+
+/* Announcement Bar */
+.announcement {
+  background: linear-gradient(90deg, #FF6A00, #A40000); /* pumpkin → blood */
+  color: #F5F2E8;             /* bone text */
+  font-family: "Jolly Lodger", cursive, sans-serif; /* spooky heading font */
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+  padding: 1px 24px;
+  border-bottom: 3px solid #4B1D5E; /* purple accent line */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  z-index: 1000;
+}
+
+/* Optional: glowing effect */
+.announcement {
+  text-shadow: 0 0 6px rgba(0,0,0,0.7),
+               0 0 10px rgba(255,106,0,0.6);
+}
+
+/* ==========================
+   3) Layout: Header / Main / Footer
+   ========================== */
+
+header {
+  background-color: var(--uofa-green);     /* purple */
+  color: #9ae66e;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+nav {
+  background-color: rgba(255,255,255,0.06); /* darker bar (was #ccc) */
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid var(--uofa-green);
+}
+nav a {
+  color: var(--uofa-yellow);               /* pumpkin links */
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 15px;
+}
+nav a:hover {
+  text-decoration: underline;
+  cursor: url("cursor/xp_link_xl.cur"), pointer;
+}
+
+main {
+  width: 80%;
+  margin: 20px auto;
+  background-color: var(--bg-surface);
+  padding: 20px;
+  border: 1px solid var(--muted-border);
+  text-align: left; /* professional content area */
+}
+
+footer {
+  background-color: var(--uofa-green);     /* purple */
+  color: var(--text);
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 2px solid var(--muted-border);
+}
+
+/* ==================
+   4) Headings & Text
+   ================== */
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: #9ae66e;               /* pumpkin headings */
+  margin-top: 0.6em;
+}
+h1 { font-size: 1.5em; margin-bottom: 20px; }
+h2 { font-size: 1.25em; margin-bottom: 15px; }
+h3 { font-size: 1.125em; margin-bottom: 10px; }
+
+p {
+  line-height: var(--lh-body);
+  margin: 0 0 15px;
+  color: var(--text);
+}
+
+/* Links */
+a {
+  color: #9ae66e; /* slime green */
+  text-decoration: none;
+}
+a:hover {
+  color: #c8ff9c;
+  text-decoration: underline;
+  cursor: url("cursor/xp_link_xl.cur"), pointer;
+}
+
+/* Inline code chips — recolored for dark */
+code {
+  background-color: rgba(255,106,0,0.14);  /* pumpkin tint */
+  border-radius: var(--radius-sm);
+  padding: 2px 4px;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  color: #ffe7c9;                          /* warm bone */
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0;
+}
+
+/* Block code */
+pre,
+pre code {
+  font-family: var(--font-mono);
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0;
+}
+
+pre {
+  background: #121219;                     /* dark panel (was #fafafa) */
+  border: 1px solid var(--muted-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  overflow: auto;
+  line-height: 1.35;
+  tab-size: 4;
+  box-shadow: var(--shadow-1);
+  color: #f7eedd;
+}
+
+/* If your HTML renders <pre><code>…</code></pre>, prevent double styling */
+pre code {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  font-size: 0.95em;
+}
+
+/* Other monospacey elements */
+kbd, samp, tt {
+  font-family: var(--font-mono);
+  color: #f7eedd;
+}
+
+/* ==========
+   5) Lists
+   ========== */
+
+ul { list-style: disc; padding-left: 1.2em; }
+ol { padding-left: 1.2em; }
+
+ul li,
+ol li {
+  margin-bottom: 5px;
+  font-family: var(--font-body);
+  color: var(--text);
+}
+
+/* ===========
+   6) Tables
+   =========== */
+
+.table-container {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid var(--muted-border);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: var(--text);
+}
+table th,
+table td {
+  border: 1px solid var(--muted-border);
+  padding: 10px;
+  text-align: left;
+}
+table th {
+  background-color: var(--uofa-green);   /* purple */
+  color: var(--text);
+}
+table tr:nth-child(even) {
+  background-color: rgba(255,106,0,0.04); /* soft pumpkin stripe (was #f9f9f9) */
+}
+
+/* ===========
+   7) Buttons
+   =========== */
+
+button {
+  background-color: var(--uofa-yellow);  /* pumpkin (was green) */
+  color: #1a0b00;                        /* high contrast on orange */
+  border: 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ff882e;             /* slightly brighter pumpkin */
+  color: #1a0b00;
+}
+
+/* “88x31” buttons */
+.buttons img {
+  width: 88px;
+  height: 31px;
+  transition: transform .2s;
+}
+.buttons img:hover {
+  transform: scale(1.1);
+  cursor: url("/cursors/cursor_select.png"), pointer;
+}
+
+/* ===============
+   8) Embeds/iframes
+   =============== */
+
+iframe.r {
+  border: 6px ridge #d9cdb8; /* bone ridge (was white) */
+}
+
+/* =======================
+   9) Notices / Utilities
+   ======================= */
+
+#mobile-warning {
+  display: none;
+  background-color: var(--uofa-yellow);
+  color: #160900; /* dark text on pumpkin */
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* ===========================
+   10) Custom Old-School Scrollbars
+   - WebKit/Blink (Chrome/Edge/Safari)
+   =========================== */
+
+  *::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    background: none;
+  }
+  
+  *::-webkit-scrollbar-thumb, *::-webkit-scrollbar-button {
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(180deg, #2b0e38, #1a0a21);
+    box-shadow: inset 1px 1px #3a2248, inset -1px -1px #0b0610;
+    border: 1px solid;
+    border-color: #6d2a87 #000 #000 #6d2a87;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: #0f0f16;
+  }
+  
+  *::-webkit-scrollbar-button {
+    background-repeat: no-repeat;
+    background-size: 16px;
+  }
+  
+  *::-webkit-scrollbar-corner {
+    background: #0f0f16;
+  }
+
+/* ===========================
+   11) Firefox scrollbar styles
+   =========================== */
+
+  /* For Firefox */
+  * {
+    scrollbar-color: #3b143f #0f0f16; /* thumb color, track color */
+    scrollbar-width: auto; /* "thin", "auto", or "none" */
+  }
+
+
+/* ============ Grades FAQ ============ */
+.faq {
+  margin: 24px 0;
+}
+
+.faq-item {
+  border: 1px solid var(--muted-border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  margin: 10px 0;
+  box-shadow: var(--shadow-1);
+  overflow: clip; /* neat rounded corners */
+}
+
+/* Hide the default marker and style summary like a button */
+.faq-item > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--uofa-yellow);  /* pumpkin summary text */
+  outline: none;
+}
+.faq-item > summary::-webkit-details-marker { display: none; }
+
+/* Chevron */
+.faq-item > summary::before {
+  content: "▸";
+  display: inline-block;
+  transform: translateY(-1px);
+  transition: transform .18s ease;
+  color: var(--uofa-yellow);
+}
+.faq-item[open] > summary::before {
+  transform: rotate(90deg) translateX(-1px);
+}
+
+/* Focus (keyboard) and hover */
+.faq-item > summary:focus-visible {
+  box-shadow: 0 0 0 3px rgba(255,106,0,.25);
+  border-radius: var(--radius-sm);
+}
+.faq-item > summary:hover {
+  background: rgba(255,106,0,.06);
+}
+
+/* The body */
+.faq-content {
+  padding: 0 16px 14px 36px;
+  color: var(--text);
+}
+
+/* Optional: smooth open/close without layout jumps */
+@media (prefers-reduced-motion: no-preference) {
+  .faq-item .faq-content {
+    animation: faq-reveal .18s ease;
+  }
+  @keyframes faq-reveal {
+    from { opacity: 0; transform: translateY(-2px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* End of stylesheet */
