@@ -58,3 +58,52 @@ code {
   border-left: 5px solid #ffcc00;
   margin-bottom: 1em;
 }
+
+
+/* ================================
+   Grade Item Dropdown Styling
+   ================================ */
+
+details.grade-item {
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+  padding: 0.5em;
+}
+
+details.grade-item summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5em;
+  list-style: none; /* hides default disclosure arrow if you want to customize later */
+}
+
+details.grade-item[open] {
+  background: #FFFFFF;
+  border-color: #000000;
+}
+
+/* Scrollable environment for feedback content */
+details.grade-item .grade-content {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  overflow-x: auto; /* horizontal scroll for wide tables */
+  overflow-y: visible; /* vertical lists expand naturally */
+  /* max-height: 400px; */ /* optional: limit vertical size with scrolling if needed */
+}
+
+/* Ensure tables behave nicely inside */
+details.grade-item .grade-content table {
+  border-collapse: collapse;
+  width: max-content; /* prevents squishing, allows scroll */
+  min-width: 100%;
+}
+
+details.grade-item .grade-content th,
+details.grade-item .grade-content td {
+  border: 1px solid #aaa;
+  padding: 0.4em 0.6em;
+  text-align: left;
+  white-space: nowrap; /* keeps columns from wrapping */
+}
