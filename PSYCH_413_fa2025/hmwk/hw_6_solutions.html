@@ -3382,8 +3382,8 @@ Note
 <span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.05</span>,</span>
 <span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">t_crit =</span> <span class="fu">abs</span>(<span class="fu">qt</span>(alpha <span class="sc">/</span> <span class="dv">2</span>, df)),</span>
 <span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">moe =</span> se <span class="sc">*</span> t_crit,</span>
-<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower =</span> m <span class="sc">-</span> t_crit,</span>
-<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper =</span> m <span class="sc">+</span> t_crit</span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower =</span> m <span class="sc">-</span> moe,</span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper =</span> m <span class="sc">+</span> moe</span>
 <span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
@@ -3395,11 +3395,11 @@ Note
 <span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>plot_data <span class="sc">|&gt;</span> <span class="fu">select</span>(Image, m, lower, upper)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 4
-  Image              m     lower    upper
-  &lt;fct&gt;          &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-1 Difference 0.2307692 -1.793625 2.255163
-2 NotSexy    3.538462   1.514067 5.562856
-3 Sexy       3.769231   1.744837 5.793625</code></pre>
+  Image              m      lower     upper
+  &lt;fct&gt;          &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt;
+1 Difference 0.2307692 -0.3129901 0.7745285
+2 NotSexy    3.538462   2.997841  4.079082 
+3 Sexy       3.769231   3.195770  4.342692 </code></pre>
 </div>
 </div>
 <div class="cell">
