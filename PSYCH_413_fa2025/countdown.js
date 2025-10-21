@@ -2,7 +2,7 @@
 const countdownData = [
   { label: "Final", date: "2025-12-18T08:30:00", timezone: "America/Edmonton", containerId: "Final" },
   // { label: "Homework 1 Countdown", date: "2025-01-24T23:59:59", timezone: "America/Edmonton", containerId: "HW_1" },
-  { label: "Midterm", date: "2025-10-22T12:30:00", timezone: "America/Edmonton", containerId: "Midterm" },
+  { label: "Midterm", date: "2025-10-22T12:30:00", timezone: "America/Edmonton", containerId: "Midterm2" },
   { label: "Plotting Assignment", date: "2025-11-28T23:59:00", timezone: "America/Edmonton", containerId: "plot_assign" },
   { label: "Final Submission", date: "2025-12-19T08:30:00", timezone: "America/Edmonton", containerId: "Final2" },
 
