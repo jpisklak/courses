@@ -2356,26 +2356,35 @@ Instructions
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<p><strong>General</strong></p>
 <ul>
 <li>Please submit your responses as a nicely formatted notebook (.ipynb) file.</li>
 <li>If your <em>answer</em> includes many decimal places (e.g., 3.14159265358979), please round it to a reasonable number of decimals for readability (typically 3 to 4).</li>
 <li>For ease of marking, avoid showing the outputs of unnecessary values.</li>
 <li>Make sure your code runs without errors and shows all required outputs.</li>
-<li>All plots must be made with <em>ggplot2</em> and include clear, descriptive axis titles rather than default column names.</li>
-<li>One-sided hypotheses require one-sided confidence intervals.</li>
-<li>Unless otherwise specified, set any trimming you need to do at 20% and use an <span class="math inline">\(\alpha = 0.05\)</span>.</li>
-<li>Unless the instructions explicitly state otherwise (e.g., “assume the data are normally distributed”), you are responsible for checking whether the assumptions of the method are reasonable and robust approaches need to be used.
+<li><strong>Good coding style matters</strong>— clean, organized, and well-commented code will be rewarded. Disorganized, redundant, or poorly structured code may lose marks.</li>
+</ul>
+<p><strong>Plots, Packages, and Functions:</strong></p>
 <ul>
-<li>If classical test assumptions are not violated, use the classical test.</li>
-</ul></li>
+<li>All plots must be made with <em>ggplot2</em> and include clear, descriptive axis titles rather than default column names.</li>
 <li>Only the following packages are permitted:
 <ul>
 <li><code>tidyverse</code></li>
 <li><code>WRS2</code></li>
 </ul></li>
 </ul>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>Unless otherwise specified, set any trimming you need to do at 20% and use an <span class="math inline">\(\alpha = 0.05\)</span>.</li>
+<li>Unless the instructions explicitly state otherwise (e.g., “assume the data are normally distributed”), you are responsible for checking whether the assumptions of the method are reasonable and robust approaches need to be used.
+<ul>
+<li>If classical test assumptions are not violated, use the classical test.</li>
+</ul></li>
+<li><strong>Do not remove/handle outliers unless explicity asked to.</strong></li>
+</ul>
 </div>
 </div>
+<p><br></p>
 <section id="question-1" class="level1">
 <h1>Question 1</h1>
 <p>The data contained in <strong>“lake.csv”</strong>, reports the data of 29 lakes in Florida and contains three variables:</p>
@@ -2385,7 +2394,9 @@ Instructions
 <li>TW = Water retention time.</li>
 </ul>
 <p>The outcome the research was interested in was TN. Calculate the correlation coefficient between NIN and TN.</p>
-<p>Use of <code>cor()</code> and <code>cor.test()</code> is not permitted.</p>
+<ul>
+<li>Use of <code>cor()</code> and <code>cor.test()</code> is not permitted.</li>
+</ul>
 <p><br></p>
 </section>
 <section id="question-2" class="level1">
