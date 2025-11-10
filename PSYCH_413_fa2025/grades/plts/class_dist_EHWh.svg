@@ -109,6 +109,8 @@
 <line x1='354.87' y1='242.64' x2='354.87' y2='234.57' style='stroke-width: 1.07; stroke-linecap: butt;' />
 <line x1='244.79' y1='242.64' x2='244.79' y2='234.57' style='stroke-width: 1.07; stroke-linecap: butt;' />
 <line x1='26.91' y1='233.47' x2='559.96' y2='233.47' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<line x1='354.87' y1='233.47' x2='354.87' y2='57.88' style='stroke-width: 1.28; stroke-dasharray: 6.83,6.83; stroke-linecap: butt;' />
+<circle cx='354.87' cy='57.88' r='3.56' style='stroke-width: 0.71; fill: #000000;' />
 </g>
 <g clip-path='url(#cpMC4wMHw1NjYuOTN8MC4wMHwyODMuNDY=)'>
 <text x='55.99' y='34.54' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='7.33px' lengthAdjust='spacingAndGlyphs'>F</text>
