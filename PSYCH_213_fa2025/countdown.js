@@ -9,6 +9,7 @@ const countdownData = [
   { label: "Homework 3", date: "2025-10-23T23:59:00", timezone: "America/Edmonton", containerId: "HW_3" },
   { label: "Homework 4", date: "2025-11-04T23:59:00", timezone: "America/Edmonton", containerId: "HW_4" },
   { label: "Homework 5", date: "2025-11-19T23:59:00", timezone: "America/Edmonton", containerId: "HW_5" },
+  { label: "Homework 6", date: "2025-12-02T23:59:00", timezone: "America/Edmonton", containerId: "HW_6" },
   { label: "Course Project I", date: "2025-11-21T23:59:00", timezone: "America/Edmonton", containerId: "CP_1" },
   { label: "Course Project II", date: "2025-11-28T23:59:00", timezone: "America/Edmonton", containerId: "CP_2" },
 
