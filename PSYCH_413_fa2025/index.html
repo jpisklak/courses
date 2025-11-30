@@ -74,6 +74,67 @@
 
       <br /> -->
 
+      <!-- Ugly Plot Voting Button -->
+      <div style="text-align: center">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScSaZzY1HsPgcQu6Kq1sKu_6g-L0Qv8SgYHjs4KLyf5MkSwuQ/viewform?usp=header"
+          class="ugly-poll-button"
+          target="_blank"
+        >
+          🎨 Vote for the Ugliest Plot! 🤢
+        </a>
+      </div>
+
+      <style>
+        .ugly-poll-button {
+          display: inline-block;
+          padding: 18px 32px;
+          margin: 20px 0;
+          font-size: 1.3rem;
+          font-weight: 800;
+          font-family: "Comic Sans MS", "Comic Sans", system-ui, sans-serif;
+          text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: 1px;
+          color: #000000;
+          background-image: linear-gradient(135deg, #ff00ff, #ffea00, #00ffd5);
+          border-radius: 999px;
+          border: 4px dashed #000000;
+          box-shadow: 0 0 0 4px #ffffff, 0 10px 0 #000000;
+          position: relative;
+          animation: bounce 1.2s infinite ease-in-out;
+        }
+
+        .ugly-poll-button:hover {
+          transform: translateY(-3px) rotate(-2deg);
+          box-shadow: 0 0 0 4px #ffffff, 0 14px 0 #000000;
+          background-image: linear-gradient(135deg, #00ffd5, #ffea00, #ff00ff);
+        }
+
+        .ugly-poll-button:active {
+          transform: translateY(2px);
+          box-shadow: 0 0 0 4px #ffffff, 0 4px 0 #000000;
+        }
+
+        @keyframes bounce {
+          0%,
+          100% {
+            transform: translateY(0) rotate(0deg);
+          }
+          25% {
+            transform: translateY(-3px) rotate(1deg);
+          }
+          50% {
+            transform: translateY(2px) rotate(-1deg);
+          }
+          75% {
+            transform: translateY(-1px) rotate(0.5deg);
+          }
+        }
+      </style>
+
+      <br />
+
       <!-- ================= LECTURES ================= -->
 
       <h1>Lectures</h1>
