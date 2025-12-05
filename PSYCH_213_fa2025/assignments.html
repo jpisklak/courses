@@ -1,510 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignments and Homework</title>
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
 
-    <!-- Prevent caching of the main HTML file -->
-    <meta
-      http-equiv="Cache-Control"
-      content="no-cache, no-store, must-revalidate"
-    />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignments and Homework</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
 
-    <style>
-      img {
-        max-width: 30%;
-        height: auto;
-      }
+  <!-- Prevent caching of the main HTML file -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
 
-      .button-container {
-        margin: 20px 20px;
-      }
+  <style>
+    img {
+      max-width: 30%;
+      height: auto;
+    }
 
-      .data-button {
-        background-color: #275d38;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-        border-radius: 5px;
-      }
+    .button-container {
+      margin: 20px 20px;
+    }
 
-      .data-button:hover {
-        background-color: #f2cd00;
-        color: black;
-      }
+    .data-button {
+      background-color: #275d38;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
 
-      .submission-button {
-        background-color: #275d38;
-        color: white;
-        padding: 15px 25px;
-        font-size: 18px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        font-weight: bold;
-      }
+    .data-button:hover {
+      background-color: #f2cd00;
+      color: black;
+    }
 
-      .submission-button:hover {
-        background-color: #f2cd00;
-        color: black;
-      }
-    </style>
-  </head>
+    .submission-button {
+      background-color: #275d38;
+      color: white;
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
 
-  <body>
-    <!-- Navigation Header-->
-    <header>
-      Psychology 213: Introduction to Data Analysis in Psychology I
-    </header>
-    <nav>
-      <a href="index.html">Home</a>
-    </nav>
-    <!-- Navigation Header-->
+    .submission-button:hover {
+      background-color: #f2cd00;
+      color: black;
+    }
+  </style>
+</head>
 
-    <main>
-      <h1>Course Projects</h1>
+<body>
+  <!-- Navigation Header-->
+  <header>
+    Psychology 213: Introduction to Data Analysis in Psychology I
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+  <!-- Navigation Header-->
 
-      <br />
+  <main>
+    <h1>Course Projects</h1>
 
-      <h2>Course Project I: Testing your own Hypothesis</h2>
-      <b>Due Date:</b> Friday November 21st by 23:59<br />
-      <div id="CP_1" style="display: flex; align-items: center">
-        <div><b>Time Remaining:</b>&nbsp;</div>
-      </div>
+    <br />
 
-      <div class="button-container">
-        <button
-          class="submission-button"
-          onclick="window.open('docs/PSYCH_213_Winter_2025_Assignment_1_Instructions.pdf')"
-        >
-          📄 Instructions
-        </button>
-        &nbsp; &nbsp;
-        <button
-          class="submission-button"
-          onclick="window.open('https://canvas.ualberta.ca/courses/28360/assignments/678621')"
-        >
-          📤 Submission Portal
-        </button>
-        <br /><br />
-        <button
-          class="submission-button"
-          onclick="window.open('docs/project_report.docx')"
-        >
-          📝 project_report.docx
-        </button>
-      </div>
+    <h2>Course Project I: Testing your own Hypothesis</h2>
+    <b>Due Date:</b> Friday November 21st by 23:59<br />
+    <div id="CP_1" style="display: flex; align-items: center">
+      <div><b>Time Remaining:</b>&nbsp;</div>
+    </div>
 
+    <div class="button-container">
+      <button class="submission-button"
+        onclick="window.open('docs/PSYCH_213_Winter_2025_Assignment_1_Instructions.pdf')">
+        📄 Instructions
+      </button>
+      &nbsp; &nbsp;
+      <button class="submission-button"
+        onclick="window.open('https://canvas.ualberta.ca/courses/28360/assignments/678621')">
+        📤 Submission Portal
+      </button>
       <br /><br />
+      <button class="submission-button" onclick="window.open('docs/project_report.docx')">
+        📝 project_report.docx
+      </button>
+    </div>
 
-      <h2>
-        Course Project II: Visualizing Reported Data from Gendreau et al. (1972)
-        Using R
-      </h2>
-      <b>Due Date:</b> Sunday November 30th by 23:59<br />
-      <div id="CP_2_2" style="display: flex; align-items: center">
-        <div><b>Time Remaining:</b>&nbsp;</div>
-      </div>
+    <br /><br />
 
-      <div class="button-container">
-        <button
-          class="submission-button"
-          onclick="window.open('docs/PSYCH_213_Winter_2025_Assignment_2_Instructions.pdf')"
-        >
-          📄 Instructions
-        </button>
-        &nbsp; &nbsp;
-        <button
-          class="submission-button"
-          onclick="window.open('https://canvas.ualberta.ca/courses/28360/assignments/680231')"
-        >
-          📤 Submission Portal
-        </button>
-      </div>
+    <h2>
+      Course Project II: Visualizing Reported Data from Gendreau et al. (1972)
+      Using R
+    </h2>
+    <b>Due Date:</b> Sunday November 30th by 23:59<br />
+    <div id="CP_2_2" style="display: flex; align-items: center">
+      <div><b>Time Remaining:</b>&nbsp;</div>
+    </div>
 
-      <br />
-      <hr />
-      <br />
+    <div class="button-container">
+      <button class="submission-button"
+        onclick="window.open('docs/PSYCH_213_Winter_2025_Assignment_2_Instructions.pdf')">
+        📄 Instructions
+      </button>
+      &nbsp; &nbsp;
+      <button class="submission-button"
+        onclick="window.open('https://canvas.ualberta.ca/courses/28360/assignments/680231')">
+        📤 Submission Portal
+      </button>
+    </div>
 
-      <h1>Homework Assignments</h1>
+    <br />
+    <hr />
+    <br />
 
-      <ul>
-        <li>
-          Assignments will consist of multiple-choice and numeric-entry
-          questions submitted through Canvas LMS.
-        </li>
-        <li>
-          Assignments will be announced in class, with links provided here.
-        </li>
-        <li>
-          Students will have two weeks from the in-class announcement to
-          complete and submit their work.
-        </li>
-        <li>
-          Unlimited attempts are allowed within the two-week period, and your
-          highest score will count. After each attempt, you will receive
-          immediate feedback, including the correct answers and solutions.
-        </li>
-      </ul>
-      <table>
-        <thead>
-          <tr>
-            <th>Homework #</th>
-            <th>Due Date</th>
-            <th>Link to Homework</th>
-            <th>Time Remaining</th>
-            <th>Review Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>2025-09-23 23:59</td>
-            <td>
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/22489"
-                target="_blank"
-                >HW1 Questions</a
-              >
-            </td>
-            <td>
-              <div id="HW_1" style="display: flex; align-items: center"></div>
-            </td>
-            <td>
-              📚
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/23618"
-                target="_blank"
-                title="Click here to practice the homework questions after the deadline."
-                >HW1</a
-              >
-            </td>
-          </tr>
+    <h1>Homework Assignments</h1>
 
-          <tr>
-            <td>2</td>
-            <td>2025-10-09 23:59</td>
-            <td>
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/23612"
-                target="_blank"
-                >HW2 Questions</a
-              >
-            </td>
-            <td>
-              <div id="HW_2" style="display: flex; align-items: center"></div>
-            </td>
-            <td>
-              📚
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/24140"
-                target="_blank"
-                title="Click here to practice the homework questions after the deadline."
-                >HW2</a
-              >
-            </td>
-          </tr>
+    <ul>
+      <li>
+        Assignments will consist of multiple-choice and numeric-entry
+        questions submitted through Canvas LMS.
+      </li>
+      <li>
+        Assignments will be announced in class, with links provided here.
+      </li>
+      <li>
+        Students will have two weeks from the in-class announcement to
+        complete and submit their work.
+      </li>
+      <li>
+        Unlimited attempts are allowed within the two-week period, and your
+        highest score will count. After each attempt, you will receive
+        immediate feedback, including the correct answers and solutions.
+      </li>
+    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>Homework #</th>
+          <th>Due Date</th>
+          <th>Link to Homework</th>
+          <th>Time Remaining</th>
+          <th>Review Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2025-09-23 23:59</td>
+          <td>
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/22489" target="_blank">HW1 Questions</a>
+          </td>
+          <td>
+            <div id="HW_1" style="display: flex; align-items: center"></div>
+          </td>
+          <td>
+            📚
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/23618" target="_blank"
+              title="Click here to practice the homework questions after the deadline.">HW1</a>
+          </td>
+        </tr>
 
-          <tr>
-            <td>3</td>
-            <td>2025-10-23 23:59</td>
-            <td>
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/24007"
-                target="_blank"
-                >HW3 Questions</a
-              >
-            </td>
-            <td>
-              <div id="HW_3" style="display: flex; align-items: center"></div>
-            </td>
-            <td>
-              📚
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/24287"
-                target="_blank"
-                title="Click here to practice the homework questions after the deadline."
-                >HW3</a
-              >
-            </td>
-          </tr>
+        <tr>
+          <td>2</td>
+          <td>2025-10-09 23:59</td>
+          <td>
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/23612" target="_blank">HW2 Questions</a>
+          </td>
+          <td>
+            <div id="HW_2" style="display: flex; align-items: center"></div>
+          </td>
+          <td>
+            📚
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/24140" target="_blank"
+              title="Click here to practice the homework questions after the deadline.">HW2</a>
+          </td>
+        </tr>
 
-          <tr>
-            <td>4</td>
-            <td>2025-11-04 23:59</td>
-            <td>
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/24236"
-                target="_blank"
-                >HW4 Questions</a
-              >
-            </td>
-            <td>
-              <div id="HW_4" style="display: flex; align-items: center"></div>
-            </td>
-            <td>
-              📚
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/24689"
-                target="_blank"
-                title="Click here to practice the homework questions after the deadline."
-                >HW4</a
-              >
-            </td>
-          </tr>
+        <tr>
+          <td>3</td>
+          <td>2025-10-23 23:59</td>
+          <td>
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/24007" target="_blank">HW3 Questions</a>
+          </td>
+          <td>
+            <div id="HW_3" style="display: flex; align-items: center"></div>
+          </td>
+          <td>
+            📚
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/24287" target="_blank"
+              title="Click here to practice the homework questions after the deadline.">HW3</a>
+          </td>
+        </tr>
 
-          <tr>
-            <td>5</td>
-            <td>2025-11-19 23:59</td>
-            <td>
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/24391"
-                target="_blank"
-                >HW5 Questions</a
-              >
-            </td>
-            <td>
-              <div id="HW_5" style="display: flex; align-items: center"></div>
-            </td>
-            <td>
-              📚
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/24909"
-                target="_blank"
-                title="Click here to practice the homework questions after the deadline."
-                >HW5</a
-              >
-            </td>
-          </tr>
+        <tr>
+          <td>4</td>
+          <td>2025-11-04 23:59</td>
+          <td>
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/24236" target="_blank">HW4 Questions</a>
+          </td>
+          <td>
+            <div id="HW_4" style="display: flex; align-items: center"></div>
+          </td>
+          <td>
+            📚
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/24689" target="_blank"
+              title="Click here to practice the homework questions after the deadline.">HW4</a>
+          </td>
+        </tr>
 
-          <tr>
-            <td>6</td>
-            <td>2025-12-02 23:59</td>
-            <td>
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/24834"
-                target="_blank"
-                >HW6 Questions</a
-              >
-            </td>
-            <td>
-              <div id="HW_6" style="display: flex; align-items: center"></div>
-            </td>
-            <td>
-              <!-- 📚 <a href="ADD URL" target="_blank" title = "Click here to practice the homework questions after the deadline.">HW6</a> -->
-            </td>
-          </tr>
+        <tr>
+          <td>5</td>
+          <td>2025-11-19 23:59</td>
+          <td>
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/24391" target="_blank">HW5 Questions</a>
+          </td>
+          <td>
+            <div id="HW_5" style="display: flex; align-items: center"></div>
+          </td>
+          <td>
+            📚
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/24909" target="_blank"
+              title="Click here to practice the homework questions after the deadline.">HW5</a>
+          </td>
+        </tr>
 
-          <tr>
-            <td>7</td>
-            <td>NA</td>
-            <td>
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/25103"
-                target="_blank"
-                >HW7 Questions</a
-              > (not for marks)
-            </td>
-            <td>NA</td>
-            <td>
-              <!-- 📚 <a href="ADD URL" target="_blank" title = "Click here to practice the homework questions after the deadline.">HW6</a> -->
-            </td>
-          </tr>
+        <tr>
+          <td>6</td>
+          <td>2025-12-02 23:59</td>
+          <td>
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/24834" target="_blank">HW6 Questions</a>
+          </td>
+          <td>
+            <div id="HW_6" style="display: flex; align-items: center"></div>
+          </td>
+          <td>
+            📚 <a href="https://canvas.ualberta.ca/courses/28360/quizzes/25307" target="_blank"
+              title="Click here to practice the homework questions after the deadline.">HW6</a>
+          </td>
+        </tr>
 
-          <tr>
-            <td>8</td>
-            <td>NA</td>
-            <td>
-              <a
-                href="https://canvas.ualberta.ca/courses/28360/quizzes/25109"
-                target="_blank"
-                >HW8 Questions</a
-              > (not for marks)
-            </td>
-            <td>NA</td>
-            <td>
-              <!-- 📚 <a href="ADD URL" target="_blank" title = "Click here to practice the homework questions after the deadline.">HW6</a> -->
-            </td>
-          </tr>
-        </tbody>
-      </table>
+        <tr>
+          <td>7</td>
+          <td>NA</td>
+          <td>
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/25103" target="_blank">HW7 Questions</a> (not for
+            marks)
+          </td>
+          <td>NA</td>
+          <td>
+            <!-- 📚 <a href="ADD URL" target="_blank" title = "Click here to practice the homework questions after the deadline.">HW6</a> -->
+          </td>
+        </tr>
 
-      <br />
+        <tr>
+          <td>8</td>
+          <td>NA</td>
+          <td>
+            <a href="https://canvas.ualberta.ca/courses/28360/quizzes/25109" target="_blank">HW8 Questions</a> (not for
+            marks)
+          </td>
+          <td>NA</td>
+          <td>
+            <!-- 📚 <a href="ADD URL" target="_blank" title = "Click here to practice the homework questions after the deadline.">HW6</a> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-      <h2>Troubleshooting</h2>
+    <br />
 
-      If you need assistance getting your code to work feel free to email the
-      instructor. However, when you do, make sure you have done the following:
-      <ol>
-        <li>
-          🔍 Find and remove other errors that might be lurking in your code:
-          Select <i>"Runtime"</i> in top drop-down menu and then
-          <i>"Restart Session and Run All"</i>. Then fix any new/extra errors
-          you find above your original error and repeat this process until there
-          are no errors.
-        </li>
-        <li>
-          ✂️ Eliminate any redundant or unnecessary code (i.e., lines that
-          duplicate the function of others). Writing excessive code increases
-          the likelihood of errors, so streamline your script by removing
-          anything superfluous.
-        </li>
-        <li>
-          🧹 Structure, organize, and comment (#) your code clearly and neatly.
-          Clean and well-organized code makes it much easier to identify typos
-          or other issues.
-          <a href="../style_tips/style_tips.html" target="_blank"
-            >Click here for tips.</a
-          >
-        </li>
-        <li>
-          📧 When all else fails, email the instructor with a description of the
-          problem and share your Colab notebook (using Google's "share" button
-          in the top right corner). DO NOT SEND SCREEN SHOTS.
-        </li>
-      </ol>
+    <h2>Troubleshooting</h2>
 
-      <br />
-      <hr />
-      <br />
+    If you need assistance getting your code to work feel free to email the
+    instructor. However, when you do, make sure you have done the following:
+    <ol>
+      <li>
+        🔍 Find and remove other errors that might be lurking in your code:
+        Select <i>"Runtime"</i> in top drop-down menu and then
+        <i>"Restart Session and Run All"</i>. Then fix any new/extra errors
+        you find above your original error and repeat this process until there
+        are no errors.
+      </li>
+      <li>
+        ✂️ Eliminate any redundant or unnecessary code (i.e., lines that
+        duplicate the function of others). Writing excessive code increases
+        the likelihood of errors, so streamline your script by removing
+        anything superfluous.
+      </li>
+      <li>
+        🧹 Structure, organize, and comment (#) your code clearly and neatly.
+        Clean and well-organized code makes it much easier to identify typos
+        or other issues.
+        <a href="../style_tips/style_tips.html" target="_blank">Click here for tips.</a>
+      </li>
+      <li>
+        📧 When all else fails, email the instructor with a description of the
+        problem and share your Colab notebook (using Google's "share" button
+        in the top right corner). DO NOT SEND SCREEN SHOTS.
+      </li>
+    </ol>
 
-      <h1>Achieve Assessments</h1>
-      <ul>
-        <li>
-          If you do not know what "Achieve" is, please see sections 7 and 10 of
-          the syllabus (or pay attention in class).
-        </li>
-        <li>
-          <a
-            href="https://sites.google.com/macmillan.com/213pisklak2025/home"
-            target="_blank"
-            >Achieve Purchase and Access Instructions</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://achieve.macmillanlearning.com/courses/2a54zj"
-            target="_blank"
-            >Achieve Login Portal</a
-          >
-        </li>
-      </ul>
+    <br />
+    <hr />
+    <br />
 
-      <h2>Due Dates</h2>
+    <h1>Achieve Assessments</h1>
+    <ul>
+      <li>
+        If you do not know what "Achieve" is, please see sections 7 and 10 of
+        the syllabus (or pay attention in class).
+      </li>
+      <li>
+        <a href="https://sites.google.com/macmillan.com/213pisklak2025/home" target="_blank">Achieve Purchase and Access
+          Instructions</a>
+      </li>
+      <li>
+        <a href="https://achieve.macmillanlearning.com/courses/2a54zj" target="_blank">Achieve Login Portal</a>
+      </li>
+    </ul>
 
-      <table style="width: auto; border-collapse: collapse">
-        <thead>
-          <tr>
-            <th>Assessment</th>
-            <th>Due Date</th>
-            <th>Due Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Achieve Orientation Assignment</td>
-            <td>November 6th</td>
-            <td>14:00</td>
-          </tr>
-          <tr>
-            <td>Achieve Practice Assignment</td>
-            <td>November 6th</td>
-            <td>14:00</td>
-          </tr>
-          <tr>
-            <td>Math Review</td>
-            <td>November 6th</td>
-            <td>14:00</td>
-          </tr>
-          <tr>
-            <td>Ch 1 - Introduction to Data</td>
-            <td>November 6th</td>
-            <td>14:00</td>
-          </tr>
-          <tr>
-            <td>Ch 2 - Summarizing Data</td>
-            <td>November 6th</td>
-            <td>14:00</td>
-          </tr>
-          <tr>
-            <td>Ch 3 - Probability</td>
-            <td>November 6th</td>
-            <td>14:00</td>
-          </tr>
-          <tr>
-            <td>Ch 4.1 - Distributions of Random Variables</td>
-            <td>November 6th</td>
-            <td>14:00</td>
-          </tr>
-          <tr>
-            <td>Ch 7.1 &amp; 7.2 - One-Sample and Paired t-tests</td>
-            <td>November 6th</td>
-            <td>14:00</td>
-          </tr>
-        </tbody>
-      </table>
+    <h2>Due Dates</h2>
 
-      <div id="Achieve_1" style="display: flex; align-items: center">
-        <div>Time Remaining:&nbsp;</div>
-      </div>
+    <table style="width: auto; border-collapse: collapse">
+      <thead>
+        <tr>
+          <th>Assessment</th>
+          <th>Due Date</th>
+          <th>Due Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Achieve Orientation Assignment</td>
+          <td>November 6th</td>
+          <td>14:00</td>
+        </tr>
+        <tr>
+          <td>Achieve Practice Assignment</td>
+          <td>November 6th</td>
+          <td>14:00</td>
+        </tr>
+        <tr>
+          <td>Math Review</td>
+          <td>November 6th</td>
+          <td>14:00</td>
+        </tr>
+        <tr>
+          <td>Ch 1 - Introduction to Data</td>
+          <td>November 6th</td>
+          <td>14:00</td>
+        </tr>
+        <tr>
+          <td>Ch 2 - Summarizing Data</td>
+          <td>November 6th</td>
+          <td>14:00</td>
+        </tr>
+        <tr>
+          <td>Ch 3 - Probability</td>
+          <td>November 6th</td>
+          <td>14:00</td>
+        </tr>
+        <tr>
+          <td>Ch 4.1 - Distributions of Random Variables</td>
+          <td>November 6th</td>
+          <td>14:00</td>
+        </tr>
+        <tr>
+          <td>Ch 7.1 &amp; 7.2 - One-Sample and Paired t-tests</td>
+          <td>November 6th</td>
+          <td>14:00</td>
+        </tr>
+      </tbody>
+    </table>
 
-      <br />
+    <div id="Achieve_1" style="display: flex; align-items: center">
+      <div>Time Remaining:&nbsp;</div>
+    </div>
 
-      <table style="width: auto; border-collapse: collapse">
-        <thead>
-          <tr>
-            <th>Assessment</th>
-            <th>Due Date</th>
-            <th>Due Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Ch 7.3 &amp; 7.4 - Independent t-test</td>
-            <td>December 8th</td>
-            <td>23:59</td>
-          </tr>
-          <tr>
-            <td>Ch 8 - Introduction to Linear Regression</td>
-            <td>December 8th</td>
-            <td>23:59</td>
-          </tr>
-          <tr>
-            <td>Ch 6.3 &amp; 6.4 - Chi-Square Tests</td>
-            <td>December 8th</td>
-            <td>23:59</td>
-          </tr>
-          <tr>
-            <td>Ch 7.5 - Comparing Many Means with ANOVA</td>
-            <td>December 8th</td>
-            <td>23:59</td>
-          </tr>
-        </tbody>
-      </table>
+    <br />
 
-      <div id="Achieve_2" style="display: flex; align-items: center">
-        <div>Time Remaining:&nbsp;</div>
-      </div>
+    <table style="width: auto; border-collapse: collapse">
+      <thead>
+        <tr>
+          <th>Assessment</th>
+          <th>Due Date</th>
+          <th>Due Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ch 7.3 &amp; 7.4 - Independent t-test</td>
+          <td>December 8th</td>
+          <td>23:59</td>
+        </tr>
+        <tr>
+          <td>Ch 8 - Introduction to Linear Regression</td>
+          <td>December 8th</td>
+          <td>23:59</td>
+        </tr>
+        <tr>
+          <td>Ch 6.3 &amp; 6.4 - Chi-Square Tests</td>
+          <td>December 8th</td>
+          <td>23:59</td>
+        </tr>
+        <tr>
+          <td>Ch 7.5 - Comparing Many Means with ANOVA</td>
+          <td>December 8th</td>
+          <td>23:59</td>
+        </tr>
+      </tbody>
+    </table>
 
-      <!-- Banner will be filled in by JavaScript -->
-      <br />
-      <hr />
-      <div id="last-updated">Loading last updated time...</div>
+    <div id="Achieve_2" style="display: flex; align-items: center">
+      <div>Time Remaining:&nbsp;</div>
+    </div>
 
-      <!-- Include Moment.js and Moment-Timezone -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
-      <!-- Include the external JavaScript file -->
-      <script src="countdown.js"></script>
-      <script src="../refresh.js"></script>
-    </main>
-    <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
-  </body>
+    <!-- Banner will be filled in by JavaScript -->
+    <br />
+    <hr />
+    <div id="last-updated">Loading last updated time...</div>
+
+    <!-- Include Moment.js and Moment-Timezone -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
+    <!-- Include the external JavaScript file -->
+    <script src="countdown.js"></script>
+    <script src="../refresh.js"></script>
+  </main>
+  <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
+</body>
+
 </html>
