@@ -1,264 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Information</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exam Information</title>
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
+    <!-- Prevent caching of the main HTML file -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
-  <!-- Prevent caching of the main HTML file -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+    <style>
+      img {
+        max-width: 30%;
+        height: auto;
+      }
 
-  <style>
-    img {
-      max-width: 30%;
-      height: auto;
-    }
+      .button-container {
+        margin: 20px 20px;
+      }
 
-    .button-container {
-      margin: 20px 20px;
-    }
+      .data-button {
+        background-color: #275d38;
+        color: white;
+        padding: 10px 15px;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+      }
 
-    .data-button {
-      background-color: #275d38;
-      color: white;
-      padding: 10px 15px;
-      margin: 10px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      border-radius: 5px;
-    }
+      .data-button:hover {
+        background-color: #f2cd00;
+        color: black;
+      }
 
-    .data-button:hover {
-      background-color: #f2cd00;
-      color: black;
-    }
+      .submission-button {
+        background-color: #275d38;
+        color: white;
+        padding: 15px 25px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+      }
 
-    .submission-button {
-      background-color: #275d38;
-      color: white;
-      padding: 15px 25px;
-      font-size: 18px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      font-weight: bold;
-    }
+      .submission-button:hover {
+        background-color: #f2cd00;
+        color: black;
+      }
+    </style>
+  </head>
 
-    .submission-button:hover {
-      background-color: #f2cd00;
-      color: black;
-    }
-  </style>
-</head>
+  <body>
+    <!-- Navigation Header-->
+    <header>
+      Psychology 413: Design and Analysis in Experimental Psychology
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+    <!-- Navigation Header-->
 
-<body>
-  <!-- Navigation Header-->
-  <header>
-    Psychology 413: Design and Analysis in Experimental Psychology
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-  </nav>
-  <!-- Navigation Header-->
+    <main>
+      <p>
+        Exam questions, data files, and submission links will be found here on
+        exam day. Unless otherwise specified by the instructor, the exam will
+        cover all content completed up to the date of the exam.
+      </p>
 
-  <main>
-    <p>
-      Exam questions, data files, and submission links will be found here on
-      exam day. Unless otherwise specified by the instructor, the exam will
-      cover all content completed up to the date of the exam.
-    </p>
+      <p>
+        <i>Note for students with academic accommodations:</i><br />Because of
+        the "take-home" asynchronous nature of the exams, they do not need to be
+        registered with the Academic Success Centre.
+      </p>
 
-    <p>
-      <i>Note for students with academic accommodations:</i><br />Because of
-      the "take-home" asynchronous nature of the exams, they do not need to be
-      registered with the Academic Success Centre.
-    </p>
+      <br />
+      <hr />
+      <br />
 
-    <br />
-    <hr />
-    <br />
+      <h1>Midterm Information</h1>
+      <ul>
+        <li><strong>Accessible</strong>: Tuesday October 21st at 12:30pm</li>
+        <li><strong>Due</strong>: Wednesday October 22nd at 15:30pm</li>
+        <li><b>Coverage:</b> Everything up to and inlcuding week 6 topics.</li>
+        <!-- <li><strong>Coverage</strong>: </li> -->
+        <li>
+          <div id="Midterm3" style="display: flex; align-items: center">
+            <div><strong>Midterm submission deadline: &nbsp;</strong></div>
+          </div>
+        </li>
+      </ul>
 
-    <h1>Midterm Information</h1>
-    <ul>
-      <li><strong>Accessible</strong>: Tuesday October 21st at 12:30pm</li>
-      <li><strong>Due</strong>: Wednesday October 22nd at 15:30pm</li>
-      <li><b>Coverage:</b> Everything up to and inlcuding week 6 topics.</li>
-      <!-- <li><strong>Coverage</strong>: </li> -->
-      <li>
-        <div id="Midterm3" style="display: flex; align-items: center">
-          <div><strong>Midterm submission deadline: &nbsp;</strong></div>
-        </div>
-      </li>
-    </ul>
+      <div class="button-container">
+        <button
+          class="submission-button"
+          onclick="window.open('mid/midterm - questions.html')"
+        >
+          📄 Exam Questions
+        </button>
+        &nbsp; &nbsp;
+        <button
+          class="submission-button"
+          onclick="window.open('https://canvas.ualberta.ca/courses/28237/assignments/678024')"
+        >
+          📤 Submission Portal
+        </button>
+        &nbsp; &nbsp;
+        <button
+          class="submission-button"
+          onclick="window.open('mid/midterm - solutions.html')"
+        >
+          💡Exam Solutions
+        </button>
+      </div>
 
-    <div class="button-container">
-      <button class="submission-button" onclick="window.open('mid/midterm - questions.html')">
-        📄 Exam Questions
-      </button>
-      &nbsp; &nbsp;
-      <button class="submission-button"
-        onclick="window.open('https://canvas.ualberta.ca/courses/28237/assignments/678024')">
-        📤 Submission Portal
-      </button>
-      &nbsp; &nbsp;
-      <button class="submission-button" onclick="window.open('mid/midterm - solutions.html')">
-        💡Exam Solutions
-      </button>
-    </div>
+      <br />
 
-    <br />
-
-    <h2>Data Sets</h2>
-    <table class="table table-striped table-hover" style="
+      <h2>Data Sets</h2>
+      <table
+        class="table table-striped table-hover"
+        style="
           color: black;
           width: auto !important;
           margin-left: auto;
           margin-right: auto;
           font-size: 0.8em;
-        ">
-      <thead>
-        <tr>
-          <th style="text-align: left">File</th>
-          <th style="text-align: left">Raw URL</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="text-align: left">
-            <a href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/mid/candy_corn.csv"
-              target="_blank">candy_corn.csv</a>
-          </td>
-          <td style="text-align: left">
-            https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/mid/candy_corn.csv
-          </td>
-        </tr>
+        "
+      >
+        <thead>
+          <tr>
+            <th style="text-align: left">File</th>
+            <th style="text-align: left">Raw URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/mid/candy_corn.csv"
+                target="_blank"
+                >candy_corn.csv</a
+              >
+            </td>
+            <td style="text-align: left">
+              https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/mid/candy_corn.csv
+            </td>
+          </tr>
 
-        <tr>
-          <td style="text-align: left">
-            <a href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/mid/dopamine.csv"
-              target="_blank">dopamine.csv</a>
-          </td>
-          <td style="text-align: left">
-            https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/mid/dopamine.csv
-          </td>
-        </tr>
+          <tr>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/mid/dopamine.csv"
+                target="_blank"
+                >dopamine.csv</a
+              >
+            </td>
+            <td style="text-align: left">
+              https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/mid/dopamine.csv
+            </td>
+          </tr>
 
-        <tr>
-          <td style="text-align: left">
-            <a href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/mid/zombie_screentime.csv"
-              target="_blank">zombie_screentime.csv</a>
-          </td>
-          <td style="text-align: left">
-            https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/mid/zombie_screentime.csv
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          <tr>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/mid/zombie_screentime.csv"
+                target="_blank"
+                >zombie_screentime.csv</a
+              >
+            </td>
+            <td style="text-align: left">
+              https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/mid/zombie_screentime.csv
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    <br />
-    <hr />
-    <br />
+      <br />
+      <hr />
+      <br />
 
-    <h1>Final Exam Information</h1>
-    <ul>
-      <li><strong>Accessible</strong>: Thursday December 18th at 08:30am</li>
-      <li>
-        <strong>Due</strong>: Friday December 19th at 08:30am (24 hours later)
-      </li>
-      <li><strong>Coverage</strong>: Everything</li>
-      <!-- <li>
+      <h1>Final Exam Information</h1>
+      <ul>
+        <li><strong>Accessible</strong>: Thursday December 18th at 08:30am</li>
+        <li>
+          <strong>Due</strong>: Friday December 19th at 08:30am (24 hours later)
+        </li>
+        <li><strong>Coverage</strong>: Everything</li>
+        <!-- <li>
         <div id="Final" style="display: flex; align-items: center;">
           <div><strong>Submission Deadline:&nbsp;</strong></div>
         </div>
       </li> -->
-    </ul>
+      </ul>
 
-    <!-- <div class="button-container">
-      <button class="submission-button" onclick="window.open('####URL')">📄 Final Exam Questions</button> &nbsp; &nbsp;
-      <button class="submission-button" onclick="window.open('####URL')">📤 Submission Portal</button> &nbsp; &nbsp;
-      <button class="submission-button" onclick="window.open('####URL')">💡Exam Solutions</button>
-    </div> -->
+      <div class="button-container">
+        <button class="submission-button" onclick="window.open('fin/final - questions.html')">
+          📄 Final Exam Questions
+        </button>
+        &nbsp; &nbsp;
+        <button class="submission-button" onclick="window.open('https://canvas.ualberta.ca/courses/28237/assignments/701315')">
+          📤 Submission Portal
+        </button>
+        <!-- &nbsp; &nbsp;
+        <button class="submission-button" onclick="window.open('####URL')">
+          💡Exam Solutions
+        </button> -->
+      </div>
 
-<!--     <br />
+      <br />
 
-    <h2>Data Sets</h2>
-    <table class="table table-striped table-hover" style="
+      <h2>Data Sets</h2>
+      <table
+        class="table table-striped table-hover"
+        style="
           color: black;
           width: auto !important;
           margin-left: auto;
           margin-right: auto;
           font-size: 0.8em;
-        ">
-      <thead>
-        <tr>
-          <th style="text-align: left">File</th>
-          <th style="text-align: left">Raw URL</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="text-align: left">
-            <a href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/fin/phone_use_response_cost.csv"
-              target="_blank">phone_use_response_cost.csv</a>
-          </td>
-          <td style="text-align: left">
-            https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/fin/phone_use_response_cost.csv
-          </td>
-        </tr>
+        "
+      >
+        <thead>
+          <tr>
+            <th style="text-align: left">File</th>
+            <th style="text-align: left">Raw URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/fin/phone_use_response_cost.csv"
+                target="_blank"
+                >phone_use_response_cost.csv</a
+              >
+            </td>
+            <td style="text-align: left">
+              https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/fin/phone_use_response_cost.csv
+            </td>
+          </tr>
 
-        <tr>
-          <td style="text-align: left">
-            <a href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/fin/MM_Madison.csv"
-              target="_blank">MM_Madison.csv</a>
-          </td>
-          <td style="text-align: left">
-            https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/fin/MM_Madison.csv
-          </td>
-        </tr>
+          <tr>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/fin/MM_Madison.csv"
+                target="_blank"
+                >MM_Madison.csv</a
+              >
+            </td>
+            <td style="text-align: left">
+              https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/fin/MM_Madison.csv
+            </td>
+          </tr>
 
-        <tr>
-          <td style="text-align: left">
-            <a href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/fin/holiday_candy_hr.csv"
-              target="_blank">holiday_candy_hr.csv</a>
-          </td>
-          <td style="text-align: left">
-            https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/fin/holiday_candy_hr.csv
-          </td>
-        </tr>
+          <tr>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/fin/holiday_candy_hr.csv"
+                target="_blank"
+                >holiday_candy_hr.csv</a
+              >
+            </td>
+            <td style="text-align: left">
+              https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/fin/holiday_candy_hr.csv
+            </td>
+          </tr>
 
-        <tr>
-          <td style="text-align: left">
-            <a href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/fin/krampus_incidents.csv"
-              target="_blank">krampus_incidents.csv</a>
-          </td>
-          <td style="text-align: left">
-            https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/fin/krampus_incidents.csv
-          </td>
-        </tr>
-      </tbody>
-    </table> -->
+          <tr>
+            <td style="text-align: left">
+              <a
+                href="https://github.com/jpisklak/courses/tree/main/PSYCH_413_fa2025/fin/krampus_incidents.csv"
+                target="_blank"
+                >krampus_incidents.csv</a
+              >
+            </td>
+            <td style="text-align: left">
+              https://raw.githubusercontent.com/jpisklak/courses/refs/heads/main/PSYCH_413_fa2025/fin/krampus_incidents.csv
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    <br>
+      <br />
 
-    <!-- Banner will be filled in by JavaScript -->
-    <hr />
-    <div id="last-updated">Loading last updated time...</div>
+      <!-- Banner will be filled in by JavaScript -->
+      <hr />
+      <div id="last-updated">Loading last updated time...</div>
 
-    <!-- Include Moment.js and Moment-Timezone -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
-    <!-- Include the external JavaScript files -->
-    <script src="countdown.js"></script>
-    <script src="../refresh.js"></script>
-  </main>
-  <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
-</body>
-
+      <!-- Include Moment.js and Moment-Timezone -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
+      <!-- Include the external JavaScript files -->
+      <script src="countdown.js"></script>
+      <script src="../refresh.js"></script>
+    </main>
+    <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
+  </body>
 </html>
