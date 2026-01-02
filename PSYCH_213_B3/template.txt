@@ -1,0 +1,51 @@
+      <!-- ================= WEEK XXX ================= -->
+
+      <details class="faq-item">
+        <summary>Week XXX</summary>
+        <div class="faq-content">
+          <table>
+            <thead>
+              <tr>
+                <th>Week</th>
+                <th>Day</th>
+                <th>Topics / Videos</th>
+                <th>Notebooks</th>
+                <th>PDF Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>####</td>
+                <td>###</td>
+                <td>
+                  <a
+                    href="#YOUTUBE LINK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Lecture Video"
+                    >Course Introduction</a
+                  >
+                </td>
+                <td>🧮
+                  <a
+                    href="COLLAB NOTEBOOK LINK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1-1-1</a
+                  >
+                  </td>
+                <td>
+                  📝
+                  <a
+                    href="PDF FILE DRIVE LINK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1-1-1</a
+                  >
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </details>
