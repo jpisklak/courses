@@ -1,238 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Information</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exam Information</title>
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
+    <!-- Prevent caching of the main HTML file -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
-  <!-- Prevent caching of the main HTML file -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+    <style>
+      img {
+        max-width: 30%;
+        height: auto;
+      }
 
-  <style>
-    img {
-      max-width: 30%;
-      height: auto;
-    }
+      .button-container {
+        margin: 20px 20px;
+      }
 
-    .button-container {
-      margin: 20px 20px;
-    }
+      .data-button {
+        background-color: #275d38;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+      }
 
-    .data-button {
-      background-color: #275d38;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      border-radius: 5px;
-    }
+      .data-button:hover {
+        background-color: #f2cd00;
+        color: black;
+      }
 
-    .data-button:hover {
-      background-color: #f2cd00;
-      color: black;
-    }
+      .submission-button {
+        background-color: #275d38;
+        color: white;
+        padding: 15px 25px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+      }
 
-    .submission-button {
-      background-color: #275d38;
-      color: white;
-      padding: 15px 25px;
-      font-size: 18px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      font-weight: bold;
-    }
+      .submission-button:hover {
+        background-color: #f2cd00;
+        color: black;
+      }
+    </style>
+  </head>
 
-    .submission-button:hover {
-      background-color: #f2cd00;
-      color: black;
-    }
-  </style>
-</head>
+  <body>
+    <!-- Navigation Header-->
+    <header>
+      Psychology 213: Introduction to Data Analysis in Psychology I
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+    <!-- Navigation Header-->
 
-<body>
-  <!-- Navigation Header-->
-  <header>
-    Psychology 213: Introduction to Data Analysis in Psychology I
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-  </nav>
-  <!-- Navigation Header-->
-
-  <main>
-    <h1>General Exam Information</h1>
-    The following applies to all exams in this course:
-    <ol>
-      <li><strong>Closed book</strong></li>
-      <li><strong>Format</strong>: Multiple choice and numeric entry.</li>
-      <li>
-        <strong>Materials provided</strong>: Formula sheet and scrap paper.
-      </li>
-      <li>
-        <strong>Platform</strong>: Written on Canvas LMS, like the homework.
-      </li>
-      <li>
-        <strong>Device guidelines</strong>:
+    <main>
+      <h1>General Exam Information</h1>
+      The following applies to all exams in this course:
+      <ol>
+        <li><strong>Closed book</strong></li>
+        <li><strong>Format</strong>: Multiple choice and numeric entry.</li>
+        <li>
+          <strong>Materials provided</strong>: Formula sheet and scrap paper.
+        </li>
+        <li>
+          <strong>Platform</strong>: Written on Canvas LMS, like the homework.
+        </li>
+        <li>
+          <strong>Device guidelines</strong>:
+          <ul>
+            <li>Tablets/laptops must be upright, not flat on the desk.</li>
+            <li>Screen brightness should be high for proctor visibility.</li>
+            <li>
+              No other apps or tabs open; the exam window must stay maximized.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Paper option</strong>: Available for those without suitable
+          devices.
+        </li>
+        <li>
+          <strong>Content</strong>: Covers all lectures and required textbook
+          readings up to the date of the exam, unless explicitly stated
+          otherwise. (see syllabus).
+        </li>
+        <li><strong>Other Notes</strong>:</li>
         <ul>
-          <li>Tablets/laptops must be upright, not flat on the desk.</li>
-          <li>Screen brightness should be high for proctor visibility.</li>
           <li>
-            No other apps or tabs open; the exam window must stay maximized.
+            A formula sheet and scrap paper will be provided by the instructor
+            during the exam.
+          </li>
+          <li>
+            R and Google Colab will <strong>not</strong> be available to use
+            during the exam.
+          </li>
+          <li>
+            There may be multiple-choice questions relating to R code on the
+            exam.
+          </li>
+          <li>
+            To help you prepare, a bank of questions you can use to practice
+            hand/manual calculations will be posted on this page closer to the
+            midterm.
           </li>
         </ul>
-      </li>
-      <li>
-        <strong>Paper option</strong>: Available for those without suitable
-        devices.
-      </li>
-      <li>
-        <strong>Content</strong>: Covers all lectures and required textbook
-        readings up to the date of the exam, unless explicitly stated
-        otherwise. (see syllabus).
-      </li>
-      <li>
-        <a href="missed_midterm.html">Missed Midterm Exam Session Information</a>
-      </li>
-    </ol>
+        <li>
+          <a href="missed_midterm.html"
+            ><strong>Missed Midterm Exam Session Information</strong></a
+          >
+        </li>
+      </ol>
 
-    <h2>Calculators</h2>
-    <ul>
-      <li>
-        <strong>Permitted Calculators:</strong>
-        Only basic or
-        <a href="https://en.wikipedia.org/wiki/Scientific_calculator" target="_blank">scientific calculators</a>
-        are allowed.
-        <a href="https://en.wikipedia.org/wiki/Graphing_calculator" target="_blank">Graphing calculators</a>,
-        <a href="https://en.wikipedia.org/wiki/Programmable_calculator" target="_blank">programmable calculators</a>, or
-        calculators on phones/devices are prohibited.
-      </li>
-      <li>
-        <strong>Bring Your Own:</strong> Students must bring an approved
-        calculator; none will be provided. Without one, you'll complete the
-        exam without it.
-      </li>
-      <li>
-        <strong>Academic Integrity:</strong> Unauthorized calculators will
-        result in academic misconduct reports.
-      </li>
-      <li>
-        <strong>Unsure about your calculator?</strong> Check the
-        <a href="calculators.html">approved list</a> or ask the instructor
-        before the exam.
-      </li>
-    </ul>
+      <br />
 
-    <p style="text-align: center">
-      <img src="../img/calcs.png" alt="Image of graphing vs. scientific calculator." />
-    </p>
+      <h2>Calculators</h2>
+      <ul>
+        <li>
+          <strong>Permitted Calculators:</strong>
+          Only basic or
+          <a
+            href="https://en.wikipedia.org/wiki/Scientific_calculator"
+            target="_blank"
+            >scientific calculators</a
+          >
+          are allowed.
+          <a
+            href="https://en.wikipedia.org/wiki/Graphing_calculator"
+            target="_blank"
+            >Graphing calculators</a
+          >,
+          <a
+            href="https://en.wikipedia.org/wiki/Programmable_calculator"
+            target="_blank"
+            >programmable calculators</a
+          >, or calculators on phones/devices are prohibited.
+        </li>
+        <li>
+          <strong>Bring Your Own:</strong> Students must bring an approved
+          calculator; none will be provided. Without one, you'll complete the
+          exam without it.
+        </li>
+        <li>
+          <strong>Academic Integrity:</strong> Unauthorized calculators will
+          result in academic misconduct reports.
+        </li>
+        <li>
+          <strong>Unsure about your calculator?</strong> Check the
+          <a href="calculators.html">approved list</a> or ask the instructor
+          before the exam.
+        </li>
+      </ul>
 
-    <br />
+      <p style="text-align: center">
+        <img
+          src="../img/calcs.png"
+          alt="Image of graphing vs. scientific calculator."
+        />
+      </p>
 
-    <hr />
+      <br />
 
-    <br />
+      <hr />
 
-    <h1>Midterm Information</h1>
-    <ul>
-      <li><strong>Date</strong>: Thursday November 6th</li>
-      <li><strong>Time</strong>: 14:00</li>
-      <li><strong>Location</strong>: CSC B-10</li>
-      <li><strong>Duration</strong>: 40 minutes</li>
-      <li>
-        <strong>Coverage</strong>: Covers all material up to (but not
-        including) the discussion about compairing two means. That encompasses
-        textbook chapters 1, 2, 3, 4.1, 5.1, and 7.1.
-      </li>
-      <li>
-        <div id="Midterm" style="display: flex; align-items: center">
-          <div><strong>Midterm Countdown:&nbsp;</strong></div>
-        </div>
-      </li>
-    </ul>
+      <br />
 
-    <div class="button-container">
-      <button class="data-button" onclick="window.open('https://canvas.ualberta.ca/courses/28360/quizzes/24286')">
+      <h1>Midterm Information</h1>
+      <ul>
+        <li><strong>Date</strong>: Tuesday March 17th</li>
+        <li><strong>Time</strong>: 15:30</li>
+        <li><strong>Location</strong>: NRE 2-003</li>
+        <li><strong>Duration</strong>: 40 minutes</li>
+        <li>
+          <strong>Coverage</strong>: Covers all lecture material and assigned
+          textbook readings up to the exam date, unless noted otherwise in
+          class. Required textbook sections are listed in the syllabus Appendix.
+        </li>
+        <li>
+          <div id="Midterm" style="display: flex; align-items: center">
+            <div><strong>Midterm Countdown:&nbsp;</strong></div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- <div class="button-container">
+      <button class="data-button" onclick="window.open('#####')">
         📝 Hand-Calculation Practice Questions
       </button>
       <button class="data-button"
-        onclick="window.open('https://jpisklak.github.io/courses/PSYCH_213_fa2025/docs/PSYCH_213_Midterm_Formula_Sheet.pdf')">
+        onclick="window.open('#####')">
         🛟 Formula Sheet
       </button>
     </div>
 
     <div class="button-container">
-      <button class="submission-button" onclick="window.open('https://canvas.ualberta.ca/courses/28360/quizzes/24637')">
+      <button class="submission-button" onclick="window.open('#####')">
         ✍️ Click Here to Access the Exam
       </button>
-    </div>
+    </div> -->
 
-    <br />
+      <br />
 
-    <hr />
+      <hr />
 
-    <br />
+      <br />
 
-    <h1>Final Exam Information</h1>
-    <ul>
-      <li><strong>Date</strong>: Thursday December 11th</li>
-      <li><strong>Time</strong>: 13:00</li>
-      <li><strong>Location</strong>: CSC B-10</li>
-      <li><strong>Duration</strong>: 120 minutes</li>
-      <li>
-        <strong>Coverage</strong>: Cumulative - includes all material from the
-        start of term.
-      </li>
-      <li><strong>Questions</strong>: 30 multiple choice; 12 calculation</li>
-      <li>
-        <div id="Final" style="display: flex; align-items: center">
-          <div><strong>Final Countdown:&nbsp;</strong></div>
-        </div>
-      </li>
-    </ul>
+      <h1>Final Exam Information</h1>
+      <ul>
+        <li><strong>Date</strong>: Wednesday April 22nd</li>
+        <li><strong>Time</strong>: 08:30</li>
+        <li><strong>Location</strong>: NRE 2-003</li>
+        <li><strong>Duration</strong>: 120 minutes</li>
+        <li>
+          <strong>Coverage</strong>: Cumulative - includes all material from the
+          start of term unless stated otherwise.
+        </li>
+        <!-- <li><strong>Questions</strong>: TBA</li> -->
+        <li>
+          <div id="Final" style="display: flex; align-items: center">
+            <div><strong>Final Countdown:&nbsp;</strong></div>
+          </div>
+        </li>
+      </ul>
 
-    <div class="button-container">
-      <button class="data-button" onclick="window.open('https://canvas.ualberta.ca/courses/28360/quizzes/25108')">
-        📝 Hand-Calculation Practice Questions
-      </button>
-      <button class="data-button" onclick="window.open('docs/PSYCH_213_Fa_2025_Final_Exam_Formula_Sheet.pdf')">
-        🛟 Formula Sheet
-      </button>
-    </div>
-
-    <div class="button-container">
+      <!-- <div class="button-container">
         <button
-          class="submission-button"
-          onclick="window.open('https://canvas.ualberta.ca/courses/28360/quizzes/25436')"
+          class="data-button"
+          onclick="window.open('#####')"
         >
-          ✍️ Click Here to Access the Exam
+          📝 Hand-Calculation Practice Questions
+        </button>
+        <button
+          class="data-button"
+          onclick="window.open('#####')"
+        >
+          🛟 Formula Sheet
         </button>
       </div>
 
-    <!--         <div class="button-container">
-            <button class="submission-button" onclick="window.open('ADD URL')">✍️ Click Here to Access the Final Exam</button>
+      <div class="button-container">
+        <button
+          class="submission-button"
+          onclick="window.open('#####')"
+        >
+          ✍️ Click Here to Access the Exam
+        </button>
+      </div> -->
+
+      <!--         <div class="button-container">
+            <button class="submission-button" onclick="window.open('#####')">✍️ Click Here to Access the Final Exam</button>
         </div> -->
 
-    <!-- Banner will be filled in by JavaScript -->
-    <br />
-    <hr />
-    <div id="last-updated">Loading last updated time...</div>
+      <!-- Banner will be filled in by JavaScript -->
+      <br />
+      <hr />
+      <div id="last-updated">Loading last updated time...</div>
 
-    <!-- Include Moment.js and Moment-Timezone -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
-    <!-- Include the external JavaScript file -->
-    <script src="countdown.js"></script>
-    <script src="../refresh.js"></script>
-  </main>
-  <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
-</body>
-
+      <!-- Include Moment.js and Moment-Timezone -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
+      <!-- Include the external JavaScript file -->
+      <script src="countdown.js"></script>
+      <script src="../refresh.js"></script>
+    </main>
+    <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
+  </body>
 </html>
