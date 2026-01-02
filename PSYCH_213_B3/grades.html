@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grades</title>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
+  <style>
+    img {
+      max-width: 30%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Header-->
+  <header>
+    Psychology 213: Introduction to Data Analysis in Psychology I
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+  <!-- Navigation Header-->
+
+  <main>
+    <h1>🔍 How to View Your Assignment Scores and Course Performance</h1>
+
+    <ol>
+      <li>
+        Each student will receive a unique random ID (e.g.,
+        <code>YUrZ</code>). This will be emailed after the add/drop deadline
+        (September 15).
+      </li>
+      <li>
+        Use this ID to access your personal gradebook by inserting it into the
+        following web address:
+        <code>https://jpisklak.github.io/courses/PSYCH_213_fa2025/<b
+              >grades/YUrZ</b
+            ></code>
+      </li>
+      <li>
+        Your gradebook page will display your assignment scores, class
+        statistics, and—most importantly—your current letter grade.
+      </li>
+    </ol>
+
+    <p>
+      Do not share this ID (unless you want the world to know how
+      <i>you</i> are performing in the class).
+    </p>
+
+    <br />
+
+    <hr />
+
+    <br />
+
+    <h1>🧮 How Your Grade Is Calculated</h1>
+
+    <p>
+      All assessments in this course are standardized so that the
+      <strong>median score</strong> is set to 50 and the
+      <strong>MADN (Median Absolute Deviation, normalized)</strong> is set to
+      25.
+    </p>
+    <p>
+      The scale is designed to feel intuitive: values near 0 always represent
+      very low performance, values near 100 always represent very high
+      performance, and 50 always represents the class average.
+    </p>
+    <p>
+      Each standardized score is then averaged according to the weights listed
+      in Table&nbsp;3 of the syllabus to produce a course total. Because this
+      weighting can introduce small shifts in the distribution, the totals are
+      standardized once more. The final standardized score is then compared
+      against the letter grade cutoffs shown in Table&nbsp;2 of the syllabus.
+    </p>
+
+    <br />
+
+    <h1>🤔 FAQ About Your Grades</h1>
+
+    <details class="faq-item">
+      <summary>Why are you standardising?</summary>
+      <div class="faq-content">
+        <p> Raw percentage scores can be misleading because the same number can reflect very different levels of
+          performance depending on the difficulty of the assessment. For example, a score of 60% might be excellent on a
+          challenging exam, while 85% could be only average on an easier one. In essense, basic percentage scores fail
+          to take into account
+          how the
+          class performed as a whole, which makes it difficult to set meaningful grade boundaries in advance and can
+          contribute to <a href="https://en.wikipedia.org/wiki/Grade_inflation" target="_blank">grade inflation</a>,
+          since instructors often feel pressured to award higher marks. </p>
+        <p> Standardizing scores, by contrast, evaluates your performance based on how far above or below the class
+          average you are (i.e., you are evaluated relative to your peers). This approach ensures that a difficult
+          assessment does not
+          unfairly lower everyone’s grades, and that an easy one does not artificially inflate them. The standardized
+          scale keeps grades tied to their intended meaning at the University, providing a fairer and more consistent
+          measure of achievement. If all instructors adopted a similar system, grades would be more equitable across
+          different sections of the same course, regardless of how easy or difficult a particular course happened to
+          be.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Why are you using the median and MADN statistics?</summary>
+      <div class="faq-content">
+        <p>
+          The <b>median</b> score is a <i>robust</i> measure of the class
+          average. Similarly, the <b>MADN</b> is a <i>robust</i> measure of
+          spread. In statistics, "robust" means that the method is not thrown
+          off by unusual values or outliers. For example, if one student
+          happens to score extremely low or extremely high, a robust method
+          won’t let that single score shift the whole class's average or
+          spread. These choices make the standardized scale more stable and
+          fair, especially in classes where exams or assignments occasionally
+          produce extreme results.
+        </p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is this the same as “grading on a curve”?</summary>
+      <div class="faq-content">
+        <p>
+          No. Traditional curve grading predetermines how many students can receive each letter grade. In that system,
+          students are ranked, and only the top <em>x</em>% might earn an A+, the next <em>x</em>% an A, the next
+          <em>x</em>% an A–, and so on.
+          This course uses <strong>no quotas</strong>. The number of A’s, B’s, C’s, etc., depends entirely on the
+          class’s actual performance—not on an imposed distribution—fully in line with University policy prohibiting
+          mandatory curves. See the
+          <a href="https://www.ualberta.ca/en/alfresco/uappol/academic/assessment-and-grading/policy/assessment-and-grading-policy.pdf"
+            target="_blank">University of Alberta Assessment and Grading Policy</a>.
+        </p>
+
+        <p>
+          That said, the underlying idea has a similar effect in practice: performance is interpreted relative to peers,
+          and thus differences in assessment difficulty are controlled. The key distinction is that a curve
+          <em>forces</em> a
+          predetermined distribution of grades, whereas this approach simply makes certain distributions <em>more
+            likely</em> to appear naturally when the class performs in a typical way. No specific grade outcomes are
+          guaranteed.
+        </p>
+      </div>
+    </details>
+
+
+    <details class="faq-item">
+      <summary>
+        How do I convert a raw score to a standardized value? Can you show an
+        example?
+      </summary>
+      <br />
+      <div class="faq-content">
+        <p>
+          You don't need to calculate this yourself—the gradebook does it
+          automatically. But if you'd like to double-check, the standardized
+          score is computed much like a z-score, except it uses the
+          <strong>class median</strong> as the centre and the
+          <strong>normalized median absolute deviation (MADN)</strong> as the
+          measure of spread. The formula is:
+        </p>
+
+        \[ s = \left(\frac{x - m}{\text{MADN}}\right) \times 25 + 50 \]
+
+        <p>
+          where \(x\) is the raw score, \(m\) is the class median, and MADN
+          measures the spread. The constants 25 and 50 set the scale so that
+          one MADN corresponds to 25 points, and the class median corresponds
+          to 50.
+        </p>
+
+        <ul>
+          <li>Suppose the class median on an assignment is \(m = 72\)</li>
+          <li>Suppose the \(\text{MADN} = 11.9\)</li>
+          <li>For a student with a raw score of \(x = 88\), we compute:</li>
+        </ul>
+
+        \[ \begin{align} s &= \left( \frac{88 - 72}{11.9}\right) \times 25 +
+        50 \\[1em] &\approx 83.6 \end{align} \] So, in this example, a raw
+        score of 88 converts to a standardized score of about 83.6. This
+        indicates performance well above the class average (50), and it would
+        then be compared to the fixed letter grade boundaries in Table 2 of
+        the syllabus.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        How do I combine/average all my scores by their weights?
+      </summary>
+      <br />
+      <div class="faq-content">
+        <p>
+          Your gradebook already does this for you; however, if you want to
+          double-check, use a weighted average (a.k.a. weighted mean):
+        </p>
+        <p>
+          Suppose you completed two assignments and a midterm and their scores
+          and weights are as follows:
+        </p>
+
+        <table style="width: 35%">
+          <thead>
+            <tr>
+              <th>Assessment</th>
+              <th>Score</th>
+              <th>Weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Assign. 1</td>
+              <td>62</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>Assign. 2</td>
+              <td>59</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Midterm</td>
+              <td>43</td>
+              <td>20</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Just multiply each score by it's weight, add the products, and
+          divide by the sum of the weights:
+        </p>
+
+        <p>
+          \[ \begin{align} \text{Overall} &= \frac{(8 \times 62) + (10 \times
+          59) + (20 \times 43)}{8 + 10 + 20} \\[1em] &= \frac{496 + 590 +
+          860}{38} \\[1em] & \approx 51.21 \end{align} \]
+        </p>
+
+        <br />
+
+        <p>The formula looks like this:</p>
+
+        <p>
+          \[ \text{Overall} \;=\; \frac{\sum_{i=1}^{k} w_i \,
+          s_i}{\sum_{i=1}^{k} w_i} \]
+        </p>
+
+        <ul>
+          <li>\(s_i = \) score for assignment \(i\).</li>
+          <li>\(w_i = \) for assignment \(i\).</li>
+          <li>\(k = \) number of assessments.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How can I estimate my standing during the term?</summary>
+      <div class="faq-content">
+        <p>
+          You don't need to calculate your standing yourself—your gradebook
+          page does it automatically. However, if you'd like to double-check,
+          you can. The gradebook shows not only your standardized score, but
+          also your raw score along with the class median and MADN. Using
+          these, you can verify your standardized score and compare it against
+          the letter-grade boundaries published in Table 2 of the syllabus.
+          This way, both the number and the assigned letter grade can be
+          independently confirmed.
+        </p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is this grading system competitive?</summary>
+      <div class="faq-content">
+        <p>
+          Not in the sense of fixed quotas or forced scarcity. Your grade does
+          not depend on “beating” a certain number of classmates, and there is
+          no preset limit on how many A's, B's, or C's can be awarded. That
+          being said, strong performance is still rewarded: students who
+          consistently perform well above the average earn higher standardized
+          scores and thus higher letter grades.
+        </p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can everyone get an A?</summary>
+      <div class="faq-content">
+        <p>
+          Not realistically. An A or A+ is meant to signal
+          <i>extra</i>ordinary performance — achievement that clearly stands
+          out from the rest of the class. If everyone earned the same top
+          grade, then by definition no one's performance would be
+          extraordinary (it would be ordinary), and the grade would lose its
+          meaning. Because scores are standardized around the class median,
+          only those who perform well above that benchmark end up in the A
+          range. In practice, this means that while many students can do well,
+          top grades remain a mark of truly exceptional achievement.
+        </p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        If the median is always set to 50 (B-), does that mean half the class
+        will fail?
+      </summary>
+      <div class="faq-content">
+        <p>
+          No. The median is simply an anchor point for the scale. Students
+          above 50 are above average and may receive grades ranging from B- to
+          A+; students below 50 are below average but may still earn passing
+          grades (C's and D's). In most classes, the majority of students
+          pass. The exact distribution of grades depends on how the whole
+          class performs, not on a fixed quota.
+        </p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Does this system disadvantage strong students?</summary>
+      <div class="faq-content">
+        <p>
+          No. Because ranks are preserved, students who consistently perform
+          well compared to their peers will always receive higher standardized
+          scores and higher letter grades.
+        </p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Why don't you use Canvas for this?</summary>
+      <div class="faq-content">
+        <p>
+          It sucks and I have a very low toleralance for tehchnology that
+          makes my life harder than it already is.
+        </p>
+      </div>
+    </details>
+  </main>
+  <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
+</body>
+
+</html>
