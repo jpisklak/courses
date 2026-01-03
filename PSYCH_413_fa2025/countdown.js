@@ -1,27 +1,30 @@
 // Array of target dates, labels, and their respective timezones
 const countdownData = [
-  { label: "Final", date: "2025-12-19T08:30:00", timezone: "America/Edmonton", containerId: "Final" },
   // { label: "Homework 1 Countdown", date: "2025-01-24T23:59:59", timezone: "America/Edmonton", containerId: "HW_1" },
-  { label: "Midterm", date: "2025-10-22T15:30:00", timezone: "America/Edmonton", containerId: "Midterm3" },
-  { label: "Plotting Assignment", date: "2025-11-28T23:59:00", timezone: "America/Edmonton", containerId: "plot_assign" },
-  { label: "Final Submission", date: "2025-12-19T08:30:00", timezone: "America/Edmonton", containerId: "Final2" },
-
-  { label: "Homework 1", date: "2025-09-12T23:59:00", timezone: "America/Edmonton", containerId: "HW1" },
-  { label: "Homework 2", date: "2025-09-19T23:59:00", timezone: "America/Edmonton", containerId: "HW2" },
-  { label: "Homework 3", date: "2025-09-26T23:59:00", timezone: "America/Edmonton", containerId: "HW3" },
-  { label: "Homework 4", date: "2025-10-03T23:59:00", timezone: "America/Edmonton", containerId: "HW4" },
-  { label: "Homework 5", date: "2025-10-10T23:59:00", timezone: "America/Edmonton", containerId: "HW5" },
-  { label: "Homework 6", date: "2025-10-17T23:59:00", timezone: "America/Edmonton", containerId: "HW6" },
-  { label: "Homework 7", date: "2025-10-24T23:59:00", timezone: "America/Edmonton", containerId: "HW7" },
-  { label: "Homework 8", date: "2025-10-31T23:59:00", timezone: "America/Edmonton", containerId: "HW8" },
-  { label: "Homework 9", date: "2025-11-07T23:59:00", timezone: "America/Edmonton", containerId: "HW9" },
-  { label: "Homework 10", date: "2025-11-21T23:59:00", timezone: "America/Edmonton", containerId: "HW10" },
-  { label: "Homework 11", date: "2025-11-28T23:59:00", timezone: "America/Edmonton", containerId: "HW11" },
-  { label: "Homework 12", date: "2025-12-05T23:59:00", timezone: "America/Edmonton", containerId: "HW12" },
-
-
-
-
+  {
+    label: "Midterm",
+    date: "2026-02-24T09:30:00",
+    timezone: "America/Edmonton",
+    containerId: "Midterm",
+  },
+  {
+    label: "Plotting Assignment",
+    date: "2026-04-03T23:59:00",
+    timezone: "America/Edmonton",
+    containerId: "plot_assign",
+  },
+  {
+    label: "Final",
+    date: "2026-04-17T17:30:00",
+    timezone: "America/Edmonton",
+    containerId: "Final",
+  },
+  {
+    label: "Final Submission",
+    date: "2026-04-18T17:30:00",
+    timezone: "America/Edmonton",
+    containerId: "Final2",
+  },
 ];
 
 // Function to create a timer in a specific container
