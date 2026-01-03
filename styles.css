@@ -23,7 +23,7 @@
 
   /* Typography scale */
   --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  --font-heading: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --font-heading: "Atkinson Hyperlegible", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   --fs-body: 20px;
   --lh-body: 1.25;
 
