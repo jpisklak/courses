@@ -21,6 +21,15 @@
         margin: 1.5em auto;
         border-collapse: collapse;
       }
+
+      tr.divider td {
+        border-top: 2px solid #444; /* slightly thicker line */
+      }
+
+      /* td.center,
+      th.center {
+        text-align: center;
+      } */
     </style>
   </head>
 
@@ -246,7 +255,7 @@
             <thead>
               <tr>
                 <th>Standardized Score</th>
-                <th>Interpretation</th>
+                <th>Descriptor</th>
                 <th>Grade Points</th>
                 <th>Letter Grade</th>
               </tr>
@@ -255,19 +264,19 @@
             <tbody>
               <tr>
                 <td>\(1.96 \le x &lt; \infty\)</td>
-                <td>Outstanding</td>
+                <td>Excellent</td>
                 <td>4.0</td>
                 <td>A+</td>
               </tr>
               <tr>
                 <td>\(1.44 \le x &lt; 1.96\)</td>
-                <td>Excellent</td>
+                <td></td>
                 <td>4.0</td>
                 <td>A</td>
               </tr>
               <tr>
                 <td>\(1.036 \le x &lt; 1.44\)</td>
-                <td>Very Good</td>
+                <td></td>
                 <td>3.7</td>
                 <td>A&minus;</td>
               </tr>
@@ -280,32 +289,32 @@
               </tr>
               <tr>
                 <td>\(0.253 \le x &lt; 0.674\)</td>
-                <td>Above Average</td>
+                <td></td>
                 <td>3.0</td>
                 <td>B</td>
               </tr>
               <tr>
                 <td>\(-0.253 \le x &lt; 0.253\)</td>
-                <td>Average</td>
+                <td></td>
                 <td>2.7</td>
                 <td>B&minus;</td>
               </tr>
 
-              <tr class="divider">
-                <td>\(-0.674 \le x &lt; -0.253\)</td>
+              <tr>
+                <td class="center">\(-0.674 \le x &lt; -0.253\)</td>
                 <td>Satisfactory</td>
                 <td>2.3</td>
                 <td>C+</td>
               </tr>
               <tr>
                 <td>\(-1.036 \le x &lt; -0.674\)</td>
-                <td>Acceptable</td>
+                <td></td>
                 <td>2.0</td>
                 <td>C</td>
               </tr>
               <tr>
                 <td>\(-1.44 \le x &lt; -1.036\)</td>
-                <td>Marginal</td>
+                <td></td>
                 <td>1.7</td>
                 <td>C&minus;</td>
               </tr>
@@ -316,7 +325,7 @@
                 <td>1.3</td>
                 <td>D+</td>
               </tr>
-              <tr>
+              <tr class="divider">
                 <td>\(-\infty \le x &lt; -1.96\)</td>
                 <td>Minimal Pass</td>
                 <td>1.0</td>
