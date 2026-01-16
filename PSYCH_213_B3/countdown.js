@@ -4,6 +4,8 @@ const countdownData = [
   { label: "Final", date: "2026-04-22T08:30:00", timezone: "America/Edmonton", containerId: "Final" },
   { label: "Achieve", date: "2026-03-17T15:30:00", timezone: "America/Edmonton", containerId: "Achieve_1" },
   { label: "Achieve", date: "2026-04-10T23:59:00", timezone: "America/Edmonton", containerId: "Achieve_2" },
+  { label: "Homework 1", date: "2026-01-30T23:59:00", timezone: "America/Edmonton", containerId: "HW1" },
+
 ];
 
 // Function to create a timer in a specific container
