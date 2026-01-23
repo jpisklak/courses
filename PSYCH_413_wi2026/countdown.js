@@ -38,6 +38,13 @@ const countdownData = [
     timezone: "America/Edmonton",
     containerId: "HW2",
   },
+
+        {
+    label: "Homework 3",
+    date: "2026-01-30T23:59:00",
+    timezone: "America/Edmonton",
+    containerId: "HW3",
+  },
 ];
 
 // Function to create a timer in a specific container
