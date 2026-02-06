@@ -53,27 +53,6 @@
       <p style="margin: 5px 0 0 0; font-size: 1.2em; font-weight: bold">
         Homework 2 and 3 is available to complete. See <a href="assignments.html">Assignments & Homework</a> section.
       </p>
-      <br>
-      <p>You will need this code for Friday's class:</p>
-      <pre style="font-size: 0.5em; color: black">
-N <- 50 # sample size of each individual sample
-sample_num <- 10 # number of samples to take
-
-# These first two lines are all you need to be concerned with.
-
-means <- vector("double", length = sample_num) #empty vector
-
-set.seed(1)
-for (i in 1:sample_num) {
-  means[i] <- mean(sample(population, size = N, replace = TRUE))
-}
-
-samp_dist <- data.frame(
-  sample = 1:length(means),
-  sample_size = N,
-  means = means
-)
-</pre>
     </div>
 
     <br />
@@ -454,6 +433,21 @@ samp_dist <- data.frame(
                 📝
                 <a href="https://drive.google.com/file/d/17rJR1MShnaABgiNRVymDTVtgq0k4svUI/view?usp=drive_link"
                   target="_blank" rel="noopener noreferrer">5-1-2</a>
+              </td>
+            </tr>
+
+                        <tr>
+              <td>5</td>
+              <td>3</td>
+              <td>
+                <a href="https://youtu.be/8UNY3Lp2zcc" target="_blank" rel="noopener noreferrer"
+                  title="Lecture Video">Sampling Distributions</a>
+              </td>
+              <td>🧮
+                <a href="https://colab.research.google.com/drive/1LZ2hUHXI-WchuXr8Yl-wkruuVvyFUUIk?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer">5-3-1</a>
+              </td>
+              <td>
               </td>
             </tr>
 
