@@ -2,10 +2,10 @@
 const countdownData = [
   // { label: "Homework 1 Countdown", date: "2025-01-24T23:59:59", timezone: "America/Edmonton", containerId: "HW_1" },
   {
-    label: "Midterm_due",
+    label: "Midterm",
     date: "2026-02-25T09:30:00",
     timezone: "America/Edmonton",
-    containerId: "Midterm",
+    containerId: "Midterm_due",
   },
   {
     label: "Plotting Assignment",
