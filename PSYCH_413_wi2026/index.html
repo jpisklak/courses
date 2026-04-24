@@ -55,7 +55,7 @@
     <main>
       <!-- ================= ANNOUNCEMENT ================= -->
 
-      <div
+      <!-- <div
         style="
           background-color: #ffcccc;
           border-left: 6px solid #ff0000;
@@ -73,57 +73,130 @@
         </p>
       </div>
 
-      <br />
+      <br /> -->
 
       <!-- ================= UGLY PLOT COMP ================= -->
 
       <br />
 
-      <!-- Retro 90s style -->
-      <center>
-        <a
-          href="https://forms.gle/Z794Rta11SEAzqa79"
-          style="
-            display: inline-block;
-            padding: 20px;
-            background: linear-gradient(
-              45deg,
-              #ff0000,
-              #00ff00,
-              #0000ff,
-              #ffff00
-            );
-            background-size: 400% 400%;
-            color: white;
-            font-family: &quot;Impact&quot;, fantasy;
-            font-size: 22px;
-            text-shadow:
-              3px 3px 0px black,
-              -3px -3px 0px black;
-            text-decoration: none;
-            border: 3px solid black;
-            animation: gradient 3s ease infinite;
-            transform: rotate(-2deg);
-          "
-          alt="Click to Vote For the Ugliest PLOT!"
-        >
-          📊 Click to Vote For the Ugliest PLOT! 🏆
-        </a>
-      </center>
+      <div
+        style="
+          background-color: #ff00ff;
+          background-image: url(&quot;data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23ffff00%22 width=%2250%22 height=%2250%22/><rect fill=%22%2300ffff%22 x=%2250%22 y=%2250%22 width=%2250%22 height=%2250%22/></svg>&quot;);
+          font-family:
+            Comic Sans MS,
+            cursive,
+            sans-serif;
+          margin: 20px auto;
+          padding: 15px;
+          border: 6px solid lime;
+          box-shadow:
+            0 0 30px #ff0000,
+            inset 0 0 30px #00ff00;
+          background: linear-gradient(
+            45deg,
+            #ffff00,
+            #ff00ff,
+            #00ffff,
+            #ff0000
+          );
+          border-radius: 30px;
+          animation: ugliest-wiggle 0.5s infinite;
+          max-width: 90%;
+        "
+      >
+        <style>
+          /* @keyframes ugliest-wiggle {
+            0%, 100% { transform: rotate(-2deg) skew(5deg); }
+            50% { transform: rotate(2deg) skew(-5deg); }
+        } */
 
-      <style>
-        @keyframes gradient {
-          0% {
-            background-position: 0% 50%;
+          @keyframes ugliest-blink {
+            0%,
+            49%,
+            100% {
+              opacity: 1;
+            }
+            50%,
+            99% {
+              opacity: 0.3;
+            }
           }
-          50% {
-            background-position: 100% 50%;
+
+          .ugliest-title {
+            color: #ff00ff;
+            text-shadow:
+              2px 2px #00ff00,
+              4px 4px #ffff00,
+              6px 6px #ff0000;
+            font-size: 28px;
+            text-align: center;
+            letter-spacing: 4px;
+            font-weight: 900;
+            margin: 0 0 12px 0;
+            text-decoration: underline overline;
+            animation: ugliest-blink 1s infinite;
           }
-          100% {
-            background-position: 0% 50%;
+
+          .ugliest-winner-name {
+            color: #0000ff;
+            background-color: #ffff00;
+            font-size: 22px;
+            padding: 10px;
+            margin: 12px 0;
+            border: 4px dashed #ff0000;
+            text-align: center;
+            font-weight: bold;
+            transform: scaleY(1.2);
+            letter-spacing: 2px;
           }
-        }
-      </style>
+
+          .ugliest-plot-image {
+            max-width: 70%;
+            border: 5px solid #00ffff;
+            box-shadow: 0 0 20px #ff00ff;
+            margin: 12px auto;
+            display: block;
+            transform: rotate(5deg);
+            filter: saturate(2) contrast(1.5);
+          }
+
+          .ugliest-winner-text {
+            color: #ff0000;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #00ff00;
+            padding: 8px;
+            margin: 8px 0;
+            font-style: italic;
+            border-bottom: 3px dotted #0000ff;
+          }
+
+          .ugliest-paragraph {
+            color: #ff00ff;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: center;
+            margin: 8px 0;
+          }
+        </style>
+
+        <div class="ugliest-title">🏆 UGLIEST PLOT 🏆</div>
+
+        <div class="ugliest-winner-text">CONGRATULATIONS OMER!!!</div>
+
+        <div class="ugliest-winner-name"></div>
+
+        <img
+          src="eJx1A.png"
+          alt="The ugliest plot"
+          class="ugliest-plot-image"
+        />
+
+        <p class="ugliest-paragraph">Highest rated in ugliness!</p>
+      </div>
 
       <br />
 
