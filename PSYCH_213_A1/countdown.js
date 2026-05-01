@@ -3,7 +3,7 @@ const countdownData = [
   { label: "Midterm", date: "2026-05-25T11:30:00", timezone: "America/Edmonton", containerId: "Midterm" },
   { label: "Final", date: "2026-06-11T15:00:00", timezone: "America/Edmonton", containerId: "Final" },
   { label: "Course Project 1", date: "2026-05-29T23:59:00", timezone: "America/Edmonton", containerId: "CP1" },
-  // { label: "Course Project 2", date: "2026-03-27T23:59:00", timezone: "America/Edmonton", containerId: "CP2" },
+  { label: "Course Project 2", date: "2026-06-05T23:59:00", timezone: "America/Edmonton", containerId: "CP2" },
   // { label: "Homework 1", date: "2026-01-30T23:59:00", timezone: "America/Edmonton", containerId: "HW1" },
 
 
