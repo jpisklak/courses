@@ -94,13 +94,15 @@ duck <- waddle + quack + beak
 
 ## 3. Do not let any line exceed 80 characters:
 
--   Note: Google collab will draw a margin when you are close to the 80 character mark.
+- You can add newlines after operators (e.g., `<-`, `=`, `+`), after commas (`,`) or opening parentheses (`(`, `{`).
+- Google collab will draw a margin when you are close to the 80 character mark.
 
 ### Bad
 
 ::: {.callout-important icon="false"}
 ``` r
-summary(duck_model <- lm(duck ~ waddle + quack + beak, data = duck))$coefficients[2, 3] # 87 chars
+# 137 characters
+potion_result <- brew_potion(ingredient1 = "dragon_scales", ingredient2 = "unicorn_hair", temperature = 666, stirring_speed = "vigorous")
 ```
 :::
 
@@ -108,8 +110,12 @@ summary(duck_model <- lm(duck ~ waddle + quack + beak, data = duck))$coefficient
 
 ::: {.callout-tip icon="false"}
 ``` r
-duck_model <- lm(duck ~ waddle + quack + beak, data = duck)) # 60 chars
-summary(duck_model)$coefficients[2, 3] #38 chars
+potion_result <- brew_potion(
+  ingredient1 = "dragon_scales",
+  ingredient2 = "unicorn_hair",
+  temperature = 666,
+  stirring_speed = "vigorous"
+)
 ```
 :::
 
