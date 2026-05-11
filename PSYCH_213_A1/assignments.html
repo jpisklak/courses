@@ -1,80 +1,82 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignments and Homework</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assignments and Homework</title>
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
+    <!-- Prevent caching of the main HTML file -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
-  <!-- Prevent caching of the main HTML file -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+    <style>
+      img {
+        max-width: 30%;
+        height: auto;
+      }
 
-  <style>
-    img {
-      max-width: 30%;
-      height: auto;
-    }
+      .button-container {
+        margin: 20px 20px;
+      }
 
-    .button-container {
-      margin: 20px 20px;
-    }
+      .data-button {
+        background-color: #275d38;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+      }
 
-    .data-button {
-      background-color: #275d38;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      border-radius: 5px;
-    }
+      .data-button:hover {
+        background-color: #f2cd00;
+        color: black;
+      }
 
-    .data-button:hover {
-      background-color: #f2cd00;
-      color: black;
-    }
+      .submission-button {
+        background-color: #275d38;
+        color: white;
+        padding: 15px 25px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+      }
 
-    .submission-button {
-      background-color: #275d38;
-      color: white;
-      padding: 15px 25px;
-      font-size: 18px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      font-weight: bold;
-    }
+      .submission-button:hover {
+        background-color: #f2cd00;
+        color: black;
+      }
+    </style>
+  </head>
 
-    .submission-button:hover {
-      background-color: #f2cd00;
-      color: black;
-    }
-  </style>
-</head>
+  <body>
+    <!-- Navigation Header-->
+    <header>
+      Psychology 213: Introduction to Data Analysis in Psychology I
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+    <!-- Navigation Header-->
 
-<body>
-  <!-- Navigation Header-->
-  <header>
-    Psychology 213: Introduction to Data Analysis in Psychology I
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-  </nav>
-  <!-- Navigation Header-->
+    <main>
+      <h1>Course Projects</h1>
 
-  <main>
-    <h1>Course Projects</h1>
-
-    <!-- <p>
+      <!-- <p>
       Course projects will be posted here as they become available;
       announcements will be made in class.
     </p> -->
 
-    <!-- <details class="faq-item">
+      <!-- <details class="faq-item">
         <summary>Course Project I</summary>
         <div class="faq-content">
           <h2>Qualitative Research in Psychology</h2>
@@ -145,210 +147,248 @@
         </div>
       </details>-->
 
-    <details class="faq-item">
-      <summary>Course Project I</summary>
-      <div class="faq-content">
-        <h2>Testing Your Own Hypothesis</h2>
-        <b>Due Date:</b> May 29th by 23:59 <br />
-        <div id="CP1" style="display: flex; align-items: center">
-          <div><b>Time Remaining:</b>&nbsp;</div>
-        </div>
-        <br />
+      <details class="faq-item">
+        <summary>Course Project I</summary>
+        <div class="faq-content">
+          <h2>Testing Your Own Hypothesis</h2>
+          <b>Due Date:</b> May 29th by 23:59 <br />
+          <div id="CP1" style="display: flex; align-items: center">
+            <div><b>Time Remaining:</b>&nbsp;</div>
+          </div>
+          <br />
 
-        Some portions of this assignment require knowledge of the one-sample t-test, which we'll cover later in the
-        course. However, much of this can be completed well in advance of that. Get ahead on what you can as we move
-        through the course!
+          Some portions of this assignment require knowledge of the one-sample
+          t-test, which we'll cover later in the course. However, much of this
+          can be completed well in advance of that. Get ahead on what you can as
+          we move through the course!
 
-        <div class="button-container">
-          <button class="submission-button" onclick="
+          <div class="button-container">
+            <button
+              class="submission-button"
+              onclick="
                 window.open(
                   'docs/PSYCH_213_Spring_2026_Assignment_1_Instructions.pdf',
                 )
-              ">
-            📄 Instructions
-          </button>
-          <button class="submission-button" onclick="window.open('docs/project_report.docx')">
-            📝 project_report.docx
-          </button>
-          <br /><br />
-          <button class="submission-button" onclick="
+              "
+            >
+              📄 Instructions
+            </button>
+            <button
+              class="submission-button"
+              onclick="window.open('docs/project_report.docx')"
+            >
+              📝 project_report.docx
+            </button>
+            <br /><br />
+            <button
+              class="submission-button"
+              onclick="
                 window.open(
                   'https://canvas.ualberta.ca/courses/33317/assignments/755189',
                 )
-              ">
-            📥 Submission Portal
-          </button>
+              "
+            >
+              📥 Submission Portal
+            </button>
+          </div>
         </div>
-      </div>
-    </details>
+      </details>
 
-    <details class="faq-item">
-      <summary>Course Project II</summary>
-      <div class="faq-content">
-        <h2>Prison Plot</h2>
-        <b>Due Date:</b> June 5th by 23:59 <br />
-        <div id="CP2" style="display: flex; align-items: center">
-          <div><b>Time Remaining:</b>&nbsp;</div>
-        </div>
-        <br />
+      <details class="faq-item">
+        <summary>Course Project II</summary>
+        <div class="faq-content">
+          <h2>Prison Plot</h2>
+          <b>Due Date:</b> June 5th by 23:59 <br />
+          <div id="CP2" style="display: flex; align-items: center">
+            <div><b>Time Remaining:</b>&nbsp;</div>
+          </div>
+          <br />
 
-        Some parts of this assignment draw on material we'll cover later in the term. You can start now on the earlier sections and return to the rest as we progress, or feel free to explore ahead on your own if you're curious.
+          Some parts of this assignment draw on material we'll cover later in
+          the term. You can start now on the earlier sections and return to the
+          rest as we progress, or feel free to explore ahead on your own if
+          you're curious.
 
-        <div class="button-container">
-          <button class="submission-button" onclick="
+          <div class="button-container">
+            <button
+              class="submission-button"
+              onclick="
                 window.open(
                   'docs/PSYCH_213_Spring_2026_Assignment_2_Instructions.pdf',
                 )
-              ">
-            📄 Instructions
-          </button>
-          <br /><br />
-          <button class="submission-button" onclick="
+              "
+            >
+              📄 Instructions
+            </button>
+            <br /><br />
+            <button
+              class="submission-button"
+              onclick="
                 window.open(
                   'https://canvas.ualberta.ca/courses/33317/assignments/755355',
                 )
-              ">
-            📥 Submission Portal
-          </button>
+              "
+            >
+              📥 Submission Portal
+            </button>
+          </div>
         </div>
-      </div>
-    </details>
+      </details>
 
-    <br />
-    <hr />
-    <br />
+      <br />
+      <hr />
+      <br />
 
-    <h1>Homework Assignments</h1>
+      <h1>Homework Assignments</h1>
 
-    <ul>
-      <li>
-        Assignments will consist of multiple-choice and numeric-entry
-        questions submitted through Canvas LMS.
-      </li>
-      <li>
-        Assignments will be announced in class, with links provided in the table below.
-      </li>
-      <li>
-        Students will have one week from the in-class announcement to
-        complete and submit their work.
-      </li>
-      <li>
-        Unlimited attempts are allowed prior to the due date, and your
-        highest score will count. After each attempt, you will receive
-        immediate feedback, including the correct answers and solutions.
-      </li>
-      <li>
-        <i>Given the fast pace of the spring term, homework will be posted <b>prior</b> to our coverage in class so students can
-        start early if they wish.</i>
-      </li>
-    </ul>
-    <table>
-      <thead>
-        <tr>
-          <th>Homework #</th>
-          <th>Due Date</th>
-          <th>Topic</th>
-          <th>Link to Homework</th>
-          <th>Time Remaining</th>
-          <th>Review Link</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>TBA</td>
-          <td>R Basics</td>
-          <td>
-
-            <a href="https://canvas.ualberta.ca/courses/33317/quizzes/30615" target="_blank">HW1 Questions</a>
-          </td>
-          <td>
-            <!-- <div id="HW1" style="display: flex; align-items: center"></div> -->
-          </td>
-          <td>
-            <!-- 📚
+      <ul>
+        <li>
+          Assignments will consist of multiple-choice and numeric-entry
+          questions submitted through Canvas LMS.
+        </li>
+        <li>
+          Assignments will be announced in class, with links provided in the
+          table below.
+        </li>
+        <li>
+          Students will have one week from the in-class announcement to complete
+          and submit their work.
+        </li>
+        <li>
+          Unlimited attempts are allowed prior to the due date, and your highest
+          score will count. After each attempt, you will receive immediate
+          feedback, including the correct answers and solutions.
+        </li>
+        <li>
+          <i
+            >Given the fast pace of the spring term, homework will be posted
+            <b>prior</b> to our coverage in class so students can start early if
+            they wish.</i
+          >
+        </li>
+      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Homework #</th>
+            <th>Due Date</th>
+            <th>Topic</th>
+            <th>Link to Homework</th>
+            <th>Time Remaining</th>
+            <th>Review Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2026-05-18</td>
+            <td>R Basics</td>
+            <td>
+              <a
+                href="https://canvas.ualberta.ca/courses/33317/quizzes/30615"
+                target="_blank"
+                >HW1 Questions</a
+              >
+            </td>
+            <td>
+              <div id="HW1" style="display: flex; align-items: center"></div>
+            </td>
+            <td>
+              <!-- 📚
             <a href="############" target="_blank"
               title="Click here to practice the homework questions after the deadline.">HW1</a> -->
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    <ul style="font-size: 0.85em">
-      <li>
-        Please note that most questions are intended to be solved using R;
-        trying to complete them "by hand" using a basic calculator is not
-        recommended and will likely exhaust and frustrate you. Though, the
-        goal here is NOT to bypass the mathematics. Rather, with R you can
-        still approach the calculations using the same logical, step-by-step
-        workflow you would use by hand. R simply lets you implement that
-        workflow more efficiently and with less opportunity for error.
-      </li>
-    </ul>
+      <ul style="font-size: 0.85em">
+        <li>
+          Please note that most questions are intended to be solved using R;
+          trying to complete them "by hand" using a basic calculator is not
+          recommended and will likely exhaust and frustrate you. Though, the
+          goal here is NOT to bypass the mathematics. Rather, with R you can
+          still approach the calculations using the same logical, step-by-step
+          workflow you would use by hand. R simply lets you implement that
+          workflow more efficiently and with less opportunity for error.
+        </li>
+      </ul>
 
-    <br />
+      <br />
 
-    <h2>Troubleshooting</h2>
+      <h2>Troubleshooting</h2>
 
-    If you need assistance getting your code to work try these troubleshooting
-    steps:
-    <ol style="font-size: 0.85em">
-      <li>
-        🔍 Find and remove other errors that might be lurking in your code:
-        Select <i>"Runtime"</i> in top drop-down menu and then
-        <i>"Restart Session and Run All"</i>. Then fix any new/extra errors
-        you find above your original error and repeat this process until there
-        are no errors.
-      </li>
-      <li>
-        ✂️ Eliminate any redundant or unnecessary code (i.e., lines that
-        duplicate the function of others). Writing excessive code increases
-        the likelihood of errors, so streamline your script by removing
-        anything superfluous.
-      </li>
-      <li>
-        🧹 Structure, organize, and comment (#) your code clearly and neatly.
-        Clean and well-organized code makes it much easier to identify typos
-        or other issues.
-        <a href="../style_tips/style_tips.html" target="_blank">Click here for tips.</a>
-      </li>
-      <li>
-        📧 When all else fails, email the instructor with a description of the
-        problem and share your Colab notebook (using Google's "share" button
-        in the top right corner). DO NOT SEND SCREEN SHOTS.
-      </li>
-    </ol>
+      If you need assistance getting your code to work try these troubleshooting
+      steps:
+      <ol style="font-size: 0.85em">
+        <li>
+          🔍 Find and remove other errors that might be lurking in your code:
+          Select <i>"Runtime"</i> in top drop-down menu and then
+          <i>"Restart Session and Run All"</i>. Then fix any new/extra errors
+          you find above your original error and repeat this process until there
+          are no errors.
+        </li>
+        <li>
+          ✂️ Eliminate any redundant or unnecessary code (i.e., lines that
+          duplicate the function of others). Writing excessive code increases
+          the likelihood of errors, so streamline your script by removing
+          anything superfluous.
+        </li>
+        <li>
+          🧹 Structure, organize, and comment (#) your code clearly and neatly.
+          Clean and well-organized code makes it much easier to identify typos
+          or other issues.
+          <a href="../style_tips/style_tips.html" target="_blank"
+            >Click here for tips.</a
+          >
+        </li>
+        <li>
+          📧 When all else fails, email the instructor with a description of the
+          problem and share your Colab notebook (using Google's "share" button
+          in the top right corner). DO NOT SEND SCREEN SHOTS.
+        </li>
+      </ol>
 
-    <br />
-    <hr />
-    <br />
+      <br />
+      <hr />
+      <br />
 
-    <h1>Achieve Assessments</h1>
-    <ul>
-      <li>
-        If you do not know what "Achieve" is, please see section 9 of the
-        syllabus, or pay attention in class.
-      </li>
-      <li>
-        Achieve assessments aren't graded, but they reinforce the readings (with an AI tutor) and will help you
-        understand the material and prepare for the midterm and final.
-      </li>
-      <li>
-        <a href="https://sites.google.com/macmillan.com/psych213sp26/home" target="_blank">Achieve Purchase and Access
-          Instructions</a>
-      </li>
-      <li>
-        <a href="https://achieve.macmillanlearning.com/courses/ywf8j6" target="_blank">Achieve Login Portal</a>
-      </li>
-      <li>
-        <mark>Once logged in, it is reccommend that you view by "Course
-          Content"</mark>
-        not "Week Outline."
-      </li>
-      <!-- <li>The ordering below matches our lecture coverage.</li> -->
-    </ul>
+      <h1>Achieve Assessments</h1>
+      <ul>
+        <li>
+          If you do not know what "Achieve" is, please see section 9 of the
+          syllabus, or pay attention in class.
+        </li>
+        <li>
+          Achieve assessments aren't graded, but they reinforce the readings
+          (with an AI tutor) and will help you understand the material and
+          prepare for the midterm and final.
+        </li>
+        <li>
+          <a
+            href="https://sites.google.com/macmillan.com/psych213sp26/home"
+            target="_blank"
+            >Achieve Purchase and Access Instructions</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://achieve.macmillanlearning.com/courses/ywf8j6"
+            target="_blank"
+            >Achieve Login Portal</a
+          >
+        </li>
+        <li>
+          <mark
+            >Once logged in, it is reccommend that you view by "Course
+            Content"</mark
+          >
+          not "Week Outline."
+        </li>
+        <!-- <li>The ordering below matches our lecture coverage.</li> -->
+      </ul>
 
-    <!-- <h2>Due Dates</h2>
+      <!-- <h2>Due Dates</h2>
 
     <table style="width: auto; border-collapse: collapse">
       <thead>
@@ -429,20 +469,18 @@
       <div>Time Remaining:&nbsp;</div>
     </div> -->
 
-    <!-- Banner will be filled in by JavaScript -->
-    <br />
-    <hr />
-    <div id="last-updated">Loading last updated time...</div>
+      <!-- Banner will be filled in by JavaScript -->
+      <br />
+      <hr />
+      <div id="last-updated">Loading last updated time...</div>
 
-    <!-- Include Moment.js and Moment-Timezone -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
-    <!-- Include the external JavaScript file -->
-    <script src="countdown.js"></script>
-    <script src="../refresh.js"></script>
-  </main>
-  <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
-</body>
-
+      <!-- Include Moment.js and Moment-Timezone -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data.min.js"></script>
+      <!-- Include the external JavaScript file -->
+      <script src="countdown.js"></script>
+      <script src="../refresh.js"></script>
+    </main>
+    <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
+  </body>
 </html>
