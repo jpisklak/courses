@@ -1,372 +1,577 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psychology 213: Introduction to Data Analysis in Psychology I</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+      async
+    ></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Psychology 213: Introduction to Data Analysis in Psychology I</title>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
 
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="icon" type="image/x-icon" href="../img/site_icon.ico" />
+    <!-- Prevent caching of the main HTML file -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+  </head>
 
-  <!-- Prevent caching of the main HTML file -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-</head>
+  <body>
+    <!-- Navigation Header-->
+    <header>
+      Psychology 213: Introduction to Data Analysis in Psychology I
+    </header>
+    <nav>
+      <a href="docs/PSYCH_213_LEC_A1_Spring_2026_Pisklak.pdf" target="_blank"
+        >Syllabus</a
+      >
+      |
+      <a href="docs/OpenIntro_Statistics_Textbook.pdf" target="_blank"
+        >Textbook</a
+      >
+      |
+      <!-- <a href="https://canvas.ualberta.ca/courses/28360/external_tools/282" target="_blank">Zoom</a> |  -->
+      <a href="exams.html">Exams</a> |
+      <a href="assignments.html">Assignments & Homework</a> |
+      <a href="data_files.html">Data Files</a> |
+      <a href="grades.html">Grades</a> |
+      <span
+        ><a href="discord.html"
+          >Discord
+          <img
+            src="../img/discord-mark-blue.svg"
+            style="vertical-align: middle; width: 1%" /></a
+      ></span>
+      | <a href="contact.html">Contact</a> |
+      <a href="links.html">Useful Student Links</a>
+    </nav>
+    <!-- Navigation Header-->
 
-<body>
-  <!-- Navigation Header-->
-  <header>
-    Psychology 213: Introduction to Data Analysis in Psychology I
-  </header>
-  <nav>
-    <a href="docs/PSYCH_213_LEC_A1_Spring_2026_Pisklak.pdf" target="_blank">Syllabus</a>
-    |
-    <a href="docs/OpenIntro_Statistics_Textbook.pdf" target="_blank">Textbook</a>
-    |
-    <!-- <a href="https://canvas.ualberta.ca/courses/28360/external_tools/282" target="_blank">Zoom</a> |  -->
-    <a href="exams.html">Exams</a> |
-    <a href="assignments.html">Assignments & Homework</a> |
-    <a href="data_files.html">Data Files</a> |
-    <a href="grades.html">Grades</a> |
-    <span><a href="discord.html">Discord
-        <img src="../img/discord-mark-blue.svg" style="vertical-align: middle; width: 1%" /></a></span>
-    | <a href="contact.html">Contact</a> |
-    <a href="links.html">Useful Student Links</a>
-  </nav>
-  <!-- Navigation Header-->
+    <main>
+      <!-- ================= ANNOUNCEMENT ================= -->
 
-  <main>
-    <!-- ================= ANNOUNCEMENT ================= -->
+      <style>
+        .spaced {
+          content: "";
+          display: block;
+          margin-bottom: 5px;
+        }
+      </style>
 
-    <div style="
+      <div
+        style="
           background-color: #ffcccc;
           border-left: 6px solid #ff0000;
           padding: 10px;
           margin: 20px 0;
           font-family: Arial, sans-serif;
           color: #660000;
-        ">
-      <h3 style="margin: 0; font-size: 1.5em">
-        🚨 Important Announcements: 🚨
-      </h3>
-      <p style="margin: 5px 0 0 0; font-size: 1.1em; font-weight: bold">
-        - 🗓️ To allow for additional study time of the topics, the Midterm has been moved to Fri May 29th.<br>
-        - 👤🖥️ Canvas functionality has returned and due dates for Homework 1 and 2 have been posted.<br>
-        - 🚧 Course project due dates have been moved down a week.
-      </p>
-    </div>
+        "
+      >
+        <h3 style="margin: 0; font-size: 1.5em">
+          🚨 Important Announcements: 🚨
+        </h3>
+        <p style="margin: 5px 0 0 0; font-size: 0.9em; font-weight: bold">
+          - 🗓️ To allow for additional study time of the topics, the Midterm has
+          been moved to Fri May 29th.<br class="spaced" />
 
-    <br />
+          - 👤🖥️ Canvas functionality has returned and due dates for Homework 1
+          and 2 have been posted.<br class="spaced" />
 
-    <!-- ================= LECTURES ================= -->
+          - 🚧 Course project due dates have been moved down a week.<br
+            class="spaced"
+          />
 
-    <h1>Lectures</h1>
+          - 🧮 Hand-Calculation Practice Questions have been posted for the
+          midterm (see <a href="exams.html">Exams</a> section).
+        </p>
+      </div>
 
-    <!-- ================= WEEK 1 ================= -->
+      <br />
 
-    <details class="faq-item">
-      <summary>Week 1 (click me 👆)</summary>
-      <div class="faq-content">
-        <table>
-          <thead>
-            <tr>
-              <th>Week</th>
-              <th>Day</th>
-              <th>Topics / Videos</th>
-              <th>Notebooks</th>
-              <th>PDF Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>1</td>
-              <td>
-                <a href="https://youtu.be/_2KSCNiISN0" target="_blank" rel="noopener noreferrer"
-                  title="Lecture Video">Course Introduction (click for video)</a>
-              </td>
-              <td>
-                <!-- 🧮
+      <!-- ================= LECTURES ================= -->
+
+      <h1>Lectures</h1>
+
+      <!-- ================= WEEK 1 ================= -->
+
+      <details class="faq-item">
+        <summary>Week 1 (click me 👆)</summary>
+        <div class="faq-content">
+          <table>
+            <thead>
+              <tr>
+                <th>Week</th>
+                <th>Day</th>
+                <th>Topics / Videos</th>
+                <th>Notebooks</th>
+                <th>PDF Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>
+                  <a
+                    href="https://youtu.be/_2KSCNiISN0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Lecture Video"
+                    >Course Introduction (click for video)</a
+                  >
+                </td>
+                <td>
+                  <!-- 🧮
                   <a
                     href="COLLAB NOTEBOOK LINK"
                     target="_blank"
                     rel="noopener noreferrer"
                     >1-1-1</a
                   > -->
-              </td>
-              <td>
-                📝
-                <a href="https://drive.google.com/file/d/1zILKLeYTPEjV1eRjB7--cGeKP3XqGOQ8/view?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">1-1-1</a>
-              </td>
-            </tr>
+                </td>
+                <td>
+                  📝
+                  <a
+                    href="https://drive.google.com/file/d/1zILKLeYTPEjV1eRjB7--cGeKP3XqGOQ8/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1-1-1</a
+                  >
+                </td>
+              </tr>
 
-            <tr>
-              <td>1</td>
-              <td>2</td>
-              <td>
-                <a href="https://youtu.be/_weyoSSIAOU" target="_blank" rel="noopener noreferrer"
-                  title="Lecture Video (part 1)">Part 1: Course Intro cont'd</a>
-                <br />
-                <a href="https://youtu.be/0gBsU5yCklk" target="_blank" rel="noopener noreferrer"
-                  title="Lecture Video (part 2)">Part 2: R Basics</a>
-              </td>
-              <td>
-                🧮
-                <a href="https://colab.research.google.com/drive/1PvuXHlCQsUDX-aafoYoDXLt5KuRmS5ab?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">1-2-1</a>
-              </td>
-              <td>
-                <!-- 📝
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>
+                  <a
+                    href="https://youtu.be/_weyoSSIAOU"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Lecture Video (part 1)"
+                    >Part 1: Course Intro cont'd</a
+                  >
+                  <br />
+                  <a
+                    href="https://youtu.be/0gBsU5yCklk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Lecture Video (part 2)"
+                    >Part 2: R Basics</a
+                  >
+                </td>
+                <td>
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/1PvuXHlCQsUDX-aafoYoDXLt5KuRmS5ab?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1-2-1</a
+                  >
+                </td>
+                <td>
+                  <!-- 📝
                   <a
                     href="https://drive.google.com/file/d/1zILKLeYTPEjV1eRjB7--cGeKP3XqGOQ8/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     >1-1-1</a
                   > -->
-              </td>
-            </tr>
+                </td>
+              </tr>
 
-            <tr>
-              <td>1</td>
-              <td>3</td>
-              <td>
-                <a href="https://youtu.be/SrT0Iui7nKo" target="_blank" rel="noopener noreferrer" title="Lecture Video">R
-                  Basics cont'd</a>
-              </td>
-              <td>
-                🧮
-                <a href="https://colab.research.google.com/drive/1SBjvBVXFlB2sWIpKVYDDxLt4CsDguuYa?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">1-3-1</a>
-              </td>
-              <td>
-                <!-- 📝
+              <tr>
+                <td>1</td>
+                <td>3</td>
+                <td>
+                  <a
+                    href="https://youtu.be/SrT0Iui7nKo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Lecture Video"
+                    >R Basics cont'd</a
+                  >
+                </td>
+                <td>
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/1SBjvBVXFlB2sWIpKVYDDxLt4CsDguuYa?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1-3-1</a
+                  >
+                </td>
+                <td>
+                  <!-- 📝
                   <a
                     href="https://drive.google.com/file/d/1zILKLeYTPEjV1eRjB7--cGeKP3XqGOQ8/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     >1-1-1</a
                   > -->
-              </td>
-            </tr>
+                </td>
+              </tr>
 
-            <tr>
-              <td>1</td>
-              <td>4</td>
-              <td>
-                <a href="https://youtu.be/5KQDds3zF1U" target="_blank" rel="noopener noreferrer" title="Lecture Video">R
-                  Basics cont'd; Math Refresher</a>
-              </td>
-              <td>
-                🧮
-                <a href="https://colab.research.google.com/drive/1k4gkjvOJgPcIh5hsk37E_0Y-C1Ms0ZeU?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">1-4-1</a>
-                | 🧮
-                <a href="https://colab.research.google.com/drive/10c-dBolUcw5sSKJI0n07AiGoNGOciAv-?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">1-4-2</a>
-              </td>
-              <td>
-                📝
-                <a href="https://drive.google.com/file/d/1T22Bsu8avwm7eCbJiUXOO3WqQkuvSv3S/view?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">1-4-3</a>
-              </td>
-            </tr>
+              <tr>
+                <td>1</td>
+                <td>4</td>
+                <td>
+                  <a
+                    href="https://youtu.be/5KQDds3zF1U"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Lecture Video"
+                    >R Basics cont'd; Math Refresher</a
+                  >
+                </td>
+                <td>
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/1k4gkjvOJgPcIh5hsk37E_0Y-C1Ms0ZeU?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1-4-1</a
+                  >
+                  | 🧮
+                  <a
+                    href="https://colab.research.google.com/drive/10c-dBolUcw5sSKJI0n07AiGoNGOciAv-?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1-4-2</a
+                  >
+                </td>
+                <td>
+                  📝
+                  <a
+                    href="https://drive.google.com/file/d/1T22Bsu8avwm7eCbJiUXOO3WqQkuvSv3S/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1-4-3</a
+                  >
+                </td>
+              </tr>
 
-            <tr>
-              <td>1</td>
-              <td>5</td>
-              <td>
-                <a href="https://youtu.be/OVMPl9p2rDM" target="_blank" rel="noopener noreferrer"
-                  title="Lecture Video">Math Refresher cont'd; Basic Terms</a>
-              </td>
-              <td>
-                🧮
-                <a href="https://colab.research.google.com/drive/1QheomYS8PlBE2LY17tFR8Dsx2YZkThl6?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">1-5-1</a>
-                | 🧮
-                <a href="https://colab.research.google.com/drive/1wffb0wzV1T64feEqc5pFrA8NZSazbv73?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">1-5-2</a>
-              </td>
-              <td>
-                📝
-                <a href="https://drive.google.com/file/d/1V9t9sW6OYPDisGeXC6NSN2V6Q9jpjCTY/view?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">1-5-1</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              <tr>
+                <td>1</td>
+                <td>5</td>
+                <td>
+                  <a
+                    href="https://youtu.be/OVMPl9p2rDM"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Lecture Video"
+                    >Math Refresher cont'd; Basic Terms</a
+                  >
+                </td>
+                <td>
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/1QheomYS8PlBE2LY17tFR8Dsx2YZkThl6?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1-5-1</a
+                  >
+                  | 🧮
+                  <a
+                    href="https://colab.research.google.com/drive/1wffb0wzV1T64feEqc5pFrA8NZSazbv73?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1-5-2</a
+                  >
+                </td>
+                <td>
+                  📝
+                  <a
+                    href="https://drive.google.com/file/d/1V9t9sW6OYPDisGeXC6NSN2V6Q9jpjCTY/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >1-5-1</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <!-- ================= WEEK 2 ================= -->
+
+      <details class="faq-item">
+        <summary>Week 2</summary>
+        <div class="faq-content">
+          <table>
+            <thead>
+              <tr>
+                <th>Week</th>
+                <th>Day</th>
+                <th>Topics / Videos</th>
+                <th>Notebooks</th>
+                <th>PDF Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2</td>
+                <td>1</td>
+                <td>
+                  <a
+                    href="https://youtu.be/jbvnMJAEQlA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Lecture Video"
+                    >Basic Terms cont'd; Central Tendency</a
+                  >
+                </td>
+                <td>
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/1j9xqC-uNfikb6bi-aM7HelL-cWHLS-z1?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-1-1</a
+                  >
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/1euR09sc_D4A1Kr-pGM-mTizTFQJziMX4?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-1-2</a
+                  >
+                </td>
+                <td>
+                  📝
+                  <a
+                    href="https://drive.google.com/file/d/1eYnMOLN-7VK0dx5mDw8QKLELm38Zk4jo/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-1-2</a
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>
+                  <a
+                    href="https://youtu.be/d0P1ZOA8Qk0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Lecture Video"
+                    >Visualizing Central Tendency (with a bar graph); Spread</a
+                  >
+                </td>
+                <td>
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/154vr13I9ETvHC80nlzOklEksKvYZR9tk?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-2-1</a
+                  >
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/1UAb8wYNwW3BcCjg2nGVcjmb4P2jzynYS?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-2-2</a
+                  >
+                </td>
+                <td>
+                  📝
+                  <a
+                    href="https://drive.google.com/file/d/1Csomb8hGAZn9QKwA5-E1HuT_5fRAn4-s/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-2-2</a
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>
+                  <a
+                    href="https://youtu.be/GU7qd6Ltrlo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Lecture Video"
+                    >Spread: Range; Interquartile Range</a
+                  >
+                </td>
+                <td>
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/11WIY_bv8szKrx8GnMeGeeto1fXXcFPtb?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-3-1</a
+                  >
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/1cXCRaACgW_5sZlDICVPCBS3kx9J8QrdU?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-3-2</a
+                  >
+                </td>
+                <td>
+                  📝
+                  <a
+                    href="https://drive.google.com/file/d/1BPIS2rYSeoKHHUpH4pe5eAlX0N_t6AA8/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-3-2</a
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>4</td>
+                <td>
+                  <a
+                    href="https://youtu.be/UsNHpRBXnQw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Lecture Video"
+                    >Boxplots; Standard Deviation</a
+                  >
+                </td>
+                <td>
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/1k0wjDFnpiUSzj7CRNKnkZeECSh0hxzlo?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-4-1</a
+                  >
+                  🧮
+                  <a
+                    href="https://colab.research.google.com/drive/1GVI3ut3J02d5A44UoP9xKec9oealQceS?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-4-2</a
+                  >
+                </td>
+                <td>
+                  📝
+                  <a
+                    href="https://drive.google.com/file/d/1bRygEB3SD2MwNV8MeDLTwHZZY7g5tDVI/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-4-1</a
+                  >
+                  📝
+                  <a
+                    href="https://drive.google.com/file/d/148UZL_hCnWfeZJmK_ZfHRPvcu_SyAOrl/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >2-4-2</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <!-- ================= BOTTOM INFO AND LINKS ================= -->
+
+      <ul>
+        <li>
+          <b
+            >You will need to be signed in to your U of A account on YouTube to
+            view the videos.</b
+          >
+        </li>
+        <li>
+          The complete set of Colab Notebooks and other class files can be found
+          in the class Google Drive folder: 📂
+          <a
+            href="https://drive.google.com/drive/folders/18KfxHWH7hBODKovQYPZSdHNIBfO2n-Fr?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click here</a
+          >
+        </li>
+        <li>
+          Notebooks and Notes are numbered with the following convention:
+          <code>[week] - [day] - [topic #]</code>
+        </li>
+      </ul>
+
+      <br />
+
+      <!-- <img src="../img/zombies.gif" /> -->
+
+      <!-- Banner will be filled in by JavaScript -->
+      <br />
+      <hr />
+      <div id="last-updated">Loading last updated time...</div>
+      <br />
+
+      <div class="buttons">
+        <a
+          href="https://geocities.restorativland.org/Area51/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="../img/geocities_area_51.gif"
+            title="WARNING: This Link May Summon the Men in Black"
+            style="float: right; margin-left: 10px"
+        /></a>
+        <a href="https://linuxatlas.pages.dev/" target="_blank"
+          ><img
+            src="../img/linux_powered.gif"
+            title="Say 'NO' to Microslop! Click here to free your PC from corporate overlords. Minty fresh freedom awaits!"
+            style="float: left; margin-left: 10px"
+        /></a>
+        <a
+          href="https://neocities.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="../img/neocities-button.gif"
+            title="Handcraft your own website—because algorithms are overrated"
+            style="float: right; margin-left: 10px"
+        /></a>
+        <a
+          href="https://www.cameronsworld.net/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="../img/html.gif"
+            title="Experience the Internet in Its Purest, Most Chaotic Form"
+            style="float: right; margin-left: 10px"
+        /></a>
+        <a
+          href="https://www.firefox.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="../img/firefox.gif"
+            title="When 'free' costs your privacy, it's not free: Ditch Chrome and get Firefox."
+            style="float: left; margin-left: 10px"
+        /></a>
       </div>
-    </details>
+      <br />
 
-    <!-- ================= WEEK 2 ================= -->
-
-    <details class="faq-item">
-      <summary>Week 2</summary>
-      <div class="faq-content">
-        <table>
-          <thead>
-            <tr>
-              <th>Week</th>
-              <th>Day</th>
-              <th>Topics / Videos</th>
-              <th>Notebooks</th>
-              <th>PDF Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2</td>
-              <td>1</td>
-              <td>
-                <a href="https://youtu.be/jbvnMJAEQlA" target="_blank" rel="noopener noreferrer"
-                  title="Lecture Video">Basic Terms cont'd; Central Tendency</a>
-              </td>
-              <td>
-                🧮
-                <a href="https://colab.research.google.com/drive/1j9xqC-uNfikb6bi-aM7HelL-cWHLS-z1?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-1-1</a>
-                🧮
-                <a href="https://colab.research.google.com/drive/1euR09sc_D4A1Kr-pGM-mTizTFQJziMX4?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-1-2</a>
-              </td>
-              <td>
-                📝
-                <a href="https://drive.google.com/file/d/1eYnMOLN-7VK0dx5mDw8QKLELm38Zk4jo/view?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-1-2</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td>2</td>
-              <td>2</td>
-              <td>
-                <a href="https://youtu.be/d0P1ZOA8Qk0" target="_blank" rel="noopener noreferrer"
-                  title="Lecture Video">Visualizing Central Tendency (with a bar graph); Spread</a>
-              </td>
-              <td>
-                🧮
-                <a href="https://colab.research.google.com/drive/154vr13I9ETvHC80nlzOklEksKvYZR9tk?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-2-1</a>
-                🧮
-                <a href="https://colab.research.google.com/drive/1UAb8wYNwW3BcCjg2nGVcjmb4P2jzynYS?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-2-2</a>
-              </td>
-              <td>
-                📝
-                <a href="https://drive.google.com/file/d/1Csomb8hGAZn9QKwA5-E1HuT_5fRAn4-s/view?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-2-2</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td>2</td>
-              <td>3</td>
-              <td>
-                <a href="https://youtu.be/GU7qd6Ltrlo" target="_blank" rel="noopener noreferrer"
-                  title="Lecture Video">Spread: Range; Interquartile Range</a>
-              </td>
-              <td>
-                🧮
-                <a href="https://colab.research.google.com/drive/11WIY_bv8szKrx8GnMeGeeto1fXXcFPtb?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-3-1</a>
-                🧮
-                <a href="https://colab.research.google.com/drive/1cXCRaACgW_5sZlDICVPCBS3kx9J8QrdU?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-3-2</a>
-              </td>
-              <td>
-                📝
-                <a href="https://drive.google.com/file/d/1BPIS2rYSeoKHHUpH4pe5eAlX0N_t6AA8/view?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-3-2</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td>2</td>
-              <td>4</td>
-              <td>
-                <a href="https://youtu.be/UsNHpRBXnQw" target="_blank" rel="noopener noreferrer"
-                  title="Lecture Video">Boxplots; Standard Deviation</a>
-              </td>
-              <td>
-                🧮
-                <a href="https://colab.research.google.com/drive/1k0wjDFnpiUSzj7CRNKnkZeECSh0hxzlo?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-4-1</a>
-                🧮
-                <a href="https://colab.research.google.com/drive/1GVI3ut3J02d5A44UoP9xKec9oealQceS?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-4-2</a>
-              </td>
-              <td>
-                📝
-                <a href="https://drive.google.com/file/d/1bRygEB3SD2MwNV8MeDLTwHZZY7g5tDVI/view?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-4-1</a>
-                📝
-                <a href="https://drive.google.com/file/d/148UZL_hCnWfeZJmK_ZfHRPvcu_SyAOrl/view?usp=drive_link"
-                  target="_blank" rel="noopener noreferrer">2-4-2</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </details>
-
-    <!-- ================= BOTTOM INFO AND LINKS ================= -->
-
-    <ul>
-      <li>
-        <b>You will need to be signed in to your U of A account on YouTube to
-          view the videos.</b>
-      </li>
-      <li>
-        The complete set of Colab Notebooks and other class files can be found
-        in the class Google Drive folder: 📂
-        <a href="https://drive.google.com/drive/folders/18KfxHWH7hBODKovQYPZSdHNIBfO2n-Fr?usp=drive_link"
-          target="_blank" rel="noopener noreferrer">
-          Click here</a>
-      </li>
-      <li>
-        Notebooks and Notes are numbered with the following convention:
-        <code>[week] - [day] - [topic #]</code>
-      </li>
-    </ul>
-
+      <!-- Include the external JavaScript files -->
+      <script src="../refresh.js"></script>
+    </main>
+    <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
     <br />
-
-    <!-- <img src="../img/zombies.gif" /> -->
-
-    <!-- Banner will be filled in by JavaScript -->
-    <br />
-    <hr />
-    <div id="last-updated">Loading last updated time...</div>
-    <br />
-
-    <div class="buttons">
-      <a href="https://geocities.restorativland.org/Area51/" target="_blank" rel="noopener noreferrer"><img
-          src="../img/geocities_area_51.gif" title="WARNING: This Link May Summon the Men in Black"
-          style="float: right; margin-left: 10px" /></a>
-      <a href="https://linuxatlas.pages.dev/" target="_blank"><img src="../img/linux_powered.gif"
-          title="Say 'NO' to Microslop! Click here to free your PC from corporate overlords. Minty fresh freedom awaits!"
-          style="float: left; margin-left: 10px" /></a>
-      <a href="https://neocities.org/" target="_blank" rel="noopener noreferrer"><img src="../img/neocities-button.gif"
-          title="Handcraft your own website—because algorithms are overrated"
-          style="float: right; margin-left: 10px" /></a>
-      <a href="https://www.cameronsworld.net/" target="_blank" rel="noopener noreferrer"><img src="../img/html.gif"
-          title="Experience the Internet in Its Purest, Most Chaotic Form"
-          style="float: right; margin-left: 10px" /></a>
-      <a href="https://www.firefox.com/" target="_blank" rel="noopener noreferrer"><img src="../img/firefox.gif"
-          title="When 'free' costs your privacy, it's not free: Ditch Chrome and get Firefox."
-          style="float: left; margin-left: 10px" /></a>
-    </div>
-    <br />
-
-    <!-- Include the external JavaScript files -->
-    <script src="../refresh.js"></script>
-  </main>
-  <footer>© 1999 Jeffrey M. Pisklak. All Rights Reserved.</footer>
-  <br />
-  <a href="../index.html"><img src="../img/y2kintegration.gif" style="width: 2%" /></a>
-</body>
-
+    <a href="../index.html"
+      ><img src="../img/y2kintegration.gif" style="width: 2%"
+    /></a>
+  </body>
 </html>
